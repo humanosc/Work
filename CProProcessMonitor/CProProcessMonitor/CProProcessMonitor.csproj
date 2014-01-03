@@ -49,10 +49,12 @@
   <ItemGroup>
     <Compile Include="Model\IModel.cs" />
     <Compile Include="Model\Model.cs" />
+    <Compile Include="Presenter\AboutViewPresenter.cs" />
     <Compile Include="Presenter\SelectInstancePresenter.cs" />
     <Compile Include="Service\IGnuPlotGenerator.cs" />
     <Compile Include="Service\ILogService.cs" />
     <Compile Include="Service\IPerformanceCounterInstanceInfoService.cs" />
+    <Compile Include="Service\IPerformanceCounterInstanceSelectorService.cs" />
     <Compile Include="Service\IPerformanceCounterService.cs" />
     <Compile Include="Service\IProcessMonitorService.cs" />
     <Compile Include="Service\LogService.cs" />
@@ -68,6 +70,7 @@
     </Compile>
     <Compile Include="Service\GnuPlotGenerator.cs" />
     <Compile Include="Presenter\MainViewPresenter.cs" />
+    <Compile Include="View\IAboutView.cs" />
     <Compile Include="View\IMainView.cs" />
     <Compile Include="View\ISelectInstanceView.cs" />
     <Compile Include="View\IView.cs" />

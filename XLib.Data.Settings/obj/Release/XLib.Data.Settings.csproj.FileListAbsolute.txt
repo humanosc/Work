@@ -19,3 +19,10 @@ D:\Work\XLib.Data.Settings\bin\Release\XLib.General.pdb
 D:\Work\XLib.Data.Settings\obj\Release\XLib.Data.Settings.csprojResolveAssemblyReference.cache
 D:\Work\XLib.Data.Settings\obj\Release\XLib.Data.Settings.dll
 D:\Work\XLib.Data.Settings\obj\Release\XLib.Data.Settings.pdb
+d:\Work\Git\Work\XLib.Data.Settings\bin\Release\XLib.Data.Settings.dll
+d:\Work\Git\Work\XLib.Data.Settings\bin\Release\XLib.Data.Settings.pdb
+d:\Work\Git\Work\XLib.Data.Settings\bin\Release\XLib.General.dll
+d:\Work\Git\Work\XLib.Data.Settings\bin\Release\XLib.General.pdb
+d:\Work\Git\Work\XLib.Data.Settings\obj\Release\XLib.Data.Settings.csprojResolveAssemblyReference.cache
+d:\Work\Git\Work\XLib.Data.Settings\obj\Release\XLib.Data.Settings.dll
+d:\Work\Git\Work\XLib.Data.Settings\obj\Release\XLib.Data.Settings.pdb

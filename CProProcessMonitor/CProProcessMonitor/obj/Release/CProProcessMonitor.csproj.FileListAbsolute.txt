@@ -54,3 +54,9 @@ D:\Work\CProProcessMonitor\CProProcessMonitor\CProProcessMonitor\obj\Release\CPr
 D:\Work\CProProcessMonitor\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.Properties.Resources.resources
 D:\Work\CProProcessMonitor\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.View.SelectInstanceForm.resources
 D:\Work\CProProcessMonitor\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.csproj.GenerateResource.Cache
+d:\Work\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.csprojResolveAssemblyReference.cache
+d:\Work\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.View.AboutBox.resources
+d:\Work\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.View.MainForm.resources
+d:\Work\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.Properties.Resources.resources
+d:\Work\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.View.SelectInstanceForm.resources
+d:\Work\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.csproj.GenerateResource.Cache

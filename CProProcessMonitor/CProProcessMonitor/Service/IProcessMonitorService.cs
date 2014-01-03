@@ -21,9 +21,10 @@ namespace CProProcessMonitor.Service
 
     public interface IProcessMonitorService
     {
-        public event EventHandler EvProcessExited;
-        public event EventHandler<NewProcessMonitorDataEventArgs> EvNewData;
+        event EventHandler EvProcessExited;
+        event EventHandler<NewProcessMonitorDataEventArgs> EvNewData;
         int Interval { get; set; }
+        bool IsInitialized { get; } 
         void Initialize ();
         void Deinitialize ();
         void Start ();

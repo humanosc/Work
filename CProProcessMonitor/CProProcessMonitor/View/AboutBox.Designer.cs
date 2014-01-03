@@ -1,4 +1,4 @@
-﻿namespace CProProcessMonitor
+﻿namespace CProProcessMonitor.View
 {
     partial class AboutBox
     {
