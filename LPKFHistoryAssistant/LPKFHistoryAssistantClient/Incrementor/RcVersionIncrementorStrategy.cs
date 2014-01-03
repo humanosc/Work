@@ -15,7 +15,8 @@ namespace LPKFHistoryAssistantClient
 
         public override VersionIncremention Increment ( string path )
         {
-            const string versionPattern = @"(\d{1,2})[,](\d{1,3})[,](\d{1,5})";
+            
+            const string versionPattern = "\"FileVersion\", \"(\\d{1,2})[,] (\\d{1,3})[,] (\\d{1,5})\"";
             const string assemblyPattern = "OriginalFilename\", \"(.*)\"";
 
             ////////////////////////////////////////////////////////
@@ -32,7 +33,16 @@ namespace LPKFHistoryAssistantClient
 
             ////////////////////////////////////////////////////////
             // build new version string
-            string oldVersion = result.Value;
+            string oldVersion = null;
+            for ( int i = 1; i < result.Groups.Count; i++ )
+            {
+                oldVersion += result.Groups[i].Value;
+                if ( i < result.Groups.Count - 1 )
+                {
+                    oldVersion += ",";
+                }
+            }
+
             string newVersion = null;
             for ( int i = 1; i < result.Groups.Count - 1; i++ )
             {

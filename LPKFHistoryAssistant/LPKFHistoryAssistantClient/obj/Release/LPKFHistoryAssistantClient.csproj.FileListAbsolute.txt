@@ -8,3 +8,8 @@ C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKF
 C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\Output\LPKF History Assistant Client.exe
 C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\Output\LPKF History Assistant Client.pdb
 C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClient\obj\Release\LPKFHistoryAssistantClient.csprojResolveAssemblyReference.cache
+H:\Git\Work\LPKFHistoryAssistant\Output\LPKF History Assistant Client.exe
+H:\Git\Work\LPKFHistoryAssistant\Output\LPKF History Assistant Client.pdb
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistantClient\obj\Release\LPKFHistoryAssistantClient.csprojResolveAssemblyReference.cache
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistantClient\obj\Release\LPKF History Assistant Client.exe
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistantClient\obj\Release\LPKF History Assistant Client.pdb

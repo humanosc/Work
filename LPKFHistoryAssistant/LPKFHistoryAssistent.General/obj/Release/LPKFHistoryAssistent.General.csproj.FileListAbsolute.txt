@@ -16,3 +16,12 @@ C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKF
 C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistent.General\obj\Release\LPKFHistoryAssistent.General.csprojResolveAssemblyReference.cache
 C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistent.General\obj\Release\LPKFHistoryAssistent.General.dll
 C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistent.General\obj\Release\LPKFHistoryAssistent.General.pdb
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistent.General\bin\Release\LPKFHistoryAssistent.General.dll
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistent.General\bin\Release\LPKFHistoryAssistent.General.pdb
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistent.General\bin\Release\XLib.Data.Settings.dll
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistent.General\bin\Release\XLib.General.dll
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistent.General\bin\Release\XLib.Data.Settings.pdb
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistent.General\bin\Release\XLib.General.pdb
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistent.General\obj\Release\LPKFHistoryAssistent.General.csprojResolveAssemblyReference.cache
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistent.General\obj\Release\LPKFHistoryAssistent.General.dll
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistent.General\obj\Release\LPKFHistoryAssistent.General.pdb

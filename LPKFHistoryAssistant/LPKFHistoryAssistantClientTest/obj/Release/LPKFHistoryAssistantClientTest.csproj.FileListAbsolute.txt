@@ -58,3 +58,27 @@ C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKF
 C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Release\LPKFHistoryAssistantClientTest.csprojResolveAssemblyReference.cache
 C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Release\LPKFHistoryAssistantClientTest.dll
 C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Release\LPKFHistoryAssistantClientTest.pdb
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Release\LPKFHistoryAssistantClientTest.dll
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Release\LPKFHistoryAssistantClientTest.pdb
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Release\LPKF History Assistant Client.exe
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Release\Microsoft.QualityTools.Testing.Fakes.dll
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Release\XLib.General.dll
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Release\LPKFHistoryAssistent.General.dll
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Release\XLib.Data.Settings.dll
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Release\XLib.P4.dll
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Release\XLib.General.pdb
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Release\LPKF History Assistant Client.pdb
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Release\LPKFHistoryAssistent.General.pdb
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Release\XLib.Data.Settings.pdb
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Release\XLib.P4.pdb
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Release\LPKFHistoryAssistantClientTest.csprojFakesResolveAssemblyReference.cache
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Release\Fakes\fakes.args
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Release\Fakes\lpkfhac\b\LPKF History Assistant Client.Fakes.xml
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Release\Fakes\lpkfhac\f.ah
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Release\Fakes\lpkfhac\f.ch
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Release\Fakes\lpkfhac\f.cs
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Release\Fakes\lpkfhac\f.csproj
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Release\Fakes\lpkfhac\f.fakesconfig
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Release\Fakes\lpkfhac\o\f.csproj.FileListAbsolute.txt
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Release\LPKFHistoryAssistantClientTest.dll
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Release\LPKFHistoryAssistantClientTest.pdb

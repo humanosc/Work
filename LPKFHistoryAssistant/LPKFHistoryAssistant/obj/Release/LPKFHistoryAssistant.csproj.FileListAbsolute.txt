@@ -34,3 +34,21 @@ C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKF
 C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\LPKFHistoryAssistant.csproj.GenerateResource.Cache
 C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\LPKF History Assistant.exe
 C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\LPKF History Assistant.pdb
+H:\Git\Work\LPKFHistoryAssistant\Output\LPKF History Assistant.exe
+H:\Git\Work\LPKFHistoryAssistant\Output\LPKF History Assistant.pdb
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\LPKFHistoryAssistant.csprojResolveAssemblyReference.cache
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\BugtrackForm.baml
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\HistoryForm.baml
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\MainWindow.baml
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\SettingsForm.baml
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\BugtrackForm.g.cs
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\HistoryForm.g.cs
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\MainWindow.g.cs
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\SettingsForm.g.cs
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\App.g.cs
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\LPKF History Assistant_MarkupCompile.cache
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\LPKF History Assistant.g.resources
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\LPKFHistoryAssistant.Properties.Resources.resources
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\LPKFHistoryAssistant.csproj.GenerateResource.Cache
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\LPKF History Assistant.exe
+H:\Git\Work\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\LPKF History Assistant.pdb
