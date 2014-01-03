@@ -5,17 +5,9 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace CProProcessMonitor
+namespace CProProcessMonitor.Service
 {
-    public enum GnuPlotDiagramType
-    {
-        All,
-        Cpu,
-        Memory,
-        ClrMemory
-    }
-
-    public static class GnuPlotGenerator
+    public class GnuPlotGenerator : IGnuPlotGenerator 
     {
         private static readonly string _plotsettingsTemplate = global::CProProcessMonitor.Properties.Resources.plotsettings_template;
         private static readonly string _plotsettingsTemplateCpu = global::CProProcessMonitor.Properties.Resources.plotsettings_cpu_template;
@@ -39,7 +31,11 @@ namespace CProProcessMonitor
             return _plotsettingsTemplate;            
         }
 
-        public static void Generate ( GnuPlotDiagramType type, string title, string logPath )
+        public GnuPlotGenerator ()
+        {
+        }
+
+        public void Generate ( GnuPlotDiagramType type, string title, string logPath )
         {
             string settingsTemplate = convertToSettingsTemplate( type );
 

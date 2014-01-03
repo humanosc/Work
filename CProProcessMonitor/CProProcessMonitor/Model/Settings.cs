@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using XLib.Data.Settings;
 
-namespace CProProcessMonitor
+namespace CProProcessMonitor.Model
 {
     public class Settings : SettingsBase<Settings>
     {

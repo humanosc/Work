@@ -50,7 +50,7 @@ namespace CProProcessMonitor.View
         {
             set
             {
-                string cpuStr = value.ToString("0.00", _cultureInfo);           
+                string cpuStr = value.ToString("0.00", CultureInfo.InvariantCulture );           
                 lbl_CPU.Text = cpuStr + " %";
             }
         }
@@ -59,7 +59,7 @@ namespace CProProcessMonitor.View
         {
             set
             {
-                string memoryStr = value.ToString("0.00", _cultureInfo);           
+                string memoryStr = value.ToString( "0.00", CultureInfo.InvariantCulture );           
                 lbl_Memory.Text = memoryStr + " MB";
             }
         }
@@ -68,7 +68,7 @@ namespace CProProcessMonitor.View
         {
             set 
             {
-                string clrmemoryStr = value.ToString("0.00", _cultureInfo);
+                string clrmemoryStr = value.ToString( "0.00", CultureInfo.InvariantCulture );
                 lbl_CLRMemory.Text = clrmemoryStr + " MB";    
             }
         }
@@ -83,10 +83,7 @@ namespace CProProcessMonitor.View
         
         private static readonly string _settingsPath = "Settings.xml";
    
-        private static int _processorCount = Environment.ProcessorCount;
-        private static readonly CultureInfo _cultureInfo = CultureInfo.InvariantCulture; 
         private readonly PerformanceCounterManager _perfCounters = new PerformanceCounterManager();
-        private StreamWriter _writer;
         private string _logPath;
         private string _logDirPath;
         private string _processWindowTitle;
@@ -110,13 +107,7 @@ namespace CProProcessMonitor.View
             }
         }
 
-        private static StreamWriter createLogStream ( string logPath )
-        {
-            StreamWriter writer = new StreamWriter( new FileStream( logPath, FileMode.Create, FileAccess.Write, FileShare.ReadWrite, 64 ) );
-            writer.WriteLine( "Timestamp\tCPU\tMemory (MB)\tCLR-Memory (MB)" );
-            writer.AutoFlush = true;
-            return writer;
-        }
+     
 
         public MainForm ()
         {
@@ -189,91 +180,85 @@ namespace CProProcessMonitor.View
        
       
 
-        private void tm_ProcessUpdate_Tick ( object sender, EventArgs e )
-        {
-            var processes = Process.GetProcesses();
-            var process = processes.FirstOrDefault( p => p.ProcessName.StartsWith( Settings.Instance.ProcessName.Value ) );
-            if ( process == null )
-            {
-                _perfCounters.Destroy();
-                Reset();
-                return;
-            }
+        //private void tm_ProcessUpdate_Tick ( object sender, EventArgs e )
+        //{
+        //    var processes = Process.GetProcesses();
+        //    var process = processes.FirstOrDefault( p => p.ProcessName.StartsWith( Settings.Instance.ProcessName.Value ) );
+        //    if ( process == null )
+        //    {
+        //        _perfCounters.Destroy();
+        //        Reset();
+        //        return;
+        //    }
 
-            _processWindowTitle = process.MainWindowTitle;
+        //    _processWindowTitle = process.MainWindowTitle;
 
-            try
-            {
-                if (!_perfCounters.IsInitialized)
-                {
-                    _perfCounters.Initialize( process.ProcessName );
-                }                
+        //    try
+        //    {
+        //        if (!_perfCounters.IsInitialized)
+        //        {
+        //            _perfCounters.Initialize( process.ProcessName );
+        //        }                
 
-                float cpu = _perfCounters.GetNextCpuValue() / _processorCount;
-                float memory = _perfCounters.GetNextPrivateBytesValue() / 1024 / 1024;
-                float clrmemory = _perfCounters.GetNextClrBytesValue() / 1024 / 1024;
+        //        float cpu = _perfCounters.GetNextCpuValue() / _processorCount;
+        //        float memory = _perfCounters.GetNextPrivateBytesValue() / 1024 / 1024;
+        //        float clrmemory = _perfCounters.GetNextClrBytesValue() / 1024 / 1024;
 
-                string cpuStr = cpu.ToString( "0.00", _cultureInfo );
-                string memoryStr = memory.ToString( "0.00", _cultureInfo );
-                string clrmemoryStr = clrmemory.ToString( "0.00", _cultureInfo );
+        //        string cpuStr = cpu.ToString( "0.00", _cultureInfo );
+        //        string memoryStr = memory.ToString( "0.00", _cultureInfo );
+        //        string clrmemoryStr = clrmemory.ToString( "0.00", _cultureInfo );
 
-                lbl_CPU.Text = cpuStr + " %";
-                lbl_Memory.Text = memoryStr + " MB";
-                lbl_CLRMemory.Text = clrmemoryStr + " MB";
+        //        lbl_CPU.Text = cpuStr + " %";
+        //        lbl_Memory.Text = memoryStr + " MB";
+        //        lbl_CLRMemory.Text = clrmemoryStr + " MB";
 
-                _writer.WriteLine( string.Format( "{0}\t{1}\t{2}\t{3}", DateTime.Now.ToString( _cultureInfo ), cpuStr, memoryStr, clrmemoryStr ) );
-            }
-            catch
-            {
-                _perfCounters.Destroy();
-                resetView();
-            }            
-        }
+        //        _writer.WriteLine( string.Format( "{0}\t{1}\t{2}\t{3}", DateTime.Now.ToString( _cultureInfo ), cpuStr, memoryStr, clrmemoryStr ) );
+        //    }
+        //    catch
+        //    {
+        //        _perfCounters.Destroy();
+        //        resetView();
+        //    }            
+        //}
 
-        private void ni_MainForm_MouseClick ( object sender, MouseEventArgs e )
-        {
-            Show();
-        }
+        //private void ni_MainForm_MouseClick ( object sender, MouseEventArgs e )
+        //{
+        //    Show();
+        //}
 
-        private void tsm_ShowMonitor_Click ( object sender, EventArgs e )
-        {
-            Show();
-        }
+        //private void tsm_ShowMonitor_Click ( object sender, EventArgs e )
+        //{
+        //    Show();
+        //}
 
-        private void tsm_HideMonitor_Click ( object sender, EventArgs e )
-        {
-            Hide();
-        }
+        //private void tsm_HideMonitor_Click ( object sender, EventArgs e )
+        //{
+        //    Hide();
+        //}
 
-        private void tsm_CloseMonitor_Click ( object sender, EventArgs e )
-        {
-            Close();
-        }
+        //private void tsm_CloseMonitor_Click ( object sender, EventArgs e )
+        //{
+        //    Close();
+        //}
 
      
+        //private void ni_MainForm_MouseClick_1(object sender, MouseEventArgs e)
+        //{
+        //    if (e.Button == System.Windows.Forms.MouseButtons.Left)
+        //    {
+        //        Visible = !Visible;
+        //    }
+        //}
 
-        private void tsm_GenerateDiagram_Click(object sender, System.EventArgs e)
-        {
-            generateDiagram(_plotsettingsTemplate);
-        }
+        //private void tsm_ShowLog_Click(object sender, EventArgs e)
+        //{
+        //    Process.Start( _logPath );
+        //}
 
-        private void ni_MainForm_MouseClick_1(object sender, MouseEventArgs e)
-        {
-            if (e.Button == System.Windows.Forms.MouseButtons.Left)
-            {
-                Visible = !Visible;
-            }
-        }
-
-        private void tsm_ShowLog_Click(object sender, EventArgs e)
-        {
-            Process.Start( _logPath );
-        }
-
-        private void tsm_OpenLogfolder_Click(object sender, EventArgs e)
-        {
-            Process.Start("explorer.exe", _logDirPath);
-        }
+        //private void tsm_OpenLogfolder_Click(object sender, EventArgs e)
+        //{
+        //    Process.Start("explorer.exe", _logDirPath);
+        //}
 
         private void tsm_CleanupLogfolder_Click(object sender, EventArgs e)
         {
@@ -293,27 +278,14 @@ namespace CProProcessMonitor.View
             }
         }
 
-        private void tsm_GenerateCpuDiagram_Click(object sender, EventArgs e)
-        {
-            generateDiagram(_plotsettingsTemplateCpu);
-        }
+      
 
-        private void tsm_GenerateMemoryDiagram_Click(object sender, EventArgs e)
-        {
-            generateDiagram(_plotsettingsTemplateMemory);
-        }
-
-        private void tsm_GenerateClrMemoryDiagram_Click(object sender, EventArgs e)
-        {
-            generateDiagram(_plotsettingsTemplateClrMemory);
-        }
-
-        private void tsm_About_Click(object sender, EventArgs e)
-        {
-            AboutBox about = new AboutBox();
-            about.StartPosition = FormStartPosition.CenterScreen;
-            about.ShowDialog();
-        }
+        //private void tsm_About_Click(object sender, EventArgs e)
+        //{
+        //    AboutBox about = new AboutBox();
+        //    about.StartPosition = FormStartPosition.CenterScreen;
+        //    about.ShowDialog();
+        //}
 
         private void tscb_TimerInterval_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -322,15 +294,7 @@ namespace CProProcessMonitor.View
             cms_MainForm.Close();
         }
 
-        private void tsm_ClearLog_Click ( object sender, EventArgs e )
-        {
-            // close current log stream
-            _writer.Close();
-            // create new log stream ( empty file )
-            _writer = createLogStream( _logPath );
-        }
-
-
+      
 
 
        
