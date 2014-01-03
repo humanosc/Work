@@ -1,0 +1,15 @@
+24.01.2013 (DB)
+- test123
+	LPKF.Fusion.UI => 2.6.100.199
+	LPKF.Fusion.OCC.Algo => 3.0.100.077
+	LPKF.Fusion.UI => 2.6.100.198
+	LPKF.Fusion.OCC.Algo => 3.0.100.076
+
+24.01.2013 (DB)
+- a
+- ä
+- as
+
+
+
+

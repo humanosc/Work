@@ -1,0 +1,10 @@
+D:\Work\FSharpPlayground\FSharpPlayground\bin\Debug\FSharpPlayground.exe.config
+D:\Work\FSharpPlayground\FSharpPlayground\bin\Debug\FSharpPlayground.XML
+D:\Work\FSharpPlayground\FSharpPlayground\bin\Debug\FSharpPlayground.exe
+D:\Work\FSharpPlayground\FSharpPlayground\bin\Debug\FSharpPlayground.pdb
+D:\Work\FSharpPlayground\FSharpPlayground\bin\Debug\FSharp.Core.dll
+D:\Work\FSharpPlayground\FSharpPlayground\bin\Debug\FSharp.Core.xml
+D:\Work\FSharpPlayground\FSharpPlayground\bin\Debug\de\FSharp.Core.resources.dll
+D:\Work\FSharpPlayground\FSharpPlayground\obj\Debug\FSharpPlayground.fsprojResolveAssemblyReference.cache
+D:\Work\FSharpPlayground\FSharpPlayground\obj\Debug\FSharpPlayground.exe
+D:\Work\FSharpPlayground\FSharpPlayground\obj\Debug\FSharpPlayground.pdb

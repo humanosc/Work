@@ -1,0 +1,3 @@
+- check grouped history for duplicates
+- support mutliple workspaces
+- support changelist mode

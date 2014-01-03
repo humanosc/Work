@@ -1,0 +1,1 @@
+gnuplot <plot_settings.txt> plot.png

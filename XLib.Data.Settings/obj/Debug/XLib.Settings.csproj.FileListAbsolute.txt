@@ -1,0 +1,7 @@
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.Settings\bin\Debug\XLib.Settings.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.Settings\bin\Debug\XLib.Settings.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.Settings\bin\Debug\XLib.General.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.Settings\bin\Debug\XLib.General.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.Settings\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.Settings\obj\Debug\XLib.Settings.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.Settings\obj\Debug\XLib.Settings.pdb

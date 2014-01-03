@@ -1,0 +1,42 @@
+﻿<Page x:Class="LPKFHistoryAssistant.BugtrackForm"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="BugtrackForm" Height="534" Width="700" Loaded="Page_Loaded" KeyboardNavigation.IsTabStop="False">
+  <Grid KeyboardNavigation.IsTabStop="False">
+        <Grid Margin="10,10,0,0" HorizontalAlignment="Left" Width="690" IsHitTestVisible="True" FocusManager.IsFocusScope="True" KeyboardNavigation.TabNavigation="Cycle" KeyboardNavigation.DirectionalNavigation="Cycle">
+            <Button Height="23" HorizontalAlignment="Right" KeyboardNavigation.TabIndex="2" Margin="0,0,12,12" Name="_btOk" VerticalAlignment="Bottom" Width="107" Click="_btOk_Click" IsDefault="True">Ok</Button>
+            <Button Click="_btSettings_Click" Height="23" KeyboardNavigation.TabIndex="3" HorizontalAlignment="Left" Margin="12,0,0,12" Name="_btSettings" VerticalAlignment="Bottom" Width="107">Settings...</Button>
+
+            <Grid Margin="12,12,12,61" Name="grid1" KeyboardNavigation.TabNavigation="Continue" KeyboardNavigation.DirectionalNavigation="Continue">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="44*" MaxHeight="44" MinHeight="44" />
+                    <RowDefinition Height="397*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <TextBox AcceptsReturn="True" AcceptsTab="True" IsTabStop="False" Background="#DBF0DB"
+                         BorderBrush="White" BorderThickness="0" FontSize="14" Height="44" FontWeight="900" IsReadOnly="True" Name="_txbHead" TextDecorations="None" VerticalAlignment="Top" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="5" FontFamily="Trebuchet MS">Please enter Bugtrack Id(s) or Entry Title</TextBox>
+                <Grid Margin="6,0" Name="grid2" Grid.Row="1" KeyboardNavigation.TabNavigation="Continue" KeyboardNavigation.DirectionalNavigation="Continue">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40*" />
+                        <RowDefinition Height="58*" />
+                        <RowDefinition Height="12.008*" />
+                        <RowDefinition Height="40*" />
+                        <RowDefinition Height="246.958*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150*" />
+                        <ColumnDefinition Width="510*" />
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="#FFDBF0DB" Margin="0,6,0,7.022" Name="rectangle1" />
+                    <Label FontFamily="Trebuchet MS" FontWeight="Bold" Margin="45,6,0,7" HorizontalAlignment="Right" Name="label1">Bugtrack Id(s)</Label>
+                    <TextBox FontFamily="Trebuchet MS" Grid.Column="1" Margin="6,6,0,7" Name="_txbIds" KeyboardNavigation.TabIndex="0" VerticalContentAlignment="Center" TextChanged="_txbId_TextChanged" />
+                    <Rectangle Fill="#FFDBF0DB" Margin="0,0,0,7.022" Name="rectangle2" Grid.Row="1"/>
+                    <TextBox FontFamily="Trebuchet MS" Margin="6,0,0,7.022" Name="_txbTitle" VerticalContentAlignment="Top" KeyboardNavigation.TabIndex="1" Grid.Column="1" Grid.Row="1"  TextChanged="_txbTitle_TextChanged" VerticalScrollBarVisibility="Auto" AcceptsReturn="True" />
+                    <Label FontFamily="Trebuchet MS" FontWeight="Bold" Margin="6,39,0,14" Name="label2" HorizontalAlignment="Right" Grid.RowSpan="2">Entry Title</Label>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P4Assistent", "P4Assistent\P4Assistent.csproj", "{CF812BA4-ECBA-433A-92C6-A57475908534}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XLib.P4", "..\XLib.P4\XLib.P4.csproj", "{628386A0-1D5B-4A7A-A758-AE18022A0605}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XLib.General", "..\XLib.General\XLib.General.csproj", "{CE4EC560-46A3-41A4-948C-55687512A0D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XLib.Data.Settings", "..\XLib.Data.Settings\XLib.Data.Settings.csproj", "{AA8668DF-62FB-47FE-AFC4-4BD4957DF2C8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF812BA4-ECBA-433A-92C6-A57475908534}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF812BA4-ECBA-433A-92C6-A57475908534}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF812BA4-ECBA-433A-92C6-A57475908534}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF812BA4-ECBA-433A-92C6-A57475908534}.Release|Any CPU.Build.0 = Release|Any CPU
+		{628386A0-1D5B-4A7A-A758-AE18022A0605}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{628386A0-1D5B-4A7A-A758-AE18022A0605}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{628386A0-1D5B-4A7A-A758-AE18022A0605}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{628386A0-1D5B-4A7A-A758-AE18022A0605}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE4EC560-46A3-41A4-948C-55687512A0D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE4EC560-46A3-41A4-948C-55687512A0D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE4EC560-46A3-41A4-948C-55687512A0D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE4EC560-46A3-41A4-948C-55687512A0D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA8668DF-62FB-47FE-AFC4-4BD4957DF2C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA8668DF-62FB-47FE-AFC4-4BD4957DF2C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA8668DF-62FB-47FE-AFC4-4BD4957DF2C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA8668DF-62FB-47FE-AFC4-4BD4957DF2C8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

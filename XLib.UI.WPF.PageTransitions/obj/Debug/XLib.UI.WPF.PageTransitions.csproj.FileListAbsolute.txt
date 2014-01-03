@@ -1,0 +1,13 @@
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.UI.WPF.PageTransitions\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.UI.WPF.PageTransitions\obj\Debug\PageTransition.g.cs
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.UI.WPF.PageTransitions\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.UI.WPF.PageTransitions\obj\Debug\XLib.UI.WPF.PageTransitions_MarkupCompile.cache
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.UI.WPF.PageTransitions\obj\Debug\XLib.UI.WPF.PageTransitions_MarkupCompile.lref
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.UI.WPF.PageTransitions\bin\Debug\XLib.UI.WPF.PageTransitions.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.UI.WPF.PageTransitions\bin\Debug\XLib.UI.WPF.PageTransitions.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.UI.WPF.PageTransitions\obj\Debug\PageTransition.baml
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.UI.WPF.PageTransitions\obj\Debug\XLib.UI.WPF.PageTransitions.g.resources
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.UI.WPF.PageTransitions\obj\Debug\XLib.UI.WPF.PageTransitions.Properties.Resources.resources
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.UI.WPF.PageTransitions\obj\Debug\XLib.UI.WPF.PageTransitions.csproj.GenerateResource.Cache
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.UI.WPF.PageTransitions\obj\Debug\XLib.UI.WPF.PageTransitions.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.UI.WPF.PageTransitions\obj\Debug\XLib.UI.WPF.PageTransitions.pdb

@@ -1,0 +1,36 @@
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\Output\LPKF History Assistant.exe
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\Output\LPKF History Assistant.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\BugtrackForm.baml
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\HistoryForm.baml
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\MainWindow.baml
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\SettingsForm.baml
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\BugtrackForm.g.cs
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\HistoryForm.g.cs
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\MainWindow.g.cs
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\SettingsForm.g.cs
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\App.g.cs
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\LPKF History Assistant_MarkupCompile.cache
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\LPKF History Assistant.g.resources
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\LPKFHistoryAssistant.Properties.Resources.resources
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\LPKFHistoryAssistant.csproj.GenerateResource.Cache
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\LPKF History Assistant.exe
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\LPKF History Assistant.pdb
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\Output\LPKF History Assistant.exe
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\Output\LPKF History Assistant.pdb
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\LPKFHistoryAssistant.csprojResolveAssemblyReference.cache
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\BugtrackForm.baml
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\HistoryForm.baml
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\MainWindow.baml
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\SettingsForm.baml
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\BugtrackForm.g.cs
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\HistoryForm.g.cs
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\MainWindow.g.cs
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\SettingsForm.g.cs
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\App.g.cs
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\LPKF History Assistant_MarkupCompile.cache
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\LPKF History Assistant.g.resources
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\LPKFHistoryAssistant.Properties.Resources.resources
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\LPKFHistoryAssistant.csproj.GenerateResource.Cache
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\LPKF History Assistant.exe
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Release\LPKF History Assistant.pdb

@@ -1,0 +1,9 @@
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\CProProcessMonitor\CProProcessMonitor\bin\Debug\CPro Process Monitor.exe.config
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\CProProcessMonitor\CProProcessMonitor\bin\Debug\CPro Process Monitor.exe
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\CProProcessMonitor\CProProcessMonitor\bin\Debug\CPro Process Monitor.pdb
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\CProProcessMonitor\CProProcessMonitor\obj\Debug\CProProcessMonitor.csprojResolveAssemblyReference.cache
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\CProProcessMonitor\CProProcessMonitor\obj\Debug\CProProcessMonitor.frm_Main.resources
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\CProProcessMonitor\CProProcessMonitor\obj\Debug\CProProcessMonitor.Properties.Resources.resources
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\CProProcessMonitor\CProProcessMonitor\obj\Debug\CProProcessMonitor.csproj.GenerateResource.Cache
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\CProProcessMonitor\CProProcessMonitor\obj\Debug\CPro Process Monitor.exe
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\CProProcessMonitor\CProProcessMonitor\obj\Debug\CPro Process Monitor.pdb

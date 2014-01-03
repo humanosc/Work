@@ -1,0 +1,4 @@
+- add dynamic time x axis labeling (change to days if the log file is larger then x)
+- track all cpus
+- show max average value
+- statistics

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Parameter Id="Version" Type="System.String">
+    <Value>1.0</Value>
+  </Parameter>
+  <Parameter Id="LastSelectedDirectory" Type="System.String">
+    <Value>LPKF CircuitPro 3D 99.00</Value>
+  </Parameter>
+  <Parameter Id="OpenDirectoryInNewTab" Type="System.Boolean">
+    <Value>False</Value>
+  </Parameter>
+  <Parameter Id="OpenDirectoryInSourceTab" Type="System.Boolean">
+    <Value>False</Value>
+  </Parameter>
+</Settings>

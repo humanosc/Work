@@ -1,0 +1,10 @@
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\Output\LPKF History Assistant Client.exe
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\Output\LPKF History Assistant Client.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClient\obj\Debug\LPKF History Assistant Client.exe
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClient\obj\Debug\LPKF History Assistant Client.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClient\obj\Debug\LPKFHistoryAssistantClient.csprojResolveAssemblyReference.cache
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClient\obj\Debug\LPKF History Assistant Client.exe
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClient\obj\Debug\LPKF History Assistant Client.pdb
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\Output\LPKF History Assistant Client.exe
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\Output\LPKF History Assistant Client.pdb
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClient\obj\Debug\LPKFHistoryAssistantClient.csprojResolveAssemblyReference.cache

@@ -1,0 +1,9 @@
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.P4\bin\Debug\XLib.P4.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.P4\bin\Debug\XLib.P4.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.P4\obj\Debug\XLib.P4.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.P4\obj\Debug\XLib.P4.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.P4\bin\Debug\XLib.Data.Settings.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.P4\bin\Debug\XLib.General.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.P4\bin\Debug\XLib.General.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.P4\bin\Debug\XLib.Data.Settings.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.P4\obj\Debug\XLib.P4.csprojResolveAssemblyReference.cache

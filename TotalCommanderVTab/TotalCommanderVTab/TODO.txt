@@ -1,0 +1,2 @@
+- Allow Directory change even in the root directory
+- Can't Change directory c:\Projekt_D_Brosche\Applications\LPKF.Fusion\02.07\02.07.100\Dev\ from c:\Projekt_D_Brosche\Applications\LPKF.Fusion\02.07\02.07.050\Dev\

@@ -1,0 +1,1 @@
+-path=c:\Projekt_D_Brosche\Applications\LPKF.Fusion\2.3\2.3.200.0\Dev\LPKF.Fusion\Properties\Settings.settings -regex=[\\]\d.\d{1,5}|[\\]\d.\d{1,5}.\d\d\d.\d -regex=Work -debug=true -openfile=true

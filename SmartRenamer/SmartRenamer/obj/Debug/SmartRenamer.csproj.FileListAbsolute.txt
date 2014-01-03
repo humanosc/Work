@@ -1,0 +1,17 @@
+C:\Dokumente und Einstellungen\Daniel\Desktop\SmartRenamer\SmartRenamer\SmartRenamer\obj\Debug\ResolveAssemblyReference.cache
+C:\Dokumente und Einstellungen\Daniel\Desktop\SmartRenamer\SmartRenamer\SmartRenamer\obj\Debug\SmartRenamer.Renamer.resources
+C:\Dokumente und Einstellungen\Daniel\Desktop\SmartRenamer\SmartRenamer\SmartRenamer\obj\Debug\SmartRenamer.Properties.Resources.resources
+C:\Dokumente und Einstellungen\Daniel\Desktop\SmartRenamer\SmartRenamer\SmartRenamer\obj\Debug\SmartRenamer.csproj.GenerateResource.Cache
+C:\Dokumente und Einstellungen\Daniel\Desktop\SmartRenamer\SmartRenamer\SmartRenamer\bin\Debug\Smart Renamer.exe
+C:\Dokumente und Einstellungen\Daniel\Desktop\SmartRenamer\SmartRenamer\SmartRenamer\bin\Debug\Smart Renamer.pdb
+C:\Dokumente und Einstellungen\Daniel\Desktop\SmartRenamer\SmartRenamer\SmartRenamer\obj\Debug\Smart Renamer.exe
+C:\Dokumente und Einstellungen\Daniel\Desktop\SmartRenamer\SmartRenamer\SmartRenamer\obj\Debug\Smart Renamer.pdb
+C:\Users\Brosche\Desktop\SmartRenamer\SmartRenamer\obj\Debug\Smart Renamer.exe
+C:\Users\Brosche\Desktop\SmartRenamer\SmartRenamer\obj\Debug\Smart Renamer.pdb
+C:\Users\Brosche\Desktop\SmartRenamer\SmartRenamer\bin\Debug\Smart Renamer.exe
+C:\Users\Brosche\Desktop\SmartRenamer\SmartRenamer\bin\Debug\Smart Renamer.pdb
+C:\Users\Brosche\Desktop\SmartRenamer\SmartRenamer\bin\Debug\gma.Drawing.ImageInfo.dll
+C:\Users\Brosche\Desktop\SmartRenamer\SmartRenamer\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Brosche\Desktop\SmartRenamer\SmartRenamer\obj\Debug\SmartRenamer.Renamer.resources
+C:\Users\Brosche\Desktop\SmartRenamer\SmartRenamer\obj\Debug\SmartRenamer.Properties.Resources.resources
+C:\Users\Brosche\Desktop\SmartRenamer\SmartRenamer\obj\Debug\SmartRenamer.csproj.GenerateResource.Cache

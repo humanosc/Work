@@ -1,0 +1,23 @@
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKF History Assistant\LPKFHistoryAssistent.General\bin\Debug\LPKFHistoryAssistent.General.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKF History Assistant\LPKFHistoryAssistent.General\bin\Debug\LPKFHistoryAssistent.General.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKF History Assistant\LPKFHistoryAssistent.General\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKF History Assistant\LPKFHistoryAssistent.General\obj\Debug\LPKFHistoryAssistent.General.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKF History Assistant\LPKFHistoryAssistent.General\obj\Debug\LPKFHistoryAssistent.General.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistent.General\bin\Debug\LPKFHistoryAssistent.General.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistent.General\bin\Debug\LPKFHistoryAssistent.General.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistent.General\bin\Debug\XLib.General.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistent.General\bin\Debug\XLib.General.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistent.General\obj\Debug\LPKFHistoryAssistent.General.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistent.General\obj\Debug\LPKFHistoryAssistent.General.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistent.General\bin\Debug\XLib.Data.Settings.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistent.General\bin\Debug\XLib.Data.Settings.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistent.General\obj\Debug\LPKFHistoryAssistent.General.csprojResolveAssemblyReference.cache
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistent.General\bin\Debug\LPKFHistoryAssistent.General.dll
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistent.General\bin\Debug\LPKFHistoryAssistent.General.pdb
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistent.General\bin\Debug\XLib.Data.Settings.dll
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistent.General\bin\Debug\XLib.General.dll
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistent.General\bin\Debug\XLib.Data.Settings.pdb
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistent.General\bin\Debug\XLib.General.pdb
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistent.General\obj\Debug\LPKFHistoryAssistent.General.csprojResolveAssemblyReference.cache
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistent.General\obj\Debug\LPKFHistoryAssistent.General.dll
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistent.General\obj\Debug\LPKFHistoryAssistent.General.pdb

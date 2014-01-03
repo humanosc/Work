@@ -1,0 +1,9 @@
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\ProcessMonitor\ProcessMonitor\bin\Release\ProcessMonitor.exe.config
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\ProcessMonitor\ProcessMonitor\bin\Release\ProcessMonitor.exe
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\ProcessMonitor\ProcessMonitor\bin\Release\ProcessMonitor.pdb
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\ProcessMonitor\ProcessMonitor\obj\Release\ProcessMonitor.frm_Main.resources
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\ProcessMonitor\ProcessMonitor\obj\Release\ProcessMonitor.Properties.Resources.resources
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\ProcessMonitor\ProcessMonitor\obj\Release\ProcessMonitor.csproj.GenerateResource.Cache
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\ProcessMonitor\ProcessMonitor\obj\Release\ProcessMonitor.exe
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\ProcessMonitor\ProcessMonitor\obj\Release\ProcessMonitor.pdb
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\ProcessMonitor\ProcessMonitor\bin\Release\CPro ProcessMonitor.exe.config

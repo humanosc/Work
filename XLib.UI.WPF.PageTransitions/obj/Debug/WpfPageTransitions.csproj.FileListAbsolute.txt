@@ -1,0 +1,13 @@
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKF History Assistant\WpfPageTransitions\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKF History Assistant\WpfPageTransitions\obj\Debug\PageTransition.g.cs
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKF History Assistant\WpfPageTransitions\obj\Debug\WpfPageTransitions_MarkupCompile.cache
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKF History Assistant\WpfPageTransitions\obj\Debug\WpfPageTransitions_MarkupCompile.lref
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKF History Assistant\WpfPageTransitions\bin\Debug\WpfPageTransitions.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKF History Assistant\WpfPageTransitions\bin\Debug\WpfPageTransitions.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKF History Assistant\WpfPageTransitions\obj\Debug\PageTransition.baml
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKF History Assistant\WpfPageTransitions\obj\Debug\WpfPageTransitions.g.resources
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKF History Assistant\WpfPageTransitions\obj\Debug\WpfPageTransitions.Properties.Resources.resources
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKF History Assistant\WpfPageTransitions\obj\Debug\WpfPageTransitions.csproj.GenerateResource.Cache
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKF History Assistant\WpfPageTransitions\obj\Debug\WpfPageTransitions.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKF History Assistant\WpfPageTransitions\obj\Debug\WpfPageTransitions.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKF History Assistant\WpfPageTransitions\obj\Debug\GeneratedInternalTypeHelper.g.cs

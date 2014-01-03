@@ -1,0 +1,413 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LPKF History Assistant Client.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:LPKFHistoryAssistantClient.Fakes.ShimCppVersionIncrementorStrategy">
+            <summary>Shim-Typ von LPKFHistoryAssistantClient.CppVersionIncrementorStrategy</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.ShimCppVersionIncrementorStrategy.#ctor">
+            <summary>Initialisiert eine neue Shim-Instanz.</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.ShimCppVersionIncrementorStrategy.#ctor(LPKFHistoryAssistantClient.CppVersionIncrementorStrategy)">
+            <summary>Initialisiert einen neuen Shim für die gegebene Instanz.</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.ShimCppVersionIncrementorStrategy.BehaveAsCurrent">
+            <summary>Weist das &apos;Current&apos;-Verhalten für alle Methoden des Shim-Typs zu.</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.ShimCppVersionIncrementorStrategy.BehaveAsNotImplemented">
+            <summary>Weist das &apos;NotImplemented&apos;-Verhalten für alle Methoden des Shim-Typs zu.</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.ShimCppVersionIncrementorStrategy.Bind(LPKFHistoryAssistantClient.IVersionIncrementorStrategy)">
+            <summary>Bindet die Member der Schnittstelle an den Shim.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.ShimCppVersionIncrementorStrategy.Behavior">
+            <summary>Weist das Verhalten für alle Methoden des Shim-Typs zu.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.ShimCppVersionIncrementorStrategy.Constructor">
+            <summary>Legt die shim von CppVersionIncrementorStrategy.CppVersionIncrementorStrategy() fest.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.ShimCppVersionIncrementorStrategy.IncrementString">
+            <summary>Legt die shim von CppVersionIncrementorStrategy.Increment(String path) fest.</summary>
+        </member>
+        <member name="T:LPKFHistoryAssistantClient.Fakes.ShimCppVersionIncrementorStrategy.AllInstances">
+            <summary>Shims für alle Instanzenmember definieren</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.ShimCppVersionIncrementorStrategy.AllInstances.IncrementString">
+            <summary>Legt die shim von CppVersionIncrementorStrategy.Increment(String path) fest.</summary>
+        </member>
+        <member name="T:LPKFHistoryAssistantClient.Fakes.ShimCsVersionIncrementorStrategy">
+            <summary>Shim-Typ von LPKFHistoryAssistantClient.CsVersionIncrementorStrategy</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.ShimCsVersionIncrementorStrategy.#ctor">
+            <summary>Initialisiert eine neue Shim-Instanz.</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.ShimCsVersionIncrementorStrategy.#ctor(LPKFHistoryAssistantClient.CsVersionIncrementorStrategy)">
+            <summary>Initialisiert einen neuen Shim für die gegebene Instanz.</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.ShimCsVersionIncrementorStrategy.BehaveAsCurrent">
+            <summary>Weist das &apos;Current&apos;-Verhalten für alle Methoden des Shim-Typs zu.</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.ShimCsVersionIncrementorStrategy.BehaveAsNotImplemented">
+            <summary>Weist das &apos;NotImplemented&apos;-Verhalten für alle Methoden des Shim-Typs zu.</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.ShimCsVersionIncrementorStrategy.Bind(LPKFHistoryAssistantClient.IVersionIncrementorStrategy)">
+            <summary>Bindet die Member der Schnittstelle an den Shim.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.ShimCsVersionIncrementorStrategy.Behavior">
+            <summary>Weist das Verhalten für alle Methoden des Shim-Typs zu.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.ShimCsVersionIncrementorStrategy.Constructor">
+            <summary>Legt die shim von CsVersionIncrementorStrategy.CsVersionIncrementorStrategy() fest.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.ShimCsVersionIncrementorStrategy.IncrementString">
+            <summary>Legt die shim von CsVersionIncrementorStrategy.Increment(String path) fest.</summary>
+        </member>
+        <member name="T:LPKFHistoryAssistantClient.Fakes.ShimCsVersionIncrementorStrategy.AllInstances">
+            <summary>Shims für alle Instanzenmember definieren</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.ShimCsVersionIncrementorStrategy.AllInstances.IncrementString">
+            <summary>Legt die shim von CsVersionIncrementorStrategy.Increment(String path) fest.</summary>
+        </member>
+        <member name="T:LPKFHistoryAssistantClient.Fakes.ShimRcVersionIncrementorStrategy">
+            <summary>Shim-Typ von LPKFHistoryAssistantClient.RcVersionIncrementorStrategy</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.ShimRcVersionIncrementorStrategy.#ctor">
+            <summary>Initialisiert eine neue Shim-Instanz.</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.ShimRcVersionIncrementorStrategy.#ctor(LPKFHistoryAssistantClient.RcVersionIncrementorStrategy)">
+            <summary>Initialisiert einen neuen Shim für die gegebene Instanz.</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.ShimRcVersionIncrementorStrategy.BehaveAsCurrent">
+            <summary>Weist das &apos;Current&apos;-Verhalten für alle Methoden des Shim-Typs zu.</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.ShimRcVersionIncrementorStrategy.BehaveAsNotImplemented">
+            <summary>Weist das &apos;NotImplemented&apos;-Verhalten für alle Methoden des Shim-Typs zu.</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.ShimRcVersionIncrementorStrategy.Bind(LPKFHistoryAssistantClient.IVersionIncrementorStrategy)">
+            <summary>Bindet die Member der Schnittstelle an den Shim.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.ShimRcVersionIncrementorStrategy.Behavior">
+            <summary>Weist das Verhalten für alle Methoden des Shim-Typs zu.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.ShimRcVersionIncrementorStrategy.Constructor">
+            <summary>Legt die shim von RcVersionIncrementorStrategy.RcVersionIncrementorStrategy() fest.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.ShimRcVersionIncrementorStrategy.IncrementString">
+            <summary>Legt die shim von RcVersionIncrementorStrategy.Increment(String path) fest.</summary>
+        </member>
+        <member name="T:LPKFHistoryAssistantClient.Fakes.ShimRcVersionIncrementorStrategy.AllInstances">
+            <summary>Shims für alle Instanzenmember definieren</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.ShimRcVersionIncrementorStrategy.AllInstances.IncrementString">
+            <summary>Legt die shim von RcVersionIncrementorStrategy.Increment(String path) fest.</summary>
+        </member>
+        <member name="T:LPKFHistoryAssistantClient.Fakes.ShimVersionIncremention">
+            <summary>Shim-Typ von LPKFHistoryAssistantClient.VersionIncremention</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.ShimVersionIncremention.#ctor">
+            <summary>Initialisiert eine neue Shim-Instanz.</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.ShimVersionIncremention.#ctor(LPKFHistoryAssistantClient.VersionIncremention)">
+            <summary>Initialisiert einen neuen Shim für die gegebene Instanz.</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.ShimVersionIncremention.BehaveAsCurrent">
+            <summary>Weist das &apos;Current&apos;-Verhalten für alle Methoden des Shim-Typs zu.</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.ShimVersionIncremention.BehaveAsNotImplemented">
+            <summary>Weist das &apos;NotImplemented&apos;-Verhalten für alle Methoden des Shim-Typs zu.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.ShimVersionIncremention.Behavior">
+            <summary>Weist das Verhalten für alle Methoden des Shim-Typs zu.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.ShimVersionIncremention.ConstructorStringStringString">
+            <summary>Legt die shim von VersionIncremention.VersionIncremention(String oldVersion, String newVersion, String assemblyName) fest.</summary>
+        </member>
+        <member name="T:LPKFHistoryAssistantClient.Fakes.ShimVersionIncremention.AllInstances">
+            <summary>Shims für alle Instanzenmember definieren</summary>
+        </member>
+        <member name="T:LPKFHistoryAssistantClient.Fakes.ShimVersionIncrementor">
+            <summary>Shim-Typ von LPKFHistoryAssistantClient.VersionIncrementor</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.ShimVersionIncrementor.#ctor">
+            <summary>Initialisiert eine neue Shim-Instanz.</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.ShimVersionIncrementor.#ctor(LPKFHistoryAssistantClient.VersionIncrementor)">
+            <summary>Initialisiert einen neuen Shim für die gegebene Instanz.</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.ShimVersionIncrementor.BehaveAsCurrent">
+            <summary>Weist das &apos;Current&apos;-Verhalten für alle Methoden des Shim-Typs zu.</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.ShimVersionIncrementor.BehaveAsNotImplemented">
+            <summary>Weist das &apos;NotImplemented&apos;-Verhalten für alle Methoden des Shim-Typs zu.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.ShimVersionIncrementor.Behavior">
+            <summary>Weist das Verhalten für alle Methoden des Shim-Typs zu.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.ShimVersionIncrementor.ConstructorStringIVersionIncrementorStrategy">
+            <summary>Legt die shim von VersionIncrementor.VersionIncrementor(String path, IVersionIncrementorStrategy strategy) fest.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.ShimVersionIncrementor.FileExtensionGet">
+            <summary>Legt die shim von VersionIncrementor.get_FileExtension() fest.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.ShimVersionIncrementor.Increment">
+            <summary>Legt die shim von VersionIncrementor.Increment() fest.</summary>
+        </member>
+        <member name="T:LPKFHistoryAssistantClient.Fakes.ShimVersionIncrementor.AllInstances">
+            <summary>Shims für alle Instanzenmember definieren</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.ShimVersionIncrementor.AllInstances.FileExtensionGet">
+            <summary>Legt die shim von VersionIncrementor.get_FileExtension() fest.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.ShimVersionIncrementor.AllInstances.Increment">
+            <summary>Legt die shim von VersionIncrementor.Increment() fest.</summary>
+        </member>
+        <member name="T:LPKFHistoryAssistantClient.Fakes.ShimVersionIncrementorFactory">
+            <summary>Shim-Typ von LPKFHistoryAssistantClient.VersionIncrementorFactory</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.ShimVersionIncrementorFactory.#ctor">
+            <summary>Initialisiert eine neue Shim-Instanz.</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.ShimVersionIncrementorFactory.#ctor(LPKFHistoryAssistantClient.VersionIncrementorFactory)">
+            <summary>Initialisiert einen neuen Shim für die gegebene Instanz.</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.ShimVersionIncrementorFactory.BehaveAsCurrent">
+            <summary>Weist das &apos;Current&apos;-Verhalten für alle Methoden des Shim-Typs zu.</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.ShimVersionIncrementorFactory.BehaveAsNotImplemented">
+            <summary>Weist das &apos;NotImplemented&apos;-Verhalten für alle Methoden des Shim-Typs zu.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.ShimVersionIncrementorFactory.Behavior">
+            <summary>Weist das Verhalten für alle Methoden des Shim-Typs zu.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.ShimVersionIncrementorFactory.Constructor">
+            <summary>Legt die shim von VersionIncrementorFactory.VersionIncrementorFactory() fest.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.ShimVersionIncrementorFactory.CreateString">
+            <summary>Legt die shim von VersionIncrementorFactory.Create(String path) fest.</summary>
+        </member>
+        <member name="T:LPKFHistoryAssistantClient.Fakes.ShimVersionIncrementorFactory.AllInstances">
+            <summary>Shims für alle Instanzenmember definieren</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.ShimVersionIncrementorFactory.AllInstances.CreateString">
+            <summary>Legt die shim von VersionIncrementorFactory.Create(String path) fest.</summary>
+        </member>
+        <member name="T:LPKFHistoryAssistantClient.Fakes.ShimVersionIncrementorStrategyBase">
+            <summary>Shim-Typ von LPKFHistoryAssistantClient.VersionIncrementorStrategyBase</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.ShimVersionIncrementorStrategyBase.#ctor(LPKFHistoryAssistantClient.VersionIncrementorStrategyBase)">
+            <summary>Initialisiert einen neuen Shim für die gegebene Instanz.</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.ShimVersionIncrementorStrategyBase.BehaveAsCurrent">
+            <summary>Weist das &apos;Current&apos;-Verhalten für alle Methoden des Shim-Typs zu.</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.ShimVersionIncrementorStrategyBase.BehaveAsNotImplemented">
+            <summary>Weist das &apos;NotImplemented&apos;-Verhalten für alle Methoden des Shim-Typs zu.</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.ShimVersionIncrementorStrategyBase.Bind(LPKFHistoryAssistantClient.IVersionIncrementorStrategy)">
+            <summary>Bindet die Member der Schnittstelle an den Shim.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.ShimVersionIncrementorStrategyBase.Behavior">
+            <summary>Weist das Verhalten für alle Methoden des Shim-Typs zu.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.ShimVersionIncrementorStrategyBase.ConstructorString">
+            <summary>Legt die shim von VersionIncrementorStrategyBase.VersionIncrementorStrategyBase(String extension) fest.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.ShimVersionIncrementorStrategyBase.FileExtensionGet">
+            <summary>Legt die shim von VersionIncrementorStrategyBase.get_FileExtension() fest.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.ShimVersionIncrementorStrategyBase.ReadTextString">
+            <summary>Legt die shim von VersionIncrementorStrategyBase.ReadText(String path) fest.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.ShimVersionIncrementorStrategyBase.WriteTextStringString">
+            <summary>Legt die shim von VersionIncrementorStrategyBase.WriteText(String path, String text) fest.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.ShimVersionIncrementorStrategyBase.createNewBuildVersionString">
+            <summary>Legt die shim von VersionIncrementorStrategyBase.createNewBuildVersion(String oldBuildVersion) fest.</summary>
+        </member>
+        <member name="T:LPKFHistoryAssistantClient.Fakes.ShimVersionIncrementorStrategyBase.AllInstances">
+            <summary>Shims für alle Instanzenmember definieren</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.ShimVersionIncrementorStrategyBase.AllInstances.FileExtensionGet">
+            <summary>Legt die shim von VersionIncrementorStrategyBase.get_FileExtension() fest.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.ShimVersionIncrementorStrategyBase.AllInstances.ReadTextString">
+            <summary>Legt die shim von VersionIncrementorStrategyBase.ReadText(String path) fest.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.ShimVersionIncrementorStrategyBase.AllInstances.WriteTextStringString">
+            <summary>Legt die shim von VersionIncrementorStrategyBase.WriteText(String path, String text) fest.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.ShimVersionIncrementorStrategyBase.AllInstances.createNewBuildVersionString">
+            <summary>Legt die shim von VersionIncrementorStrategyBase.createNewBuildVersion(String oldBuildVersion) fest.</summary>
+        </member>
+        <member name="T:LPKFHistoryAssistantClient.Fakes.StubCppVersionIncrementorStrategy">
+            <summary>Stub-Typ von LPKFHistoryAssistantClient.CppVersionIncrementorStrategy</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.StubCppVersionIncrementorStrategy.#ctor">
+            <summary>Initialisiert eine neue Instanz.</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.StubCppVersionIncrementorStrategy.Increment(System.String)">
+            <summary>Legt die stub von CppVersionIncrementorStrategy.Increment(String path) fest.</summary>
+        </member>
+        <member name="F:LPKFHistoryAssistantClient.Fakes.StubCppVersionIncrementorStrategy.IncrementString">
+            <summary>Legt die stub von CppVersionIncrementorStrategy.Increment(String path) fest.</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.StubCppVersionIncrementorStrategy.InitializeStub">
+            <summary>Initialisiert eine neue Instanz von type StubCppVersionIncrementorStrategy.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.StubCppVersionIncrementorStrategy.CallBase">
+            <summary>Ruft einen Wert ab, der angibt, ob die Basismethode anstelle des Fallback-Verhaltens abgerufen werden soll, oder legt diesen fest.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.StubCppVersionIncrementorStrategy.InstanceBehavior">
+            <summary>Ruft das Instanzverhalten ab, oder legt dieses fest.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.StubCppVersionIncrementorStrategy.InstanceObserver">
+            <summary>Ruft den Instanzbeobachter ab, oder legt ihn fest.</summary>
+        </member>
+        <member name="T:LPKFHistoryAssistantClient.Fakes.StubCsVersionIncrementorStrategy">
+            <summary>Stub-Typ von LPKFHistoryAssistantClient.CsVersionIncrementorStrategy</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.StubCsVersionIncrementorStrategy.#ctor">
+            <summary>Initialisiert eine neue Instanz.</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.StubCsVersionIncrementorStrategy.Increment(System.String)">
+            <summary>Legt die stub von CsVersionIncrementorStrategy.Increment(String path) fest.</summary>
+        </member>
+        <member name="F:LPKFHistoryAssistantClient.Fakes.StubCsVersionIncrementorStrategy.IncrementString">
+            <summary>Legt die stub von CsVersionIncrementorStrategy.Increment(String path) fest.</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.StubCsVersionIncrementorStrategy.InitializeStub">
+            <summary>Initialisiert eine neue Instanz von type StubCsVersionIncrementorStrategy.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.StubCsVersionIncrementorStrategy.CallBase">
+            <summary>Ruft einen Wert ab, der angibt, ob die Basismethode anstelle des Fallback-Verhaltens abgerufen werden soll, oder legt diesen fest.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.StubCsVersionIncrementorStrategy.InstanceBehavior">
+            <summary>Ruft das Instanzverhalten ab, oder legt dieses fest.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.StubCsVersionIncrementorStrategy.InstanceObserver">
+            <summary>Ruft den Instanzbeobachter ab, oder legt ihn fest.</summary>
+        </member>
+        <member name="T:LPKFHistoryAssistantClient.Fakes.StubIVersionIncrementorStrategy">
+            <summary>Stub-Typ von LPKFHistoryAssistantClient.IVersionIncrementorStrategy</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.StubIVersionIncrementorStrategy.#ctor">
+            <summary>Initialisiert eine neue Instanz von type StubIVersionIncrementorStrategy.</summary>
+        </member>
+        <member name="F:LPKFHistoryAssistantClient.Fakes.StubIVersionIncrementorStrategy.FileExtensionGet">
+            <summary>Legt die stub von IVersionIncrementorStrategy.get_FileExtension() fest.</summary>
+        </member>
+        <member name="F:LPKFHistoryAssistantClient.Fakes.StubIVersionIncrementorStrategy.IncrementString">
+            <summary>Legt die stub von IVersionIncrementorStrategy.Increment(String path) fest.</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.StubIVersionIncrementorStrategy.lpkfhac::LPKFHistoryAssistantClient#IVersionIncrementorStrategy#Increment(System.String)">
+            <summary>Legt die stub von IVersionIncrementorStrategy.Increment(String path) fest.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.StubIVersionIncrementorStrategy.lpkfhac::LPKFHistoryAssistantClient#IVersionIncrementorStrategy#FileExtension">
+            <summary>Legt die stub von IVersionIncrementorStrategy.get_FileExtension() fest.</summary>
+        </member>
+        <member name="T:LPKFHistoryAssistantClient.Fakes.StubRcVersionIncrementorStrategy">
+            <summary>Stub-Typ von LPKFHistoryAssistantClient.RcVersionIncrementorStrategy</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.StubRcVersionIncrementorStrategy.#ctor">
+            <summary>Initialisiert eine neue Instanz.</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.StubRcVersionIncrementorStrategy.Increment(System.String)">
+            <summary>Legt die stub von RcVersionIncrementorStrategy.Increment(String path) fest.</summary>
+        </member>
+        <member name="F:LPKFHistoryAssistantClient.Fakes.StubRcVersionIncrementorStrategy.IncrementString">
+            <summary>Legt die stub von RcVersionIncrementorStrategy.Increment(String path) fest.</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.StubRcVersionIncrementorStrategy.InitializeStub">
+            <summary>Initialisiert eine neue Instanz von type StubRcVersionIncrementorStrategy.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.StubRcVersionIncrementorStrategy.CallBase">
+            <summary>Ruft einen Wert ab, der angibt, ob die Basismethode anstelle des Fallback-Verhaltens abgerufen werden soll, oder legt diesen fest.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.StubRcVersionIncrementorStrategy.InstanceBehavior">
+            <summary>Ruft das Instanzverhalten ab, oder legt dieses fest.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.StubRcVersionIncrementorStrategy.InstanceObserver">
+            <summary>Ruft den Instanzbeobachter ab, oder legt ihn fest.</summary>
+        </member>
+        <member name="T:LPKFHistoryAssistantClient.Fakes.StubVersionIncremention">
+            <summary>Stub-Typ von LPKFHistoryAssistantClient.VersionIncremention</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.StubVersionIncremention.#ctor(System.String,System.String,System.String)">
+            <summary>Initialisiert eine neue Instanz.</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.StubVersionIncremention.InitializeStub">
+            <summary>Initialisiert eine neue Instanz von type StubVersionIncremention.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.StubVersionIncremention.CallBase">
+            <summary>Ruft einen Wert ab, der angibt, ob die Basismethode anstelle des Fallback-Verhaltens abgerufen werden soll, oder legt diesen fest.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.StubVersionIncremention.InstanceBehavior">
+            <summary>Ruft das Instanzverhalten ab, oder legt dieses fest.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.StubVersionIncremention.InstanceObserver">
+            <summary>Ruft den Instanzbeobachter ab, oder legt ihn fest.</summary>
+        </member>
+        <member name="T:LPKFHistoryAssistantClient.Fakes.StubVersionIncrementor">
+            <summary>Stub-Typ von LPKFHistoryAssistantClient.VersionIncrementor</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.StubVersionIncrementor.#ctor(System.String,LPKFHistoryAssistantClient.IVersionIncrementorStrategy)">
+            <summary>Initialisiert eine neue Instanz.</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.StubVersionIncrementor.InitializeStub">
+            <summary>Initialisiert eine neue Instanz von type StubVersionIncrementor.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.StubVersionIncrementor.CallBase">
+            <summary>Ruft einen Wert ab, der angibt, ob die Basismethode anstelle des Fallback-Verhaltens abgerufen werden soll, oder legt diesen fest.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.StubVersionIncrementor.InstanceBehavior">
+            <summary>Ruft das Instanzverhalten ab, oder legt dieses fest.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.StubVersionIncrementor.InstanceObserver">
+            <summary>Ruft den Instanzbeobachter ab, oder legt ihn fest.</summary>
+        </member>
+        <member name="T:LPKFHistoryAssistantClient.Fakes.StubVersionIncrementorFactory">
+            <summary>Stub-Typ von LPKFHistoryAssistantClient.VersionIncrementorFactory</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.StubVersionIncrementorFactory.#ctor">
+            <summary>Initialisiert eine neue Instanz.</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.StubVersionIncrementorFactory.InitializeStub">
+            <summary>Initialisiert eine neue Instanz von type StubVersionIncrementorFactory.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.StubVersionIncrementorFactory.CallBase">
+            <summary>Ruft einen Wert ab, der angibt, ob die Basismethode anstelle des Fallback-Verhaltens abgerufen werden soll, oder legt diesen fest.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.StubVersionIncrementorFactory.InstanceBehavior">
+            <summary>Ruft das Instanzverhalten ab, oder legt dieses fest.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.StubVersionIncrementorFactory.InstanceObserver">
+            <summary>Ruft den Instanzbeobachter ab, oder legt ihn fest.</summary>
+        </member>
+        <member name="T:LPKFHistoryAssistantClient.Fakes.StubVersionIncrementorStrategyBase">
+            <summary>Stub-Typ von LPKFHistoryAssistantClient.VersionIncrementorStrategyBase</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.StubVersionIncrementorStrategyBase.#ctor(System.String)">
+            <summary>Initialisiert eine neue Instanz.</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.StubVersionIncrementorStrategyBase.Increment(System.String)">
+            <summary>Legt die stub von VersionIncrementorStrategyBase.Increment(String path) fest.</summary>
+        </member>
+        <member name="F:LPKFHistoryAssistantClient.Fakes.StubVersionIncrementorStrategyBase.IncrementString">
+            <summary>Legt die stub von VersionIncrementorStrategyBase.Increment(String path) fest.</summary>
+        </member>
+        <member name="M:LPKFHistoryAssistantClient.Fakes.StubVersionIncrementorStrategyBase.InitializeStub">
+            <summary>Initialisiert eine neue Instanz von type StubVersionIncrementorStrategyBase.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.StubVersionIncrementorStrategyBase.CallBase">
+            <summary>Ruft einen Wert ab, der angibt, ob die Basismethode anstelle des Fallback-Verhaltens abgerufen werden soll, oder legt diesen fest.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.StubVersionIncrementorStrategyBase.InstanceBehavior">
+            <summary>Ruft das Instanzverhalten ab, oder legt dieses fest.</summary>
+        </member>
+        <member name="P:LPKFHistoryAssistantClient.Fakes.StubVersionIncrementorStrategyBase.InstanceObserver">
+            <summary>Ruft den Instanzbeobachter ab, oder legt ihn fest.</summary>
+        </member>
+    </members>
+</doc>

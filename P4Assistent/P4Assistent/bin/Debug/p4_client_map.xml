@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Parameter Id="ClientMap" Type="XLib.P4.P4Settings+Entry[]">
+    <Childs>
+      <Parameter Id="0" Type="XLib.P4.P4Settings+Entry">
+        <Childs>
+          <Parameter Id="Directory" Type="System.String">
+            <Value>c:\Projekt_D_Brosche\</Value>
+          </Parameter>
+          <Parameter Id="Client" Type="System.String">
+            <Value>DBROSCHE</Value>
+          </Parameter>
+        </Childs>
+      </Parameter>
+      <Parameter Id="1" Type="XLib.P4.P4Settings+Entry">
+        <Childs>
+          <Parameter Id="Directory" Type="System.String">
+            <Value>c:\Projects_Dev-ForPropagations\</Value>
+          </Parameter>
+          <Parameter Id="Client" Type="System.String">
+            <Value>Brosche_Dev-ForPropagations</Value>
+          </Parameter>
+        </Childs>
+      </Parameter>
+    </Childs>
+  </Parameter>
+</Settings>

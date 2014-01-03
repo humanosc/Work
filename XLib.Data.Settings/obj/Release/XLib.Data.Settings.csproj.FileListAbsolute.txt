@@ -1,0 +1,21 @@
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.Data.Settings\bin\Release\XLib.Data.Settings.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.Data.Settings\bin\Release\XLib.Data.Settings.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.Data.Settings\bin\Release\XLib.General.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.Data.Settings\bin\Release\XLib.General.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.Data.Settings\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.Data.Settings\obj\Release\XLib.Data.Settings.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.Data.Settings\obj\Release\XLib.Data.Settings.pdb
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\XLib.Data.Settings\bin\Release\XLib.Data.Settings.dll
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\XLib.Data.Settings\bin\Release\XLib.Data.Settings.pdb
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\XLib.Data.Settings\bin\Release\XLib.General.dll
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\XLib.Data.Settings\bin\Release\XLib.General.pdb
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\XLib.Data.Settings\obj\Release\XLib.Data.Settings.csprojResolveAssemblyReference.cache
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\XLib.Data.Settings\obj\Release\XLib.Data.Settings.dll
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\XLib.Data.Settings\obj\Release\XLib.Data.Settings.pdb
+D:\Work\XLib.Data.Settings\bin\Release\XLib.Data.Settings.dll
+D:\Work\XLib.Data.Settings\bin\Release\XLib.Data.Settings.pdb
+D:\Work\XLib.Data.Settings\bin\Release\XLib.General.dll
+D:\Work\XLib.Data.Settings\bin\Release\XLib.General.pdb
+D:\Work\XLib.Data.Settings\obj\Release\XLib.Data.Settings.csprojResolveAssemblyReference.cache
+D:\Work\XLib.Data.Settings\obj\Release\XLib.Data.Settings.dll
+D:\Work\XLib.Data.Settings\obj\Release\XLib.Data.Settings.pdb

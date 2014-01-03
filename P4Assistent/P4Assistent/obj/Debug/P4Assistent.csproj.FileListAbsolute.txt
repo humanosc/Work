@@ -1,0 +1,11 @@
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\P4Assistent\P4Assistent\bin\Debug\P4 Assistent.exe
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\P4Assistent\P4Assistent\bin\Debug\P4 Assistent.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\P4Assistent\P4Assistent\bin\Debug\XLib.P4.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\P4Assistent\P4Assistent\bin\Debug\XLib.P4.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\P4Assistent\P4Assistent\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\P4Assistent\P4Assistent\obj\Debug\P4 Assistent.exe
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\P4Assistent\P4Assistent\obj\Debug\P4 Assistent.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\P4Assistent\P4Assistent\bin\Debug\XLib.General.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\P4Assistent\P4Assistent\bin\Debug\XLib.General.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\P4Assistent\P4Assistent\bin\Debug\XLib.Data.Settings.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\P4Assistent\P4Assistent\bin\Debug\XLib.Data.Settings.pdb

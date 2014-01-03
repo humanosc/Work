@@ -1,0 +1,36 @@
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\Output\LPKF History Assistant.exe
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\Output\LPKF History Assistant.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Debug\BugtrackForm.baml
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Debug\HistoryForm.baml
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Debug\MainWindow.baml
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Debug\SettingsForm.baml
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Debug\BugtrackForm.g.cs
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Debug\HistoryForm.g.cs
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Debug\MainWindow.g.cs
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Debug\SettingsForm.g.cs
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Debug\App.g.cs
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Debug\LPKF History Assistant_MarkupCompile.cache
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Debug\LPKF History Assistant.g.resources
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Debug\LPKFHistoryAssistant.Properties.Resources.resources
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Debug\LPKFHistoryAssistant.csproj.GenerateResource.Cache
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Debug\LPKF History Assistant.exe
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Debug\LPKF History Assistant.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Debug\LPKFHistoryAssistant.csprojResolveAssemblyReference.cache
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\Output\LPKF History Assistant.exe
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\Output\LPKF History Assistant.pdb
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Debug\LPKFHistoryAssistant.csprojResolveAssemblyReference.cache
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Debug\BugtrackForm.baml
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Debug\HistoryForm.baml
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Debug\MainWindow.baml
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Debug\SettingsForm.baml
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Debug\BugtrackForm.g.cs
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Debug\HistoryForm.g.cs
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Debug\MainWindow.g.cs
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Debug\SettingsForm.g.cs
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Debug\App.g.cs
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Debug\LPKF History Assistant_MarkupCompile.cache
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Debug\LPKF History Assistant.g.resources
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Debug\LPKFHistoryAssistant.Properties.Resources.resources
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Debug\LPKFHistoryAssistant.csproj.GenerateResource.Cache
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Debug\LPKF History Assistant.exe
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistant\obj\Debug\LPKF History Assistant.pdb

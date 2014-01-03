@@ -1,0 +1,5 @@
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.P4V\bin\Debug\XLib.P4V.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.P4V\bin\Debug\XLib.P4V.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.P4V\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.P4V\obj\Debug\XLib.P4V.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.P4V\obj\Debug\XLib.P4V.pdb

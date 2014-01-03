@@ -1,0 +1,14 @@
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.General\bin\Release\XLib.General.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.General\bin\Release\XLib.General.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.General\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.General\obj\Release\XLib.General.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.General\obj\Release\XLib.General.pdb
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\XLib.General\bin\Release\XLib.General.dll
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\XLib.General\bin\Release\XLib.General.pdb
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\XLib.General\obj\Release\XLib.General.dll
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\XLib.General\obj\Release\XLib.General.pdb
+D:\Work\XLib.General\bin\Release\XLib.General.dll
+D:\Work\XLib.General\bin\Release\XLib.General.pdb
+D:\Work\XLib.General\obj\Release\XLib.General.dll
+D:\Work\XLib.General\obj\Release\XLib.General.pdb
+D:\Work\XLib.General\obj\Release\XLib.General.csprojResolveAssemblyReference.cache

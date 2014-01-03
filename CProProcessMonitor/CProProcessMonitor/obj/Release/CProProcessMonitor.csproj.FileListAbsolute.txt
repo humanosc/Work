@@ -1,0 +1,56 @@
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\ProcessMonitor\ProcessMonitor\bin\Release\CPro Process Monitor.exe.config
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\ProcessMonitor\ProcessMonitor\bin\Release\CPro Process Monitor.exe
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\ProcessMonitor\ProcessMonitor\bin\Release\CPro Process Monitor.pdb
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\ProcessMonitor\ProcessMonitor\obj\Release\CProProcessMonitor.frm_Main.resources
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\ProcessMonitor\ProcessMonitor\obj\Release\CProProcessMonitor.Properties.Resources.resources
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\ProcessMonitor\ProcessMonitor\obj\Release\CProProcessMonitor.csproj.GenerateResource.Cache
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\ProcessMonitor\ProcessMonitor\obj\Release\CPro Process Monitor.exe
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\ProcessMonitor\ProcessMonitor\obj\Release\CPro Process Monitor.pdb
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\CProProcessMonitor\CProProcessMonitor\bin\Release\CPro Process Monitor.exe.config
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\CProProcessMonitor\CProProcessMonitor\obj\Release\CPro Process Monitor.exe
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\CProProcessMonitor\CProProcessMonitor\obj\Release\CPro Process Monitor.pdb
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\CProProcessMonitor\CProProcessMonitor\bin\Release\CPro Process Monitor.exe
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\CProProcessMonitor\CProProcessMonitor\bin\Release\CPro Process Monitor.pdb
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.Properties.Resources.resources
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.csproj.GenerateResource.Cache
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.csprojResolveAssemblyReference.cache
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\CProProcessMonitor\CProProcessMonitor\bin\Release\XLib.Data.Settings.dll
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\CProProcessMonitor\CProProcessMonitor\bin\Release\XLib.General.dll
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\CProProcessMonitor\CProProcessMonitor\bin\Release\XLib.Data.Settings.pdb
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\CProProcessMonitor\CProProcessMonitor\bin\Release\XLib.General.pdb
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.MainForm.resources
+D:\Work\CProProcessMonitor\CProProcessMonitor\obj\Release\CPro Process Monitor.exe
+D:\Work\CProProcessMonitor\CProProcessMonitor\obj\Release\CPro Process Monitor.pdb
+D:\Work\CProProcessMonitor\CProProcessMonitor\bin\Release\CPro Process Monitor.exe
+D:\Work\CProProcessMonitor\CProProcessMonitor\bin\Release\CPro Process Monitor.pdb
+D:\Work\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.MainForm.resources
+D:\Work\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.Properties.Resources.resources
+D:\Work\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.csproj.GenerateResource.Cache
+D:\Work\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.csprojResolveAssemblyReference.cache
+D:\Work\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.AboutBox.resources
+D:\Work\CProProcessMonitor\CProProcessMonitor\bin\Release\XLib.Data.Settings.dll
+D:\Work\CProProcessMonitor\CProProcessMonitor\bin\Release\XLib.General.dll
+D:\Work\CProProcessMonitor\CProProcessMonitor\bin\Release\XLib.Data.Settings.pdb
+D:\Work\CProProcessMonitor\CProProcessMonitor\bin\Release\XLib.General.pdb
+C:\Users\Brosche\Desktop\work\CProProcessMonitor\CProProcessMonitor\CProProcessMonitor\obj\Release\CPro Process Monitor.exe
+C:\Users\Brosche\Desktop\work\CProProcessMonitor\CProProcessMonitor\CProProcessMonitor\obj\Release\CPro Process Monitor.pdb
+C:\Users\Brosche\Desktop\work\CProProcessMonitor\CProProcessMonitor\CProProcessMonitor\bin\Release\CPro Process Monitor.exe
+C:\Users\Brosche\Desktop\work\CProProcessMonitor\CProProcessMonitor\CProProcessMonitor\bin\Release\CPro Process Monitor.pdb
+C:\Users\Brosche\Desktop\work\CProProcessMonitor\CProProcessMonitor\CProProcessMonitor\bin\Release\XLib.Data.Settings.dll
+C:\Users\Brosche\Desktop\work\CProProcessMonitor\CProProcessMonitor\CProProcessMonitor\bin\Release\XLib.General.dll
+C:\Users\Brosche\Desktop\work\CProProcessMonitor\CProProcessMonitor\CProProcessMonitor\bin\Release\XLib.Data.Settings.pdb
+C:\Users\Brosche\Desktop\work\CProProcessMonitor\CProProcessMonitor\CProProcessMonitor\bin\Release\XLib.General.pdb
+C:\Users\Brosche\Desktop\work\CProProcessMonitor\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.csprojResolveAssemblyReference.cache
+C:\Users\Brosche\Desktop\work\CProProcessMonitor\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.AboutBox.resources
+C:\Users\Brosche\Desktop\work\CProProcessMonitor\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.MainForm.resources
+C:\Users\Brosche\Desktop\work\CProProcessMonitor\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.Properties.Resources.resources
+C:\Users\Brosche\Desktop\work\CProProcessMonitor\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.csproj.GenerateResource.Cache
+C:\Users\Brosche\Desktop\work\CProProcessMonitor\CProProcessMonitor\CProProcessMonitor\bin\Release\What's New.txt
+D:\Work\CProProcessMonitor\CProProcessMonitor\CProProcessMonitor\obj\Release\CPro Process Monitor.exe
+D:\Work\CProProcessMonitor\CProProcessMonitor\CProProcessMonitor\obj\Release\CPro Process Monitor.pdb
+D:\Work\CProProcessMonitor\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.csprojResolveAssemblyReference.cache
+D:\Work\CProProcessMonitor\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.AboutBox.resources
+D:\Work\CProProcessMonitor\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.View.MainForm.resources
+D:\Work\CProProcessMonitor\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.Properties.Resources.resources
+D:\Work\CProProcessMonitor\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.View.SelectInstanceForm.resources
+D:\Work\CProProcessMonitor\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.csproj.GenerateResource.Cache

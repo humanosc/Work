@@ -1,0 +1,9 @@
+﻿<Window x:Class="LPKFHistoryAssistant.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:pageTransitions="clr-namespace:XLib.UI.WPF;assembly=XLib.UI.WPF.PageTransitions"
+    Title="LPKF History Assistent v1.0" KeyboardNavigation.IsTabStop="False" Height="560" Width="700" MinHeight="560" MaxHeight="560" MaxWidth="700" MinWidth="700" WindowStyle="SingleBorderWindow" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Icon="file:///C:/Users/Brosche/Documents/Visual Studio 2008/Projects/LPKFHistoryAssistant/LPKFHistoryAssistant/History.ico" Focusable="False" IsHitTestVisible="True">
+    <Grid KeyboardNavigation.IsTabStop="False">
+        <pageTransitions:PageTransition KeyboardNavigation.IsTabStop="False" Name="pageTransitionControl" TransitionType="SlideAndFade" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="-12,-12,0,0" IsHitTestVisible="True" />
+    </Grid>
+</Window>

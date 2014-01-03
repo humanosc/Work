@@ -1,0 +1,5 @@
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.TotalCommander\bin\Debug\XLib.TotalCommander.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.TotalCommander\bin\Debug\XLib.TotalCommander.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.TotalCommander\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.TotalCommander\obj\Debug\XLib.TotalCommander.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.TotalCommander\obj\Debug\XLib.TotalCommander.pdb

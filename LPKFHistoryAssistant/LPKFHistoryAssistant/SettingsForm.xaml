@@ -1,0 +1,43 @@
+﻿<Page x:Class="LPKFHistoryAssistant.SettingsForm"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="SettingsForm" Height="534" Width="700" Loaded="Page_Loaded" KeyboardNavigation.IsTabStop="False">
+    <Grid KeyboardNavigation.IsTabStop="False">
+        <Grid Margin="10,10,0,0" HorizontalAlignment="Left" Width="690" FocusManager.IsFocusScope="True" KeyboardNavigation.TabNavigation="Cycle" KeyboardNavigation.DirectionalNavigation="Cycle">
+            <Button Height="23" HorizontalAlignment="Right" Margin="0,0,12,12" KeyboardNavigation.TabIndex="2" Name="_btOk" VerticalAlignment="Bottom" Width="107" Click="_btOk_Click" IsDefault="True">Ok</Button>
+            <Grid Margin="12,12,12,61" Name="grid1" KeyboardNavigation.TabNavigation="Continue" KeyboardNavigation.DirectionalNavigation="Continue">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="44*" MaxHeight="44" MinHeight="44" />
+                    <RowDefinition Height="397*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <TextBox AcceptsReturn="True" IsTabStop="False" AcceptsTab="True" Background="#DBF0DB"
+                         BorderBrush="White" BorderThickness="0" FontSize="14" Height="44" FontWeight="900" IsReadOnly="True" Name="_txbHead" TextDecorations="None" VerticalAlignment="Top" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="5" FontFamily="Trebuchet MS">Settings</TextBox>
+                <Grid Grid.Row="1" Margin="6,0" Name="grid2" KeyboardNavigation.TabNavigation="Continue" KeyboardNavigation.DirectionalNavigation="Continue">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40*" />
+                        <RowDefinition Height="34*" />
+                        <RowDefinition Height="34*" />
+                        <RowDefinition Height="40*" />
+                        <RowDefinition Height="246.958*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150*" />
+                        <ColumnDefinition Width="510*" />
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Name="rectangle1" Fill="#FFDBF0DB" Margin="0,6,0,7"></Rectangle>
+                    <Label Name="label1" FontWeight="700" FontFamily="Trebuchet MS" Margin="0,6,0,7" HorizontalAlignment="Right" VerticalAlignment="Center">Nickname:</Label>
+                    <Rectangle Fill="#FFDBF0DB" Margin="0,0,0,7" Name="rectangle3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Grid.Row="1" Grid.RowSpan="1" Width="148.636" />
+                    <Label FontFamily="Trebuchet MS" Grid.Row="1" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,7" Name="label3" HorizontalAlignment="Right">RSS URL:</Label>
+                    <TextBox KeyboardNavigation.TabIndex="0" Grid.Column="1" Margin="6,6,0,7" Name="_txbNickname" FontFamily="Trebuchet MS" VerticalContentAlignment="Center" />
+                    <TextBox KeyboardNavigation.TabIndex="1" FontFamily="Trebuchet MS" Margin="6,0,0,7" Name="_txbRssUrl" Grid.Column="1" VerticalContentAlignment="Center" Grid.Row="1" />
+                    <Rectangle Fill="#FFDBF0DB" Grid.Row="2" Grid.Column="0" Margin="0,0,0,7" Name="rectangle2"  Grid.RowSpan="1" />
+                    <Label Grid.Row="2" FontFamily="Trebuchet MS" FontWeight="Bold" Margin="0,0,0,7" Name="label2" HorizontalAlignment="Right" VerticalAlignment="Center">Perforce Integration:</Label>
+                    <CheckBox Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left" Margin="6,0,0,7" Name="_cbPerforceIntegration" VerticalAlignment="Center"></CheckBox>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

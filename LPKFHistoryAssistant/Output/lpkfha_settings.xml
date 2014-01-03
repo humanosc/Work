@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Parameter Id="Version" Type="System.String">
+    <Value>1.0</Value>
+  </Parameter>
+  <Parameter Id="Nick" Type="System.String">
+    <Value>DB</Value>
+  </Parameter>
+  <Parameter Id="RssUrl" Type="System.String">
+    <Value>https://lpkf.bugtrack.net/webquery.aspx?o=RSS&amp;l=MkI4NUU1RjkyOTUzNDQ3QUFBQTkzMDQ1NUZGMkFGQ0E=&amp;uid=36544&amp;fid=0</Value>
+  </Parameter>
+</Settings>

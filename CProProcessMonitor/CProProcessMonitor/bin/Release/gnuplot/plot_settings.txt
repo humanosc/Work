@@ -1,0 +1,13 @@
+set datafile separator "\t"
+set terminal png size 1024,768
+set title "LPKF CircuitPro 3D Office 2.7 - Document [Untitled]"
+set ylabel "Value"
+set xlabel "Time"
+set xdata time
+set timefmt "%m/%d/%Y %H:%M:%S"
+set format x "%H:%M"
+set key bottom center outside
+set grid
+plot "C:/Users/Brosche/Desktop/work/CProProcessMonitor/CProProcessMonitor/CProProcessMonitor/bin/Release/Log/CPro Process Monitor (131213-010504).log" every ::1 using 1:2 with lines lw 2 lt 3 title 'CPU [%]', \
+     "C:/Users/Brosche/Desktop/work/CProProcessMonitor/CProProcessMonitor/CProProcessMonitor/bin/Release/Log/CPro Process Monitor (131213-010504).log" every ::1 using 1:3 with lines lw 2 lt 1 title 'Memory [MB]', \
+     "C:/Users/Brosche/Desktop/work/CProProcessMonitor/CProProcessMonitor/CProProcessMonitor/bin/Release/Log/CPro Process Monitor (131213-010504).log" every ::1 using 1:4 with lines lw 2 lt 2 title 'CLR Memory [MB]' 

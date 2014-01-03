@@ -1,0 +1,8 @@
+C:\Users\Brosche\Desktop\SmartRenamer\SmartRenamer\bin\Release\Smart Renamer.exe
+C:\Users\Brosche\Desktop\SmartRenamer\SmartRenamer\bin\Release\Smart Renamer.pdb
+C:\Users\Brosche\Desktop\SmartRenamer\SmartRenamer\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Brosche\Desktop\SmartRenamer\SmartRenamer\obj\Release\SmartRenamer.Renamer.resources
+C:\Users\Brosche\Desktop\SmartRenamer\SmartRenamer\obj\Release\SmartRenamer.Properties.Resources.resources
+C:\Users\Brosche\Desktop\SmartRenamer\SmartRenamer\obj\Release\SmartRenamer.csproj.GenerateResource.Cache
+C:\Users\Brosche\Desktop\SmartRenamer\SmartRenamer\obj\Release\Smart Renamer.exe
+C:\Users\Brosche\Desktop\SmartRenamer\SmartRenamer\obj\Release\Smart Renamer.pdb

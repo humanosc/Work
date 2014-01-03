@@ -1,0 +1,14 @@
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\TotalCommanderVTab\TotalCommanderVTab\bin\Release\Total Commander VTab.exe
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\TotalCommanderVTab\TotalCommanderVTab\bin\Release\Total Commander VTab.pdb
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\TotalCommanderVTab\TotalCommanderVTab\bin\Release\XLib.Data.Settings.dll
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\TotalCommanderVTab\TotalCommanderVTab\bin\Release\XLib.General.dll
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\TotalCommanderVTab\TotalCommanderVTab\bin\Release\XLib.TotalCommander.dll
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\TotalCommanderVTab\TotalCommanderVTab\bin\Release\XLib.Data.Settings.pdb
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\TotalCommanderVTab\TotalCommanderVTab\bin\Release\XLib.General.pdb
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\TotalCommanderVTab\TotalCommanderVTab\bin\Release\XLib.TotalCommander.pdb
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\TotalCommanderVTab\TotalCommanderVTab\obj\Release\TotalCommanderVTab.csprojResolveAssemblyReference.cache
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\TotalCommanderVTab\TotalCommanderVTab\obj\Release\TotalCommanderVTab.MainForm.resources
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\TotalCommanderVTab\TotalCommanderVTab\obj\Release\TotalCommanderVTab.Properties.Resources.resources
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\TotalCommanderVTab\TotalCommanderVTab\obj\Release\TotalCommanderVTab.csproj.GenerateResource.Cache
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\TotalCommanderVTab\TotalCommanderVTab\obj\Release\Total Commander VTab.exe
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\TotalCommanderVTab\TotalCommanderVTab\obj\Release\Total Commander VTab.pdb

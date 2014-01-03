@@ -1,0 +1,88 @@
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Debug\LPKFHistoryAssistantClientTest.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Debug\LPKFHistoryAssistantClientTest.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Debug\LPKF History Assistant Client.exe
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Debug\XLib.General.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Debug\XLib.General.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Debug\LPKF History Assistant Client.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\LPKFHistoryAssistantClientTest.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\LPKFHistoryAssistantClientTest.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Debug\LPKFHistoryAssistent.General.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Debug\LPKFHistoryAssistent.General.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Debug\XLib.Data.Settings.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Debug\XLib.Data.Settings.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Debug\XLib.P4.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Debug\XLib.P4.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\LPKFHistoryAssistantClientTest.csprojFakesResolveAssemblyReference.cache
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\fakes.args
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\b\LPKF History Assistant Client.exe
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\b\LPKF History Assistant Client.Fakes.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\b\LPKF History Assistant Client.Fakes.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\b\LPKF History Assistant Client.Fakes.xml
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\b\LPKF History Assistant Client.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\b\LPKFHistoryAssistent.General.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\b\LPKFHistoryAssistent.General.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\b\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\b\XLib.Data.Settings.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\b\XLib.Data.Settings.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\b\XLib.General.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\b\XLib.General.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\b\XLib.P4.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\b\XLib.P4.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\f.ah
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\f.ch
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\f.cs
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\f.csproj
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\f.fakes
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\f.fakesconfig
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\o\f.csproj.FileListAbsolute.txt
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\o\f.csprojResolveAssemblyReference.cache
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\o\LPKF History Assistant Client.Fakes.dll
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\o\LPKF History Assistant Client.Fakes.pdb
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\LPKFHistoryAssistantClientTest.csprojResolveAssemblyReference.cache
+C:\Users\Brosche\Documents\Visual Studio 2008\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Debug\LPKF History Assistant Client.Fakes.fakesconfig
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Debug\LPKFHistoryAssistantClientTest.dll
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Debug\LPKFHistoryAssistantClientTest.pdb
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Debug\LPKF History Assistant Client.exe
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Debug\LPKF History Assistant Client.Fakes.dll
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Debug\XLib.General.dll
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Debug\LPKFHistoryAssistent.General.dll
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Debug\XLib.Data.Settings.dll
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Debug\XLib.P4.dll
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Debug\XLib.General.pdb
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Debug\LPKF History Assistant Client.pdb
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Debug\LPKF History Assistant Client.Fakes.xml
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Debug\LPKFHistoryAssistent.General.pdb
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Debug\XLib.Data.Settings.pdb
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Debug\XLib.P4.pdb
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\LPKFHistoryAssistantClientTest.csprojFakesResolveAssemblyReference.cache
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\fakes.args
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\b\LPKF History Assistant Client.exe
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\b\LPKF History Assistant Client.Fakes.dll
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\b\LPKF History Assistant Client.Fakes.pdb
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\b\LPKF History Assistant Client.Fakes.xml
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\b\LPKF History Assistant Client.pdb
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\b\LPKFHistoryAssistent.General.dll
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\b\LPKFHistoryAssistent.General.pdb
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\b\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\b\XLib.Data.Settings.dll
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\b\XLib.Data.Settings.pdb
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\b\XLib.General.dll
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\b\XLib.General.pdb
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\b\XLib.P4.dll
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\b\XLib.P4.pdb
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\f.ah
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\f.ch
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\f.cs
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\f.csproj
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\f.fakes
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\f.fakesconfig
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\o\f.csproj.FileListAbsolute.txt
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\o\f.csprojResolveAssemblyReference.cache
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\o\LPKF History Assistant Client.Fakes.dll
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\Fakes\lpkfhac\o\LPKF History Assistant Client.Fakes.pdb
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\LPKFHistoryAssistantClientTest.csprojResolveAssemblyReference.cache
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\LPKFHistoryAssistantClientTest.dll
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\obj\Debug\LPKFHistoryAssistantClientTest.pdb
+C:\Users\Brosche\Documents\Visual Studio 2012\Projects\LPKFHistoryAssistant\LPKFHistoryAssistantClientTest\bin\Debug\LPKF History Assistant Client.Fakes.fakesconfig
