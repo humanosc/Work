@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CProProcessMonitor.Model
 {
-    public interface IModel
+    public interface IMainModel
     {
         string ProcessWindowTitle { set; get; }
         string ProcessName { set; get; }

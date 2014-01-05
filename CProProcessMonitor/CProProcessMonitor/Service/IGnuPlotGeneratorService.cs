@@ -13,7 +13,7 @@ namespace CProProcessMonitor.Service
         ClrMemory
     }
 
-    public interface IGnuPlotGenerator
+    public interface IGnuPlotGeneratorService
     {
         void Generate ( GnuPlotDiagramType type, string title, string logPath );
     }

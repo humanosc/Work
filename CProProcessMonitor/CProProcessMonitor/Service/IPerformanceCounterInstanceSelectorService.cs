@@ -7,6 +7,6 @@ namespace CProProcessMonitor.Service
 {
     public interface IPerformanceCounterInstanceSelectorService
     {
-        string SelectInstance(string[] instances);
+        int SelectInstance(string[] instances);
     }
 }

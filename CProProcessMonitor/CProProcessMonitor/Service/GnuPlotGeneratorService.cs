@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CProProcessMonitor.Model;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -7,7 +8,7 @@ using System.Text;
 
 namespace CProProcessMonitor.Service
 {
-    public class GnuPlotGenerator : IGnuPlotGenerator 
+    public class GnuPlotGeneratorService : IGnuPlotGeneratorService 
     {
         private static readonly string _plotsettingsTemplate = global::CProProcessMonitor.Properties.Resources.plotsettings_template;
         private static readonly string _plotsettingsTemplateCpu = global::CProProcessMonitor.Properties.Resources.plotsettings_cpu_template;
@@ -31,8 +32,11 @@ namespace CProProcessMonitor.Service
             return _plotsettingsTemplate;            
         }
 
-        public GnuPlotGenerator ()
+        private readonly IMainModel _model;
+
+        public GnuPlotGeneratorService ( IMainModel model )
         {
+            _model = model;
         }
 
         public void Generate ( GnuPlotDiagramType type, string title, string logPath )
@@ -42,7 +46,7 @@ namespace CProProcessMonitor.Service
             generate( settingsTemplate, title, logPath );
         }
 
-        private static void generate ( string settingsTemplate, string title, string logPath )
+        private void generate ( string settingsTemplate, string title, string logPath )
         {
             string gnuPlotDir = Path.GetFullPath( "gnuplot\\" );
 
@@ -51,8 +55,8 @@ namespace CProProcessMonitor.Service
             //string title = ( string.IsNullOrEmpty( _processWindowTitle ) ? _logPath : _processWindowTitle ).Replace( "\\", "\\\\" );
             string plotSettings = settingsTemplate.Replace( "[log_path]", logPath.Replace( '\\', '/' ) )
                 .Replace( "[title]", title )
-                .Replace( "[width]", Settings.Instance.DiagramWidth.Value.ToString() )
-                .Replace( "[height]", Settings.Instance.DiagramHeight.Value.ToString() );
+                .Replace( "[width]",  _model.DiagramWidth.ToString() )
+                .Replace( "[height]", _model.DiagramHeight.ToString() );
 
             // write modified plot settings
             File.WriteAllText( plotSettingsPath, plotSettings );

@@ -18,7 +18,7 @@ namespace CProProcessMonitor.View
 
         public string Title
         {
-            set { throw new NotImplementedException(); }
+            set { Text = value; }
         }
 
         public string Version

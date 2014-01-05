@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.tm_ProcessUpdate = new System.Windows.Forms.Timer(this.components);
             this.lbl_CPUDesc = new System.Windows.Forms.Label();
             this.lbl_MemoryDesc = new System.Windows.Forms.Label();
             this.lbl_CPU = new System.Windows.Forms.Label();
@@ -46,6 +45,7 @@
             this.tscb_TimerInterval = new System.Windows.Forms.ToolStripComboBox();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
             this.tsm_ShowLog = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsm_ClearLog = new System.Windows.Forms.ToolStripMenuItem();
             this.tsm_OpenLogfolder = new System.Windows.Forms.ToolStripMenuItem();
             this.tsm_CleanupLogfolder = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
@@ -57,15 +57,9 @@
             this.tsm_About = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripSeparator();
             this.tsm_CloseMonitor = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsm_ClearLog = new System.Windows.Forms.ToolStripMenuItem();
             this.tblp_View.SuspendLayout();
             this.cms_MainForm.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // tm_ProcessUpdate
-            // 
-            this.tm_ProcessUpdate.Interval = 1000;
-            this.tm_ProcessUpdate.Tick += new System.EventHandler(this.tm_ProcessUpdate_Tick);
             // 
             // lbl_CPUDesc
             // 
@@ -168,7 +162,6 @@
             this.ni_MainForm.Icon = ((System.Drawing.Icon)(resources.GetObject("ni_MainForm.Icon")));
             this.ni_MainForm.Text = "CPro Process Monitor";
             this.ni_MainForm.Visible = true;
-            this.ni_MainForm.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ni_MainForm_MouseClick_1);
             // 
             // cms_MainForm
             // 
@@ -192,21 +185,19 @@
             this.toolStripMenuItem4,
             this.tsm_CloseMonitor});
             this.cms_MainForm.Name = "cms_MainForm";
-            this.cms_MainForm.Size = new System.Drawing.Size(256, 347);
+            this.cms_MainForm.Size = new System.Drawing.Size(256, 325);
             // 
             // tsm_ShowMonitor
             // 
             this.tsm_ShowMonitor.Name = "tsm_ShowMonitor";
             this.tsm_ShowMonitor.Size = new System.Drawing.Size(255, 22);
             this.tsm_ShowMonitor.Text = "Show Monitor";
-            this.tsm_ShowMonitor.Click += new System.EventHandler(this.tsm_ShowMonitor_Click);
             // 
             // tsm_HideMonitor
             // 
             this.tsm_HideMonitor.Name = "tsm_HideMonitor";
             this.tsm_HideMonitor.Size = new System.Drawing.Size(255, 22);
             this.tsm_HideMonitor.Text = "Hide Monitor";
-            this.tsm_HideMonitor.Click += new System.EventHandler(this.tsm_HideMonitor_Click);
             // 
             // toolStripMenuItem2
             // 
@@ -222,7 +213,6 @@
             this.tscb_TimerInterval.Name = "tscb_TimerInterval";
             this.tscb_TimerInterval.Size = new System.Drawing.Size(195, 23);
             this.tscb_TimerInterval.ToolTipText = "Timer interval";
-            this.tscb_TimerInterval.SelectedIndexChanged += new System.EventHandler(this.tscb_TimerInterval_SelectedIndexChanged);
             // 
             // toolStripMenuItem3
             // 
@@ -234,21 +224,24 @@
             this.tsm_ShowLog.Name = "tsm_ShowLog";
             this.tsm_ShowLog.Size = new System.Drawing.Size(255, 22);
             this.tsm_ShowLog.Text = "Show Log";
-            this.tsm_ShowLog.Click += new System.EventHandler(this.tsm_ShowLog_Click);
+            // 
+            // tsm_ClearLog
+            // 
+            this.tsm_ClearLog.Name = "tsm_ClearLog";
+            this.tsm_ClearLog.Size = new System.Drawing.Size(255, 22);
+            this.tsm_ClearLog.Text = "Clear Log";
             // 
             // tsm_OpenLogfolder
             // 
             this.tsm_OpenLogfolder.Name = "tsm_OpenLogfolder";
             this.tsm_OpenLogfolder.Size = new System.Drawing.Size(255, 22);
             this.tsm_OpenLogfolder.Text = "Open Logfolder";
-            this.tsm_OpenLogfolder.Click += new System.EventHandler(this.tsm_OpenLogfolder_Click);
             // 
             // tsm_CleanupLogfolder
             // 
             this.tsm_CleanupLogfolder.Name = "tsm_CleanupLogfolder";
             this.tsm_CleanupLogfolder.Size = new System.Drawing.Size(255, 22);
             this.tsm_CleanupLogfolder.Text = "Cleanup Logfolder";
-            this.tsm_CleanupLogfolder.Click += new System.EventHandler(this.tsm_CleanupLogfolder_Click);
             // 
             // toolStripMenuItem1
             // 
@@ -260,28 +253,24 @@
             this.tsm_GenerateDiagram.Name = "tsm_GenerateDiagram";
             this.tsm_GenerateDiagram.Size = new System.Drawing.Size(255, 22);
             this.tsm_GenerateDiagram.Text = "Generate Diagram";
-            this.tsm_GenerateDiagram.Click += new System.EventHandler(this.tsm_GenerateDiagram_Click);
             // 
             // tsm_GenerateCpuDiagram
             // 
             this.tsm_GenerateCpuDiagram.Name = "tsm_GenerateCpuDiagram";
             this.tsm_GenerateCpuDiagram.Size = new System.Drawing.Size(255, 22);
             this.tsm_GenerateCpuDiagram.Text = "Generate CPU Diagram";
-            this.tsm_GenerateCpuDiagram.Click += new System.EventHandler(this.tsm_GenerateCpuDiagram_Click);
             // 
             // tsm_GenerateMemoryDiagram
             // 
             this.tsm_GenerateMemoryDiagram.Name = "tsm_GenerateMemoryDiagram";
             this.tsm_GenerateMemoryDiagram.Size = new System.Drawing.Size(255, 22);
             this.tsm_GenerateMemoryDiagram.Text = "Generate Memory Diagram";
-            this.tsm_GenerateMemoryDiagram.Click += new System.EventHandler(this.tsm_GenerateMemoryDiagram_Click);
             // 
             // tsm_GenerateClrMemoryDiagram
             // 
             this.tsm_GenerateClrMemoryDiagram.Name = "tsm_GenerateClrMemoryDiagram";
             this.tsm_GenerateClrMemoryDiagram.Size = new System.Drawing.Size(255, 22);
             this.tsm_GenerateClrMemoryDiagram.Text = "Generate CLR-Memory Diagram";
-            this.tsm_GenerateClrMemoryDiagram.Click += new System.EventHandler(this.tsm_GenerateClrMemoryDiagram_Click);
             // 
             // toolStripSeparator1
             // 
@@ -293,7 +282,6 @@
             this.tsm_About.Name = "tsm_About";
             this.tsm_About.Size = new System.Drawing.Size(255, 22);
             this.tsm_About.Text = "About";
-            this.tsm_About.Click += new System.EventHandler(this.tsm_About_Click);
             // 
             // toolStripMenuItem4
             // 
@@ -305,14 +293,6 @@
             this.tsm_CloseMonitor.Name = "tsm_CloseMonitor";
             this.tsm_CloseMonitor.Size = new System.Drawing.Size(255, 22);
             this.tsm_CloseMonitor.Text = "Close Monitor";
-            this.tsm_CloseMonitor.Click += new System.EventHandler(this.tsm_CloseMonitor_Click);
-            // 
-            // tsm_ClearLog
-            // 
-            this.tsm_ClearLog.Name = "tsm_ClearLog";
-            this.tsm_ClearLog.Size = new System.Drawing.Size(255, 22);
-            this.tsm_ClearLog.Text = "Clear Log";
-            this.tsm_ClearLog.Click += new System.EventHandler(this.tsm_ClearLog_Click);
             // 
             // MainForm
             // 
@@ -342,7 +322,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Timer tm_ProcessUpdate;
         private System.Windows.Forms.Label lbl_CPUDesc;
         private System.Windows.Forms.Label lbl_MemoryDesc;
         private System.Windows.Forms.Label lbl_CPU;

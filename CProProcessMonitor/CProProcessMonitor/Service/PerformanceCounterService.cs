@@ -7,89 +7,87 @@ using XLib.General;
 
 namespace CProProcessMonitor.Service
 {
-    public class PerformanceCounterService
+    public class PerformanceCounterService : IPerformanceCounterService
     {
-        public class PerformanceCounterManager : IPerformanceCounterService 
+
+        private static int _processorCount = Environment.ProcessorCount;
+
+
+        public event EventHandler<PerformanceCounterCategoryNotSupportedEventArgs> PerformanceCounterNotSupported;
+        public event EventHandler<PerformanceCounterBrokenEventArgs> PerformanceCounterBroken;
+
+        private PerformanceCounter _processCpu;
+        private PerformanceCounter _processPrivateBytes;
+        private PerformanceCounter _processClrBytes;
+        private bool _isInitialized;
+
+        public bool IsInitialized { get { return _isInitialized; } }
+
+        public float GetNextCpuValue()
         {
-            private static int _processorCount = Environment.ProcessorCount;
- 
+            return _processCpu.NextValue() / _processorCount;
+        }
 
-            public event EventHandler<PerformanceCounterCategoryNotSupportedEventArgs> PerformanceCounterNotSupported;
-            public event EventHandler<PerformanceCounterBrokenEventArgs> PerformanceCounterBroken;
-                       
-            private PerformanceCounter _processCpu;
-            private PerformanceCounter _processPrivateBytes;
-            private PerformanceCounter _processClrBytes;
-            private bool _isInitialized;
+        public float GetNextPrivateBytesValue()
+        {
+            return _processPrivateBytes.NextValue() / 1024 / 1024;
+        }
 
-            public bool IsInitialized { get { return _isInitialized; } }
-            
-            public float GetNextCpuValue ()
+        public float GetNextClrBytesValue()
+        {
+            if (_processClrBytes != null)
             {
-                return _processCpu.NextValue() / _processorCount;
+                double value = _processClrBytes.NextValue();
+                if ((int)value == 0)
+                {
+                    PerformanceCounterBroken.RaiseIfValid(this, new PerformanceCounterBrokenEventArgs(_processClrBytes.CategoryName));
+                }
             }
 
-            public float GetNextPrivateBytesValue ()
-            {
-                return _processPrivateBytes.NextValue() /  1024 / 1024;
-            }           
+            return _processClrBytes != null ? _processClrBytes.NextValue() / 1024 / 1024 : 0.0f;
+        }
 
-            public float GetNextClrBytesValue ()
-            {
-                if ( _processClrBytes != null )
-                {
-                    double value = _processClrBytes.NextValue();
-                    if ( (int)value == 0 )
-                    {
-                        PerformanceCounterBroken.RaiseIfValid( this, new PerformanceCounterBrokenEventArgs( _processClrBytes.CategoryName ) );
-                    }
-                }
+        public void Initialize(string processPerformanceCounterInstanceName, string clrMemoryPerformanceCounterInstanceName)
+        {
+            _processCpu = new PerformanceCounter(PerformanceCounterCategoryNames.Process, "% Processor Time", processPerformanceCounterInstanceName);
+            _processPrivateBytes = new PerformanceCounter(PerformanceCounterCategoryNames.Process, "Private Bytes", processPerformanceCounterInstanceName);
 
-                return _processClrBytes != null ? _processClrBytes.NextValue()  / 1024 / 1024 : 0.0f;
+
+            if (PerformanceCounterCategory.InstanceExists(clrMemoryPerformanceCounterInstanceName, PerformanceCounterCategoryNames.ClrMemory))
+            {
+                _processClrBytes = new PerformanceCounter(PerformanceCounterCategoryNames.ClrMemory, "# Bytes in all heaps", clrMemoryPerformanceCounterInstanceName);
+            }
+            else
+            {
+
+                PerformanceCounterNotSupported.RaiseIfValid(this, new PerformanceCounterCategoryNotSupportedEventArgs(PerformanceCounterCategoryNames.ClrMemory));
             }
 
-            public void Initialize ( string processPerformanceCounterInstanceName, string clrMemoryPerformanceCounterInstanceName )
+            _isInitialized = true;
+
+        }
+
+        public void Deinitialize()
+        {
+            if (_processCpu != null)
             {
-                _processCpu = new PerformanceCounter( PerformanceCounterCategoryNames.Process, "% Processor Time", processPerformanceCounterInstanceName );
-                _processPrivateBytes = new PerformanceCounter( PerformanceCounterCategoryNames.Process, "Private Bytes", processPerformanceCounterInstanceName );
-
-
-                if ( PerformanceCounterCategory.InstanceExists( clrMemoryPerformanceCounterInstanceName, PerformanceCounterCategoryNames.ClrMemory ) )
-                {
-                    _processClrBytes = new PerformanceCounter( PerformanceCounterCategoryNames.ClrMemory, "# Bytes in all heaps", clrMemoryPerformanceCounterInstanceName );
-                }
-                else
-                {
-
-                    PerformanceCounterNotSupported.RaiseIfValid( this, new PerformanceCounterCategoryNotSupportedEventArgs( PerformanceCounterCategoryNames.ClrMemory ) );
-                }
-
-                _isInitialized = true;
-
+                _processCpu.Close();
+                _processCpu = null;
             }
 
-            public void Deinitialize ()
+            if (_processPrivateBytes != null)
             {
-                if ( _processCpu != null )
-                {
-                    _processCpu.Close();
-                    _processCpu = null;
-                }
-
-                if ( _processPrivateBytes != null )
-                {
-                    _processPrivateBytes.Close();
-                    _processPrivateBytes = null;
-                }
-
-                if ( _processClrBytes != null )
-                {
-                    _processClrBytes.Close();
-                    _processClrBytes = null;
-                }
-
-                _isInitialized = false;
+                _processPrivateBytes.Close();
+                _processPrivateBytes = null;
             }
+
+            if (_processClrBytes != null)
+            {
+                _processClrBytes.Close();
+                _processClrBytes = null;
+            }
+
+            _isInitialized = false;
         }
     }
 }

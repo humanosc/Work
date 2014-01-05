@@ -47,11 +47,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\IModel.cs" />
-    <Compile Include="Model\Model.cs" />
+    <Compile Include="Model\IMainModel.cs" />
+    <Compile Include="Model\IPerformanceCounterInstanceModel.cs" />
+    <Compile Include="Model\MainModel.cs" />
+    <Compile Include="Model\PerformanceCounterInstanceModel.cs" />
     <Compile Include="Presenter\AboutViewPresenter.cs" />
     <Compile Include="Presenter\SelectInstancePresenter.cs" />
-    <Compile Include="Service\IGnuPlotGenerator.cs" />
+    <Compile Include="Service\IGnuPlotGeneratorService.cs" />
     <Compile Include="Service\ILogService.cs" />
     <Compile Include="Service\IPerformanceCounterInstanceInfoService.cs" />
     <Compile Include="Service\IPerformanceCounterInstanceSelectorService.cs" />
@@ -60,6 +62,7 @@
     <Compile Include="Service\LogService.cs" />
     <Compile Include="Service\PerformanceCounterCategoryNames.cs" />
     <Compile Include="Service\PerformanceCounterInstanceInfoService.cs" />
+    <Compile Include="Service\PerformanceCounterInstanceSelectorService.cs" />
     <Compile Include="Service\PerformanceCounterService.cs" />
     <Compile Include="Service\ProcessMonitorService.cs" />
     <Compile Include="View\AboutBox.cs">
@@ -68,7 +71,7 @@
     <Compile Include="View\AboutBox.Designer.cs">
       <DependentUpon>AboutBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="Service\GnuPlotGenerator.cs" />
+    <Compile Include="Service\GnuPlotGeneratorService.cs" />
     <Compile Include="Presenter\MainViewPresenter.cs" />
     <Compile Include="View\IAboutView.cs" />
     <Compile Include="View\IMainView.cs" />

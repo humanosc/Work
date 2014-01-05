@@ -41,8 +41,14 @@ namespace CProProcessMonitor.View
             }
         }
 
+        public string Title
+        {
+            set { Text = value; }
+        }
+
         public int SelectedUpdateIntervalIndex
         {
+            set { tscb_TimerInterval.SelectedIndex = value; }
             get { return tscb_TimerInterval.SelectedIndex; }
         }
 
@@ -89,23 +95,7 @@ namespace CProProcessMonitor.View
         private string _processWindowTitle;
 
 
-        struct IntervalEntry
-        {
-            public readonly string Text;
-            public int Milliseconds;
-            
-            public IntervalEntry( string text, int milliseconds )
-            {
-                
-                Text = text;
-                Milliseconds = milliseconds;
-            }
-
-            public override string ToString()
-            {
-                return Text;
-            }
-        }
+       
 
      
 
@@ -132,51 +122,49 @@ namespace CProProcessMonitor.View
             tsm_About.Click += (o, e) => EvAbout.RaiseIfValid(this);
             tscb_TimerInterval.SelectedIndexChanged += (o, e) => EvUpdateIntervalChanged.RaiseIfValid(this);
 
-            var version = Assembly.GetExecutingAssembly().GetName().Version;
-            Text = string.Format("CPro Process Monitor v{0}.{1}", version.Major, version.Minor);
+          
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+            //// initialize logging
+            //_logDirPath = Path.GetFullPath("Log");
+            //if (!Directory.Exists( _logDirPath ))
+            //{
+            //    Directory.CreateDirectory( _logDirPath );
+            //}
 
-            ///////////////////////////////////////////////////////////////////////////////////////////////////
-            // initialize logging
-            _logDirPath = Path.GetFullPath("Log");
-            if (!Directory.Exists( _logDirPath ))
-            {
-                Directory.CreateDirectory( _logDirPath );
-            }
+            //_logPath = Path.Combine(_logDirPath, string.Format("CPro Process Monitor ({0}).log", DateTime.Now.ToString("ddMMyy-hhmmss")));
+            //_writer = createLogStream( _logPath );
 
-            _logPath = Path.Combine(_logDirPath, string.Format("CPro Process Monitor ({0}).log", DateTime.Now.ToString("ddMMyy-hhmmss")));
-            _writer = createLogStream( _logPath );
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+            //// load settings and setup databinding
+            //Settings.Instance.Load( _settingsPath );
+            //DataBindings.Add( new Binding( "Top", Settings.Instance.WindowTop, "Value" ) );
+            //DataBindings.Add( new Binding( "Left", Settings.Instance.WindowLeft, "Value" ) );
 
-            ///////////////////////////////////////////////////////////////////////////////////////////////////
-            // load settings and setup databinding
-            Settings.Instance.Load( _settingsPath );
-            DataBindings.Add( new Binding( "Top", Settings.Instance.WindowTop, "Value" ) );
-            DataBindings.Add( new Binding( "Left", Settings.Instance.WindowLeft, "Value" ) );
+            //tscb_TimerInterval.Items.Add( new IntervalEntry("Very very high resolution ~ 1 s", 1000));
+            //tscb_TimerInterval.Items.Add( new IntervalEntry("Very high resolution ~ 5 s", 5000));
+            //tscb_TimerInterval.Items.Add( new IntervalEntry("High resolution ~ 10 s", 10000));
+            //tscb_TimerInterval.Items.Add( new IntervalEntry("Standard resolution ~ 30 s", 30000));
+            //tscb_TimerInterval.Items.Add( new IntervalEntry("Low resolution ~ 1 m", 60000));
+            //tscb_TimerInterval.Items.Add( new IntervalEntry( "Very low resolution ~ 5 m", 300000 ) );
+            //tscb_TimerInterval.Items.Add( new IntervalEntry( "Very very low resolution ~ 10 m", 600000 ) );
+            //tscb_TimerInterval.SelectedIndex = Settings.Instance.TimerResolutionId.Value;
 
-            tscb_TimerInterval.Items.Add( new IntervalEntry("Very very high resolution ~ 1 s", 1000));
-            tscb_TimerInterval.Items.Add( new IntervalEntry("Very high resolution ~ 5 s", 5000));
-            tscb_TimerInterval.Items.Add( new IntervalEntry("High resolution ~ 10 s", 10000));
-            tscb_TimerInterval.Items.Add( new IntervalEntry("Standard resolution ~ 30 s", 30000));
-            tscb_TimerInterval.Items.Add( new IntervalEntry("Low resolution ~ 1 m", 60000));
-            tscb_TimerInterval.Items.Add( new IntervalEntry( "Very low resolution ~ 5 m", 300000 ) );
-            tscb_TimerInterval.Items.Add( new IntervalEntry( "Very very low resolution ~ 10 m", 600000 ) );
-            tscb_TimerInterval.SelectedIndex = Settings.Instance.TimerResolutionId.Value;
-
-            tm_ProcessUpdate.Start();
+            //tm_ProcessUpdate.Start();
         }
 
-        protected override void OnClosed ( EventArgs e )
-        {
-            _writer.Close();
+        //protected override void OnClosed ( EventArgs e )
+        //{
+        //    _writer.Close();
 
-            foreach ( Binding b in DataBindings )
-            {
-                b.WriteValue();
-            }
+        //    foreach ( Binding b in DataBindings )
+        //    {
+        //        b.WriteValue();
+        //    }
 
-            Settings.Instance.Save( _settingsPath );
+        //    Settings.Instance.Save( _settingsPath );
 
-            base.OnClosed( e );
-        }
+        //    base.OnClosed( e );
+        //}
        
       
 
@@ -260,23 +248,23 @@ namespace CProProcessMonitor.View
         //    Process.Start("explorer.exe", _logDirPath);
         //}
 
-        private void tsm_CleanupLogfolder_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Do really want to delete all unused files in the Log directory?", "Question...", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-            {
-                string[] filePaths = Directory.GetFiles(_logDirPath);
-                foreach (var path in filePaths)
-                {
-                    try
-                    {
-                        File.Delete(path);
-                    }
-                    catch
-                    {
-                    }
-                }            
-            }
-        }
+        //private void tsm_CleanupLogfolder_Click(object sender, EventArgs e)
+        //{
+        //    if (MessageBox.Show("Do really want to delete all unused files in the Log directory?", "Question...", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+        //    {
+        //        string[] filePaths = Directory.GetFiles(_logDirPath);
+        //        foreach (var path in filePaths)
+        //        {
+        //            try
+        //            {
+        //                File.Delete(path);
+        //            }
+        //            catch
+        //            {
+        //            }
+        //        }            
+        //    }
+        //}
 
       
 
@@ -287,16 +275,19 @@ namespace CProProcessMonitor.View
         //    about.ShowDialog();
         //}
 
-        private void tscb_TimerInterval_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            Settings.Instance.TimerResolutionId.Value = tscb_TimerInterval.SelectedIndex;
-            tm_ProcessUpdate.Interval = ((IntervalEntry)tscb_TimerInterval.SelectedItem).Milliseconds;
-            cms_MainForm.Close();
-        }
-
-      
+        //private void tscb_TimerInterval_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    Settings.Instance.TimerResolutionId.Value = tscb_TimerInterval.SelectedIndex;
+        //    tm_ProcessUpdate.Interval = ((IntervalEntry)tscb_TimerInterval.SelectedItem).Milliseconds;
+        //    cms_MainForm.Close();
+        //}
 
 
-       
+
+
+
+
+
+        
     }
 }

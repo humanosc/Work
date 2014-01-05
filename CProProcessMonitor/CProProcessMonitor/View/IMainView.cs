@@ -17,8 +17,11 @@ namespace CProProcessMonitor.View
         event EventHandler EvAbout;
         event EventHandler EvUpdateIntervalChanged;
 
+        string Title { set; }
         string[] UpdateIntervals { set; }
-        int SelectedUpdateIntervalIndex { get; }
+        int SelectedUpdateIntervalIndex { get; set; }
+        int Top { set; }
+        int Left { set; }
         double CPU { set; }
         double Memory { set; }
         double ClrMemory { set; }

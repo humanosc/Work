@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CProProcessMonitor.View;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -78,6 +79,32 @@ namespace CProProcessMonitor.Presenter
                 }
                 return ((AssemblyCompanyAttribute)attributes[0]).Company;
             }
+        }
+
+        private readonly IAboutView _view;
+
+        public AboutViewPresenter( IAboutView view )
+        {
+            _view = view;
+            
+            _view.Version = AssemblyVersion;
+            _view.Description = AssemblyDescription;
+            _view.Product = AssemblyProduct;
+            _view.Copyright = AssemblyCopyright;
+            _view.Company = AssemblyCompany;
+            _view.Title = AssemblyTitle;
+
+            _view.EvClose += _view_EvClose;
+        }
+
+        private void _view_EvClose(object sender, EventArgs e)
+        {
+            _view.Close();
+        }
+
+        public void ShowView()
+        {
+            _view.Show();
         }
     }
 }

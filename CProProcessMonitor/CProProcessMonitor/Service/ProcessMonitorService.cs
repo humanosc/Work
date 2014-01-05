@@ -18,7 +18,7 @@ namespace CProProcessMonitor.Service
         private readonly IPerformanceCounterService _performanceCounterService;
         private readonly IPerformanceCounterInstanceInfoService _performanceCounterInstanceInfoService;
         private readonly IPerformanceCounterInstanceSelectorService _performanceCounterInstanceSelectorService;
-        private readonly IModel _model;
+        private readonly IMainModel _model;
         private Thread _thread;
         private bool _isRunning = false;
         private readonly ManualResetEvent _startEvent = new ManualResetEvent(false);
@@ -38,7 +38,7 @@ namespace CProProcessMonitor.Service
         public ProcessMonitorService ( IPerformanceCounterService performanceCounterService,
                                        IPerformanceCounterInstanceInfoService performanceCounterInstanceInfoService,
                                        IPerformanceCounterInstanceSelectorService performanceCounterInstanceSelectorService, 
-                                       IModel model )
+                                       IMainModel model )
         {
             _performanceCounterService = performanceCounterService;
             _performanceCounterInstanceInfoService = performanceCounterInstanceInfoService;
@@ -70,10 +70,13 @@ namespace CProProcessMonitor.Service
                         string[] processInstances = _performanceCounterInstanceInfoService.GetProcessCategoryInstanceNames(process.ProcessName);
                         string[] clrMemoryInstances = _performanceCounterInstanceInfoService.GetClrMemoryCategoryInstanceNames(process.ProcessName);
 
-                        string processInstance = processInstances.Length > 1 ? _performanceCounterInstanceSelectorService.SelectInstance(processInstances) : processInstances[0];
-                        string clrMemoryInstance = clrMemoryInstances.Length > 1 ? _performanceCounterInstanceSelectorService.SelectInstance(clrMemoryInstances) : clrMemoryInstances[0];
+                        int processInstanceIndex = processInstances.Length > 1 ? _performanceCounterInstanceSelectorService.SelectInstance(processInstances) : 0;
+                        int clrMemoryInstanceIndex = clrMemoryInstances.Length > 1 ? _performanceCounterInstanceSelectorService.SelectInstance(clrMemoryInstances) : 0;
 
-                        _performanceCounterService.Initialize(processInstance, clrMemoryInstance);
+                        if (processInstanceIndex != -1 && clrMemoryInstanceIndex != -1)
+                        {
+                            _performanceCounterService.Initialize(processInstances[processInstanceIndex], clrMemoryInstances[clrMemoryInstanceIndex]);
+                        }
                     }
 
                     float cpu = _performanceCounterService.GetNextCpuValue();

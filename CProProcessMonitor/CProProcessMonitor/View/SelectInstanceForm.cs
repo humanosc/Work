@@ -10,7 +10,7 @@ using XLib.General;
 
 namespace CProProcessMonitor.View
 {
-    public partial class SelectInstanceForm : Form, ISelectInstanceView 
+    public partial class SelectInstanceForm : Form, ISelectInstanceView
     {
         public event EventHandler EvLoad;
         public event EventHandler EvShow;
@@ -18,22 +18,23 @@ namespace CProProcessMonitor.View
         public event EventHandler EvClose;
         public event EventHandler EvOk;
         public event EventHandler EvCancel;
-        
-        public SelectInstanceForm ()
+
+        public SelectInstanceForm()
         {
             InitializeComponent();
 
             Load += (o, e) => EvLoad.RaiseIfValid(this);
             Shown += (o, e) => EvShow.RaiseIfValid(this);
             FormClosed += (o, e) => EvClose.RaiseIfValid(this);
-            VisibleChanged += (o, e) => {
+            VisibleChanged += (o, e) =>
+            {
                 if (!Visible)
                     EvHide.RaiseIfValid(this);
             };
             bt_Ok.Click += (o, e) => EvOk.RaiseIfValid(this);
             bt_Cancel.Click += (o, e) => EvCancel.RaiseIfValid(this);
-        }    
-        
+        }
+
         public string[] Instances
         {
             set
@@ -46,6 +47,6 @@ namespace CProProcessMonitor.View
         public int SelectedInstanceIndex
         {
             get { return lb_Instances.SelectedIndex; }
-        }       
+        }
     }
 }
