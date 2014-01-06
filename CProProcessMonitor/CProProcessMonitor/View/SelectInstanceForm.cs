@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CProProcessMonitor.Presenter;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,19 +11,8 @@ using XLib.General;
 
 namespace CProProcessMonitor.View
 {
-    public partial class SelectInstanceForm : FormViewBase, ISelectInstanceView
+    public partial class SelectInstanceForm : GenericFormViewBase<SelectInstancePresenter>, ISelectInstanceView
     {
-        public event EventHandler EvOk;
-        public event EventHandler EvCancel;
-
-        public SelectInstanceForm()
-        {
-            InitializeComponent();
-
-            bt_Ok.Click += (o, e) => EvOk.RaiseIfValid(this);
-            bt_Cancel.Click += (o, e) => EvCancel.RaiseIfValid(this);
-        }
-
         public string[] Instances
         {
             set
@@ -35,6 +25,14 @@ namespace CProProcessMonitor.View
         public int SelectedInstanceIndex
         {
             get { return lb_Instances.SelectedIndex; }
+        }
+
+        public SelectInstanceForm()
+        {
+            InitializeComponent();
+
+            bt_Ok.Click += (o, e) => Presenter.OnOk();
+            bt_Cancel.Click += (o, e) => Presenter.OnCancel();
         }
     }
 }

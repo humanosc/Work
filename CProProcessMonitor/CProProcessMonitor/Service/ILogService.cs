@@ -12,8 +12,9 @@ namespace CProProcessMonitor.Service
         void Initialize ( string rootDir );
         void Deinitialize ();
         void ClearLog ();
-        void ClearLogFolder ();
         void OpenLog ();
+        void CleanupLogFolder();
+        void OpenLogFolder();
 
         void Log ( float cpu, float memory, float clrMemory );
     }

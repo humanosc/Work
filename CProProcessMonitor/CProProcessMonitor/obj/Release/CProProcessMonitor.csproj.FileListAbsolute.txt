@@ -75,3 +75,12 @@ H:\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor
 H:\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.csproj.GenerateResource.Cache
 H:\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Release\CPro Process Monitor.exe
 H:\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Release\CPro Process Monitor.pdb
+D:\Work\Git\Work\CProProcessMonitor\CProProcessMonitor\bin\Release\What's New.txt
+D:\Work\Git\Work\CProProcessMonitor\CProProcessMonitor\bin\Release\CPro Process Monitor.exe
+D:\Work\Git\Work\CProProcessMonitor\CProProcessMonitor\bin\Release\CPro Process Monitor.pdb
+D:\Work\Git\Work\CProProcessMonitor\CProProcessMonitor\bin\Release\XLib.Data.Settings.dll
+D:\Work\Git\Work\CProProcessMonitor\CProProcessMonitor\bin\Release\XLib.General.dll
+D:\Work\Git\Work\CProProcessMonitor\CProProcessMonitor\bin\Release\XLib.Data.Settings.pdb
+D:\Work\Git\Work\CProProcessMonitor\CProProcessMonitor\bin\Release\XLib.General.pdb
+D:\Work\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Release\CPro Process Monitor.exe
+D:\Work\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Release\CPro Process Monitor.pdb

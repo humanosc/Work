@@ -9,10 +9,8 @@ namespace CProProcessMonitor.Service
 {
     public class PerformanceCounterService : IPerformanceCounterService
     {
-
         private static int _processorCount = Environment.ProcessorCount;
-
-
+        
         public event EventHandler<PerformanceCounterCategoryNotSupportedEventArgs> PerformanceCounterNotSupported;
         public event EventHandler<PerformanceCounterBrokenEventArgs> PerformanceCounterBroken;
 

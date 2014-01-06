@@ -39,22 +39,22 @@ namespace CProProcessMonitor.Service
             _model = model;
         }
 
-        public void Generate ( GnuPlotDiagramType type, string title, string logPath )
+        public void Generate ( GnuPlotDiagramType type )
         {
             string settingsTemplate = convertToSettingsTemplate( type );
 
-            generate( settingsTemplate, title, logPath );
+            generate( settingsTemplate );
         }
 
-        private void generate ( string settingsTemplate, string title, string logPath )
+        private void generate ( string settingsTemplate )
         {
             string gnuPlotDir = Path.GetFullPath( "gnuplot\\" );
 
             // load plot settings
             string plotSettingsPath = Path.Combine( gnuPlotDir, "plot_settings.txt" );
             //string title = ( string.IsNullOrEmpty( _processWindowTitle ) ? _logPath : _processWindowTitle ).Replace( "\\", "\\\\" );
-            string plotSettings = settingsTemplate.Replace( "[log_path]", logPath.Replace( '\\', '/' ) )
-                .Replace( "[title]", title )
+            string plotSettings = settingsTemplate.Replace( "[log_path]", _model.LogPath.Replace( '\\', '/' ) )
+                .Replace( "[title]", string.IsNullOrEmpty(_model.ProcessWindowTitle) ? "CPro Process Monitor" : _model.ProcessWindowTitle )
                 .Replace( "[width]",  _model.DiagramWidth.ToString() )
                 .Replace( "[height]", _model.DiagramHeight.ToString() );
 
@@ -73,7 +73,7 @@ namespace CProProcessMonitor.Service
 
             // copy plot result to working directory
             string sourcePngPath = Path.Combine( gnuPlotDir, "plot.png" );
-            string destPngPath = logPath.Replace( ".log", ".png" );
+            string destPngPath = _model.LogPath.Replace( ".log", ".png" );
             if ( File.Exists( destPngPath ) )
             {
                 File.Delete( destPngPath );

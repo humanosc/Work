@@ -15,6 +15,6 @@ namespace CProProcessMonitor.Service
 
     public interface IGnuPlotGeneratorService
     {
-        void Generate ( GnuPlotDiagramType type, string title, string logPath );
+        void Generate ( GnuPlotDiagramType type );
     }
 }

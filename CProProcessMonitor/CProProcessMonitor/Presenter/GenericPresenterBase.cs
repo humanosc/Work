@@ -7,7 +7,7 @@ using CProProcessMonitor.View;
 
 namespace CProProcessMonitor.Presenter
 {
-    public abstract class GenericPresenterBase<TView> where TView : IView
+    public abstract class GenericPresenterBase<TView> : IPresenter where TView : IView
     {
         protected TView View
         {
@@ -23,6 +23,8 @@ namespace CProProcessMonitor.Presenter
         public GenericPresenterBase ( TView view )
         {
             View = view;
+
+            View.AttachPresenter(this);
         }
                
         public void ShowView ()
@@ -33,6 +35,22 @@ namespace CProProcessMonitor.Presenter
         public bool ShowDialogView ()
         {
             return View.ShowDialog();
+        }
+
+        public virtual void OnLoaded()
+        {
+        }
+
+        public virtual void OnShown()
+        {
+        }
+
+        public virtual void OnHidden()
+        {
+        }
+
+        public virtual void OnClosed()
+        {
         }
     }
 }

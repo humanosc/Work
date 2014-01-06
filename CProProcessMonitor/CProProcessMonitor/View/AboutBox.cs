@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CProProcessMonitor.Presenter;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -9,7 +10,7 @@ using XLib.General;
 
 namespace CProProcessMonitor.View
 {
-    partial class AboutBox : FormViewBase, IAboutView
+    partial class AboutBox : GenericFormViewBase<AboutViewPresenter>, IAboutView
     {
         public string Title
         {

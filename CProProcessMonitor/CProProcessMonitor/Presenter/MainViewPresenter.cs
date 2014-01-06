@@ -74,31 +74,33 @@ namespace CProProcessMonitor.Presenter
 
             View.UpdateIntervals = _intervals.Select(e => e.ToString()).ToArray();
             View.Title = AssemblyVersion;
-            View.EvLoaded += View_EvLoaded;
-            View.EvClosed += View_EvClosed;         
-            View.EvGenerateClrMemoryDiagram += View_EvGenerateClrMemoryDiagram;
-            View.EvGenerateCpuDiagram += View_EvGenerateCpuDiagram;
-            View.EvGenerateDiagram += View_EvGenerateDiagram;
-            View.EvGenerateMemoryDiagram += View_EvGenerateMemoryDiagram;
-            View.EvUpdateIntervalChanged += View_EvUpdateIntervalChanged;
-
+         
             _processMonitorService.EvNewData += _processMonitorService_EvNewData;
             _processMonitorService.EvProcessExited += _processMonitorService_EvProcessExited;
         }
 
         private void _processMonitorService_EvProcessExited ( object sender, EventArgs e )
         {
-            _syncContext.Send( o => View.Reset(), null );
+            _syncContext.Send( () => View.Reset() );
         }
 
         private void _processMonitorService_EvNewData ( object sender, NewProcessMonitorDataEventArgs e )
         {
+            View.Context.Send(() =>
+                {
+                    View.Memory = e.Memory;
+                    View.ClrMemory = e.ClrMemory;
+                    View.CPU = e.Cpu;
+                });            
+
             _logService.Log( e.Cpu, e.Memory, e.ClrMemory );
         }
 
-        private void View_EvClosed ( object sender, EventArgs e )
+
+        public override void OnClosed()
         {
-            _processMonitorService.Stop();
+             _processMonitorService.Stop();
+             _processMonitorService.Deinitialize();
 
             _model.WindowTop = View.Top;
             _model.WindowLeft = View.Left;            
@@ -107,7 +109,7 @@ namespace CProProcessMonitor.Presenter
             _logService.Deinitialize();
         }
 
-        private void View_EvLoaded ( object sender, EventArgs e )
+        public override void OnLoaded()
         {
             _moderlSerializerService.Deserialize( SETTINGS_PATH, _model );
 
@@ -117,32 +119,73 @@ namespace CProProcessMonitor.Presenter
            
             _logService.Initialize( LOG_DIR_PATH );
 
+            _processMonitorService.Initialize();
             _processMonitorService.Start();
         }
 
-        private void View_EvUpdateIntervalChanged(object sender, EventArgs e)
+        public virtual void OnClearLog()
+        {
+            _logService.ClearLog();
+        }
+
+        public virtual void OnOpenLogFile()
+        {
+            _logService.OpenLog();
+        }
+
+        public virtual void OnOpenLogFolder()
+        {
+            _logService.OpenLogFolder();
+        }
+
+        public virtual void OnCleanupLogFolder()
+        {
+            _logService.CleanupLogFolder();
+        }
+
+        public virtual void OnAbout()
+        {
+        }
+
+        public virtual void OnShow()
+        {
+            View.Show();
+        }
+
+        public virtual void OnHide()
+        {
+            View.Hide();
+        }
+
+        public virtual void OnClose()
+        {
+            View.Close();
+        }        
+
+        public virtual void OnUpdateIntervalChanged()
         {
             _model.TimerResolutionId = View.SelectedUpdateIntervalIndex;
+            _processMonitorService.Interval = _intervals[View.SelectedUpdateIntervalIndex].Milliseconds;
         }
 
-        private void View_EvGenerateMemoryDiagram ( object sender, EventArgs e )
+        public virtual void OnGenerateMemoryDiagram()
         {
-
+            _plotGeneratorService.Generate(GnuPlotDiagramType.Memory);
         }
 
-        private void View_EvGenerateDiagram ( object sender, EventArgs e )
+        public virtual void OnGenerateDiagram ()
         {
-
+            _plotGeneratorService.Generate(GnuPlotDiagramType.All);
         }
 
-        private void View_EvGenerateCpuDiagram ( object sender, EventArgs e )
+        public virtual void OnGenerateCpuDiagram ()
         {
-
+            _plotGeneratorService.Generate(GnuPlotDiagramType.Cpu);
         }
 
-        private void View_EvGenerateClrMemoryDiagram ( object sender, EventArgs e )
+        public virtual void OnGenerateClrMemoryDiagram ()
         {
-
+            _plotGeneratorService.Generate(GnuPlotDiagramType.ClrMemory);
         }
     }
 }

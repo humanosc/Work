@@ -8,10 +8,6 @@ namespace CProProcessMonitor.View
 {
     public interface ISelectInstanceView : IView 
     {
-        event EventHandler EvOk;
-        event EventHandler EvCancel;
-
-        SynchronizationContext Context { get; }
         string[] Instances { set; }
         int SelectedInstanceIndex { get; }
     }

@@ -5,3 +5,10 @@ C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.Data.Settings\bin\De
 C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.Data.Settings\obj\Debug\XLib.Data.Settings.dll
 C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.Data.Settings\obj\Debug\XLib.Data.Settings.pdb
 C:\Users\Brosche\Documents\Visual Studio 2008\Projects\XLib.Data.Settings\obj\Debug\XLib.Data.Settings.csprojResolveAssemblyReference.cache
+D:\Work\Git\Work\XLib.Data.Settings\bin\Debug\XLib.Data.Settings.dll
+D:\Work\Git\Work\XLib.Data.Settings\bin\Debug\XLib.Data.Settings.pdb
+D:\Work\Git\Work\XLib.Data.Settings\bin\Debug\XLib.General.dll
+D:\Work\Git\Work\XLib.Data.Settings\bin\Debug\XLib.General.pdb
+D:\Work\Git\Work\XLib.Data.Settings\obj\Debug\XLib.Data.Settings.csprojResolveAssemblyReference.cache
+D:\Work\Git\Work\XLib.Data.Settings\obj\Debug\XLib.Data.Settings.dll
+D:\Work\Git\Work\XLib.Data.Settings\obj\Debug\XLib.Data.Settings.pdb

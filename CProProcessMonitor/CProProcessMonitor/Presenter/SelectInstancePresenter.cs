@@ -22,17 +22,15 @@ namespace CProProcessMonitor.Presenter
         {
             _model = model;
             _model.EvChanged += _model_EvChanged;
-            View.EvOk += _view_EvOk;
-            View.EvCancel += _view_EvCancel;
         }
 
-        private void _view_EvCancel(object sender, EventArgs e)
+        public virtual void OnCancel()
         {
             _model.SelectedInstanceIndex = -1;
             View.Close();
         }
 
-        private void _view_EvOk(object sender, EventArgs e)
+        public virtual void OnOk()
         {
             _model.SelectedInstanceIndex = View.SelectedInstanceIndex;
             View.Close();

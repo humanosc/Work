@@ -1,5 +1,7 @@
-﻿using System;
+﻿using CProProcessMonitor.Presenter;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -8,20 +10,21 @@ using XLib.General;
 
 namespace CProProcessMonitor.View
 {
-    public abstract class FormViewBase : Form, IView 
+    public abstract class GenericFormViewBase<TPresenter> : Form, IView where TPresenter : class, IPresenter
     {
-        public event EventHandler EvLoaded;
-        public event EventHandler EvShown;
-        public event EventHandler EvHidden;
-        public event EventHandler EvClosed;
-
         private SynchronizationContext _context;
 
         public SynchronizationContext Context
         {
             get { return _context; }
         }
-             
+
+        protected TPresenter Presenter
+        {
+            private set;
+            get;
+        }
+
         public new bool ShowDialog ()
         {
             return base.ShowDialog() == System.Windows.Forms.DialogResult.OK;
@@ -29,31 +32,45 @@ namespace CProProcessMonitor.View
 
         protected override void OnLoad ( EventArgs e )
         {
-            EvLoaded.RaiseIfValid( this );    
+            Presenter.OnLoaded();  
             base.OnLoad( e );
         }
+
         protected override void OnVisibleChanged ( EventArgs e )
         {
             if ( Visible )
             {
-                EvShown.RaiseIfValid( this );
+                Presenter.OnShown();
             }
             else
             {
-                EvHidden.RaiseIfValid( this );
+                Presenter.OnHidden();
             }
 
             base.OnVisibleChanged( e );
         }
+        
         protected override void OnClosed ( EventArgs e )
         {
-            EvClosed.RaiseIfValid( this );
+            Presenter.OnClosed();
             base.OnClosed( e );
         }
 
-        public FormViewBase ()
+        public GenericFormViewBase ()
         {
             _context = SynchronizationContext.Current;
-        }      
+        }
+
+        public void AttachPresenter<T>(T presenter) where T : class, IPresenter 
+        {
+            Debug.Assert(presenter != null, "A presenter is already attached");
+
+            Presenter = presenter as TPresenter;
+        }
+
+        public void DetachPresenter()
+        {
+            Presenter = null;
+        }
     }
 }

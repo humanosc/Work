@@ -53,6 +53,7 @@
     <Compile Include="Model\PerformanceCounterInstanceModel.cs" />
     <Compile Include="Presenter\AboutViewPresenter.cs" />
     <Compile Include="Presenter\GenericPresenterBase.cs" />
+    <Compile Include="Presenter\IPresenter.cs" />
     <Compile Include="Presenter\SelectInstancePresenter.cs" />
     <Compile Include="Service\IGnuPlotGeneratorService.cs" />
     <Compile Include="Service\ILogService.cs" />
@@ -76,7 +77,7 @@
     </Compile>
     <Compile Include="Service\GnuPlotGeneratorService.cs" />
     <Compile Include="Presenter\MainViewPresenter.cs" />
-    <Compile Include="View\FormViewBase.cs">
+    <Compile Include="View\GenericFormViewBase.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\IAboutView.cs" />

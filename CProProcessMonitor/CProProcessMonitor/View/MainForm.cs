@@ -13,21 +13,12 @@ using System.Threading;
 using System.Windows.Forms;
 using XLib.Data.Settings;
 using XLib.General;
+using CProProcessMonitor.Presenter;
 
 namespace CProProcessMonitor.View
 {  
-    public partial class MainForm : FormViewBase, IMainView 
-    {
-        public event EventHandler EvGenerateDiagram;
-        public event EventHandler EvGenerateCpuDiagram;
-        public event EventHandler EvGenerateMemoryDiagram;
-        public event EventHandler EvGenerateClrMemoryDiagram;
-        public event EventHandler EvOpenLogFile;
-        public event EventHandler EvOpenLogFolder;
-        public event EventHandler EvCleanupLogFolder;
-        public event EventHandler EvAbout;
-        public event EventHandler EvUpdateIntervalChanged;
-
+    public partial class MainForm : GenericFormViewBase<MainViewPresenter>, IMainView 
+    {      
         public string[] UpdateIntervals
         {
             set 
@@ -79,15 +70,23 @@ namespace CProProcessMonitor.View
         {
             InitializeComponent();
 
-            tsm_GenerateDiagram.Click += (o, e) => EvGenerateDiagram.RaiseIfValid(this);
-            tsm_GenerateCpuDiagram.Click += (o, e) => EvGenerateCpuDiagram.RaiseIfValid(this);
-            tsm_GenerateMemoryDiagram.Click += (o, e) => EvGenerateMemoryDiagram.RaiseIfValid(this);
-            tsm_GenerateClrMemoryDiagram.Click += (o, e) => EvGenerateClrMemoryDiagram.RaiseIfValid(this);
-            tsm_ShowLog.Click += (o, e) => EvOpenLogFile.RaiseIfValid(this);
-            tsm_OpenLogfolder.Click += (o, e) => EvOpenLogFolder.RaiseIfValid(this);
-            tsm_CleanupLogfolder.Click += (o, e) => EvCleanupLogFolder.RaiseIfValid(this);
-            tsm_About.Click += (o, e) => EvAbout.RaiseIfValid(this);
-            tscb_TimerInterval.SelectedIndexChanged += (o, e) => EvUpdateIntervalChanged.RaiseIfValid(this);
+            tsm_ShowMonitor.Click += (o, e) => Presenter.OnShow();
+            tsm_HideMonitor.Click += (o, e) => Presenter.OnHide();
+            tsm_CloseMonitor.Click += (o, e) => Presenter.OnClose();
+            tsm_GenerateDiagram.Click += (o, e) => Presenter.OnGenerateDiagram();
+            tsm_GenerateCpuDiagram.Click += (o, e) => Presenter.OnGenerateCpuDiagram();
+            tsm_GenerateMemoryDiagram.Click += (o, e) => Presenter.OnGenerateMemoryDiagram();
+            tsm_GenerateClrMemoryDiagram.Click += (o, e) => Presenter.OnGenerateClrMemoryDiagram();
+            tsm_ShowLog.Click += (o, e) => Presenter.OnOpenLogFile();
+            tsm_OpenLogfolder.Click += (o, e) => Presenter.OnOpenLogFolder();
+            tsm_CleanupLogfolder.Click += (o, e) => Presenter.OnCleanupLogFolder();
+            tsm_ClearLog.Click += (o, e) => Presenter.OnClearLog();
+            tsm_About.Click += (o, e) => Presenter.OnAbout();
+            tscb_TimerInterval.SelectedIndexChanged += (o, e) =>
+                {
+                    Presenter.OnUpdateIntervalChanged();
+                    cms_MainForm.Close();
+                };
         }
 
         public void Reset ()
@@ -97,54 +96,19 @@ namespace CProProcessMonitor.View
             ClrMemory = 0.0;
         }
        
-      
-
-   
-
-        //private void ni_MainForm_MouseClick ( object sender, MouseEventArgs e )
-        //{
-        //    Show();
-        //}
-
-        //private void tsm_ShowMonitor_Click ( object sender, EventArgs e )
-        //{
-        //    Show();
-        //}
-
-        //private void tsm_HideMonitor_Click ( object sender, EventArgs e )
-        //{
-        //    Hide();
-        //}
-
-        //private void tsm_CloseMonitor_Click ( object sender, EventArgs e )
-        //{
-        //    Close();
-        //}
-
-     
-        //private void ni_MainForm_MouseClick_1(object sender, MouseEventArgs e)
-        //{
-        //    if (e.Button == System.Windows.Forms.MouseButtons.Left)
-        //    {
-        //        Visible = !Visible;
-        //    }
-        //}
-
-
-        
-
-        //private void tsm_About_Click(object sender, EventArgs e)
-        //{
-        //    AboutBox about = new AboutBox();
-        //    about.StartPosition = FormStartPosition.CenterScreen;
-        //    about.ShowDialog();
-        //}
-
-        //private void tscb_TimerInterval_SelectedIndexChanged(object sender, EventArgs e)
-        //{
-        //    Settings.Instance.TimerResolutionId.Value = tscb_TimerInterval.SelectedIndex;
-        //    tm_ProcessUpdate.Interval = ((IntervalEntry)tscb_TimerInterval.SelectedItem).Milliseconds;
-        //    cms_MainForm.Close();
-        //}
+        private void ni_MainForm_MouseClick_1(object sender, MouseEventArgs e)
+        {
+            if (e.Button == System.Windows.Forms.MouseButtons.Left)
+            {
+                if (Visible)
+                {
+                    Presenter.OnHide();
+                }
+                else
+                {
+                    Presenter.OnShow();
+                }
+            }
+        }             
     }
 }

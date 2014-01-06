@@ -50,7 +50,13 @@ namespace CProProcessMonitor.Service
         {
             while (_isRunning)
             {
-                _startEvent.WaitOne();
+                while (!_startEvent.WaitOne(100))
+                {
+                    if (!_isRunning)
+                    {
+                        return;
+                    }
+                }
 
                 var processes = Process.GetProcesses();
                 var process = processes.FirstOrDefault(p => p.ProcessName.StartsWith(_model.ProcessName));
@@ -101,6 +107,7 @@ namespace CProProcessMonitor.Service
             Deinitialize();
             _thread = new Thread(new ThreadStart(update));
             _thread.IsBackground = true;
+            _isRunning = true;
             _thread.Start();
         }
 

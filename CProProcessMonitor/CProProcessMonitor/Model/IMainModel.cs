@@ -8,7 +8,6 @@ namespace CProProcessMonitor.Model
     public interface IMainModel
     {
         string ProcessWindowTitle { set; get; }
-        string LogDirPath { set; get; }
         string LogPath { set; get; }
 
         string ProcessName { set; get; }

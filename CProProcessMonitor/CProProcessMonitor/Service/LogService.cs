@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CProProcessMonitor.Model;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
@@ -10,10 +11,11 @@ using System.Windows.Forms;
 namespace CProProcessMonitor.Service
 {
     public class LogService : ILogService 
-    {       
+    {
+        private readonly object _syncObject = new object();
         private StreamWriter _writer;
-        private string _logFilePath;
         private string _logDirectoryPath;
+        private readonly IMainModel _model;
 
         public bool IsInitialized
         {
@@ -28,66 +30,99 @@ namespace CProProcessMonitor.Service
             return writer;
         }
 
-        public void Initialize ( string logDirectoryPath )
+        public LogService(IMainModel model)
         {
-            _logDirectoryPath = logDirectoryPath;
+            _model = model;
+        }
 
-            if ( !Directory.Exists( logDirectoryPath ) )
+        public void Initialize(string logDirectoryPath)
+        {
+            lock (_syncObject)
             {
-                Directory.CreateDirectory( logDirectoryPath );
-            }
+                _logDirectoryPath = logDirectoryPath;
 
-            _logFilePath = Path.Combine( logDirectoryPath, string.Format( "CPro Process Monitor ({0}).log", DateTime.Now.ToString( "ddMMyy-hhmmss" ) ) );
-    
-            _writer = createLogStream( _logFilePath );
+                if (!Directory.Exists(logDirectoryPath))
+                {
+                    Directory.CreateDirectory(logDirectoryPath);
+                }
+
+                _model.LogPath = Path.Combine(logDirectoryPath, string.Format("CPro Process Monitor ({0}).log", DateTime.Now.ToString("ddMMyy-hhmmss")));
+
+                _writer = createLogStream(_model.LogPath);
+            }
         }
 
         public void Deinitialize ()
         {
-            if ( _writer != null )
+            lock (_syncObject)
             {
-                _writer.Close();
-                _writer = null;
-                _logFilePath = null;
+                if (_writer != null)
+                {
+                    _writer.Close();
+                    _writer = null;
+                    _logDirectoryPath = null;
+                }
             }
         }
 
-        public void Log ( float cpu, float memory, float clrMemory )
+        public void Log(float cpu, float memory, float clrMemory)
         {
-            string cpuStr = cpu.ToString( "0.00", CultureInfo.InvariantCulture );
-            string memoryStr = memory.ToString( "0.00", CultureInfo.InvariantCulture );
-            string clrmemoryStr = clrMemory.ToString( "0.00", CultureInfo.InvariantCulture );
+            Debug.Assert(IsInitialized, "Service is not initialized!");
             
-            _writer.WriteLine( string.Format( "{0}\t{1}\t{2}\t{3}", DateTime.Now.ToString( CultureInfo.InvariantCulture ), cpuStr, memoryStr, clrmemoryStr ) );
-        }            
+            lock (_syncObject)
+            {
+                string cpuStr = cpu.ToString("0.00", CultureInfo.InvariantCulture);
+                string memoryStr = memory.ToString("0.00", CultureInfo.InvariantCulture);
+                string clrmemoryStr = clrMemory.ToString("0.00", CultureInfo.InvariantCulture);
+
+                _writer.WriteLine(string.Format("{0}\t{1}\t{2}\t{3}", DateTime.Now.ToString(CultureInfo.InvariantCulture), cpuStr, memoryStr, clrmemoryStr));
+            }
+        }
 
         public void ClearLog ()
         {
-            if ( IsInitialized )
+            lock (_syncObject)
             {
-                _writer.Close();
-                _writer = createLogStream( _logFilePath );
-            }
-        }
-
-        public void ClearLogFolder ()
-        {
-            string[] filePaths = Directory.GetFiles( _logDirectoryPath );
-            foreach ( var path in filePaths )
-            {
-                try
+                if (IsInitialized)
                 {
-                    File.Delete( path );
-                }
-                catch
-                {
+                    _writer.Close();
+                    _writer = createLogStream(_model.LogPath);
                 }
             }
         }
 
-        public void OpenLog ()
+        public void OpenLog()
         {
-            Process.Start( _logFilePath );
+            lock (_syncObject)
+            {
+                Process.Start(_model.LogPath);
+            }
+        }
+
+        public void CleanupLogFolder()
+        {
+            lock (_syncObject)
+            {
+                string[] filePaths = Directory.GetFiles(_logDirectoryPath);
+                foreach (var path in filePaths)
+                {
+                    try
+                    {
+                        File.Delete(path);
+                    }
+                    catch
+                    {
+                    }
+                }
+            }
+        }
+
+        public void OpenLogFolder()
+        {
+            lock (_syncObject)
+            {
+                Process.Start(_logDirectoryPath);
+            }
         }
     }
 }
