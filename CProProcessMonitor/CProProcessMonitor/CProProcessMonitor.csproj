@@ -52,14 +52,17 @@
     <Compile Include="Model\MainModel.cs" />
     <Compile Include="Model\PerformanceCounterInstanceModel.cs" />
     <Compile Include="Presenter\AboutViewPresenter.cs" />
+    <Compile Include="Presenter\GenericPresenterBase.cs" />
     <Compile Include="Presenter\SelectInstancePresenter.cs" />
     <Compile Include="Service\IGnuPlotGeneratorService.cs" />
     <Compile Include="Service\ILogService.cs" />
+    <Compile Include="Service\IMainModelSerializerService.cs" />
     <Compile Include="Service\IPerformanceCounterInstanceInfoService.cs" />
     <Compile Include="Service\IPerformanceCounterInstanceSelectorService.cs" />
     <Compile Include="Service\IPerformanceCounterService.cs" />
     <Compile Include="Service\IProcessMonitorService.cs" />
     <Compile Include="Service\LogService.cs" />
+    <Compile Include="Service\MainModelSerializerService.cs" />
     <Compile Include="Service\PerformanceCounterCategoryNames.cs" />
     <Compile Include="Service\PerformanceCounterInstanceInfoService.cs" />
     <Compile Include="Service\PerformanceCounterInstanceSelectorService.cs" />
@@ -73,6 +76,9 @@
     </Compile>
     <Compile Include="Service\GnuPlotGeneratorService.cs" />
     <Compile Include="Presenter\MainViewPresenter.cs" />
+    <Compile Include="View\FormViewBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="View\IAboutView.cs" />
     <Compile Include="View\IMainView.cs" />
     <Compile Include="View\ISelectInstanceView.cs" />
@@ -91,7 +97,6 @@
     <Compile Include="View\SelectInstanceForm.Designer.cs">
       <DependentUpon>SelectInstanceForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\Settings.cs" />
     <EmbeddedResource Include="View\AboutBox.resx">
       <DependentUpon>AboutBox.cs</DependentUpon>
     </EmbeddedResource>

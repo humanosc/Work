@@ -17,14 +17,9 @@ namespace CProProcessMonitor.Service
         }
 
         public int SelectInstance(string[] instances)
-        {
-            ManualResetEvent ev = new ManualResetEvent(false);
-
+        {    
             _selectInstancePresenter.Model.Instances = instances;
-            _selectInstancePresenter.ShowView();
-            _selectInstancePresenter.ViewClosed += (o, e) => ev.Set();            
-            ev.WaitOne();
-
+            _selectInstancePresenter.ShowDialogView();    
             return _selectInstancePresenter.Model.SelectedInstanceIndex;
         }
     }

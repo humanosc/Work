@@ -9,9 +9,11 @@ namespace CProProcessMonitor.Service
     {
         bool IsInitialized { get; }
 
-        void Initialize ( string path );
+        void Initialize ( string rootDir );
         void Deinitialize ();
-        void Clear ();
+        void ClearLog ();
+        void ClearLogFolder ();
+        void OpenLog ();
 
         void Log ( float cpu, float memory, float clrMemory );
     }

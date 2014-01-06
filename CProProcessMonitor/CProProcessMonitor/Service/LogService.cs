@@ -1,16 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Windows.Forms;
 
 namespace CProProcessMonitor.Service
 {
     public class LogService : ILogService 
     {       
         private StreamWriter _writer;
-        private string _path;
+        private string _logFilePath;
+        private string _logDirectoryPath;
 
         public bool IsInitialized
         {
@@ -25,10 +28,18 @@ namespace CProProcessMonitor.Service
             return writer;
         }
 
-        public void Initialize ( string path )
+        public void Initialize ( string logDirectoryPath )
         {
-            _path = path;
-            _writer = createLogStream( path );
+            _logDirectoryPath = logDirectoryPath;
+
+            if ( !Directory.Exists( logDirectoryPath ) )
+            {
+                Directory.CreateDirectory( logDirectoryPath );
+            }
+
+            _logFilePath = Path.Combine( logDirectoryPath, string.Format( "CPro Process Monitor ({0}).log", DateTime.Now.ToString( "ddMMyy-hhmmss" ) ) );
+    
+            _writer = createLogStream( _logFilePath );
         }
 
         public void Deinitialize ()
@@ -37,7 +48,7 @@ namespace CProProcessMonitor.Service
             {
                 _writer.Close();
                 _writer = null;
-                _path = null;
+                _logFilePath = null;
             }
         }
 
@@ -48,17 +59,35 @@ namespace CProProcessMonitor.Service
             string clrmemoryStr = clrMemory.ToString( "0.00", CultureInfo.InvariantCulture );
             
             _writer.WriteLine( string.Format( "{0}\t{1}\t{2}\t{3}", DateTime.Now.ToString( CultureInfo.InvariantCulture ), cpuStr, memoryStr, clrmemoryStr ) );
-        }      
+        }            
 
-      
-
-        public void Clear ()
+        public void ClearLog ()
         {
             if ( IsInitialized )
             {
                 _writer.Close();
-                _writer = createLogStream( _path );
+                _writer = createLogStream( _logFilePath );
             }
+        }
+
+        public void ClearLogFolder ()
+        {
+            string[] filePaths = Directory.GetFiles( _logDirectoryPath );
+            foreach ( var path in filePaths )
+            {
+                try
+                {
+                    File.Delete( path );
+                }
+                catch
+                {
+                }
+            }
+        }
+
+        public void OpenLog ()
+        {
+            Process.Start( _logFilePath );
         }
     }
 }

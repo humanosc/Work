@@ -12,3 +12,8 @@ D:\Work\XLib.General\bin\Release\XLib.General.pdb
 D:\Work\XLib.General\obj\Release\XLib.General.dll
 D:\Work\XLib.General\obj\Release\XLib.General.pdb
 D:\Work\XLib.General\obj\Release\XLib.General.csprojResolveAssemblyReference.cache
+H:\Git\Work\XLib.General\bin\Release\XLib.General.dll
+H:\Git\Work\XLib.General\bin\Release\XLib.General.pdb
+H:\Git\Work\XLib.General\obj\Release\XLib.General.csprojResolveAssemblyReference.cache
+H:\Git\Work\XLib.General\obj\Release\XLib.General.dll
+H:\Git\Work\XLib.General\obj\Release\XLib.General.pdb

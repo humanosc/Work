@@ -16,12 +16,8 @@ using XLib.General;
 
 namespace CProProcessMonitor.View
 {  
-    public partial class MainForm : Form, IMainView 
+    public partial class MainForm : FormViewBase, IMainView 
     {
-        public event EventHandler EvLoad;
-        public event EventHandler EvShow;
-        public event EventHandler EvHide;
-        public event EventHandler EvClose;
         public event EventHandler EvGenerateDiagram;
         public event EventHandler EvGenerateCpuDiagram;
         public event EventHandler EvGenerateMemoryDiagram;
@@ -79,38 +75,9 @@ namespace CProProcessMonitor.View
             }
         }
 
-        public void Reset()
-        {
-            CPU = 0.0;
-            Memory = 0.0;
-            ClrMemory = 0.0;
-        }
-
-        
-        private static readonly string _settingsPath = "Settings.xml";
-   
-        private readonly PerformanceCounterManager _perfCounters = new PerformanceCounterManager();
-        private string _logPath;
-        private string _logDirPath;
-        private string _processWindowTitle;
-
-
-       
-
-     
-
         public MainForm ()
         {
             InitializeComponent();
-
-            Load += (o, e) => EvLoad.RaiseIfValid(this);
-            Shown += (o, e) => EvShow.RaiseIfValid(this);
-            FormClosed += (o, e) => EvClose.RaiseIfValid(this);
-            VisibleChanged += (o, e) =>
-            {
-                if (!Visible)
-                    EvHide.RaiseIfValid(this);
-            };
 
             tsm_GenerateDiagram.Click += (o, e) => EvGenerateDiagram.RaiseIfValid(this);
             tsm_GenerateCpuDiagram.Click += (o, e) => EvGenerateCpuDiagram.RaiseIfValid(this);
@@ -121,93 +88,18 @@ namespace CProProcessMonitor.View
             tsm_CleanupLogfolder.Click += (o, e) => EvCleanupLogFolder.RaiseIfValid(this);
             tsm_About.Click += (o, e) => EvAbout.RaiseIfValid(this);
             tscb_TimerInterval.SelectedIndexChanged += (o, e) => EvUpdateIntervalChanged.RaiseIfValid(this);
-
-          
-            /////////////////////////////////////////////////////////////////////////////////////////////////////
-            //// initialize logging
-            //_logDirPath = Path.GetFullPath("Log");
-            //if (!Directory.Exists( _logDirPath ))
-            //{
-            //    Directory.CreateDirectory( _logDirPath );
-            //}
-
-            //_logPath = Path.Combine(_logDirPath, string.Format("CPro Process Monitor ({0}).log", DateTime.Now.ToString("ddMMyy-hhmmss")));
-            //_writer = createLogStream( _logPath );
-
-            /////////////////////////////////////////////////////////////////////////////////////////////////////
-            //// load settings and setup databinding
-            //Settings.Instance.Load( _settingsPath );
-            //DataBindings.Add( new Binding( "Top", Settings.Instance.WindowTop, "Value" ) );
-            //DataBindings.Add( new Binding( "Left", Settings.Instance.WindowLeft, "Value" ) );
-
-            //tscb_TimerInterval.Items.Add( new IntervalEntry("Very very high resolution ~ 1 s", 1000));
-            //tscb_TimerInterval.Items.Add( new IntervalEntry("Very high resolution ~ 5 s", 5000));
-            //tscb_TimerInterval.Items.Add( new IntervalEntry("High resolution ~ 10 s", 10000));
-            //tscb_TimerInterval.Items.Add( new IntervalEntry("Standard resolution ~ 30 s", 30000));
-            //tscb_TimerInterval.Items.Add( new IntervalEntry("Low resolution ~ 1 m", 60000));
-            //tscb_TimerInterval.Items.Add( new IntervalEntry( "Very low resolution ~ 5 m", 300000 ) );
-            //tscb_TimerInterval.Items.Add( new IntervalEntry( "Very very low resolution ~ 10 m", 600000 ) );
-            //tscb_TimerInterval.SelectedIndex = Settings.Instance.TimerResolutionId.Value;
-
-            //tm_ProcessUpdate.Start();
         }
 
-        //protected override void OnClosed ( EventArgs e )
-        //{
-        //    _writer.Close();
-
-        //    foreach ( Binding b in DataBindings )
-        //    {
-        //        b.WriteValue();
-        //    }
-
-        //    Settings.Instance.Save( _settingsPath );
-
-        //    base.OnClosed( e );
-        //}
+        public void Reset ()
+        {
+            CPU = 0.0;
+            Memory = 0.0;
+            ClrMemory = 0.0;
+        }
        
       
 
-        //private void tm_ProcessUpdate_Tick ( object sender, EventArgs e )
-        //{
-        //    var processes = Process.GetProcesses();
-        //    var process = processes.FirstOrDefault( p => p.ProcessName.StartsWith( Settings.Instance.ProcessName.Value ) );
-        //    if ( process == null )
-        //    {
-        //        _perfCounters.Destroy();
-        //        Reset();
-        //        return;
-        //    }
-
-        //    _processWindowTitle = process.MainWindowTitle;
-
-        //    try
-        //    {
-        //        if (!_perfCounters.IsInitialized)
-        //        {
-        //            _perfCounters.Initialize( process.ProcessName );
-        //        }                
-
-        //        float cpu = _perfCounters.GetNextCpuValue() / _processorCount;
-        //        float memory = _perfCounters.GetNextPrivateBytesValue() / 1024 / 1024;
-        //        float clrmemory = _perfCounters.GetNextClrBytesValue() / 1024 / 1024;
-
-        //        string cpuStr = cpu.ToString( "0.00", _cultureInfo );
-        //        string memoryStr = memory.ToString( "0.00", _cultureInfo );
-        //        string clrmemoryStr = clrmemory.ToString( "0.00", _cultureInfo );
-
-        //        lbl_CPU.Text = cpuStr + " %";
-        //        lbl_Memory.Text = memoryStr + " MB";
-        //        lbl_CLRMemory.Text = clrmemoryStr + " MB";
-
-        //        _writer.WriteLine( string.Format( "{0}\t{1}\t{2}\t{3}", DateTime.Now.ToString( _cultureInfo ), cpuStr, memoryStr, clrmemoryStr ) );
-        //    }
-        //    catch
-        //    {
-        //        _perfCounters.Destroy();
-        //        resetView();
-        //    }            
-        //}
+   
 
         //private void ni_MainForm_MouseClick ( object sender, MouseEventArgs e )
         //{
@@ -238,35 +130,8 @@ namespace CProProcessMonitor.View
         //    }
         //}
 
-        //private void tsm_ShowLog_Click(object sender, EventArgs e)
-        //{
-        //    Process.Start( _logPath );
-        //}
 
-        //private void tsm_OpenLogfolder_Click(object sender, EventArgs e)
-        //{
-        //    Process.Start("explorer.exe", _logDirPath);
-        //}
-
-        //private void tsm_CleanupLogfolder_Click(object sender, EventArgs e)
-        //{
-        //    if (MessageBox.Show("Do really want to delete all unused files in the Log directory?", "Question...", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-        //    {
-        //        string[] filePaths = Directory.GetFiles(_logDirPath);
-        //        foreach (var path in filePaths)
-        //        {
-        //            try
-        //            {
-        //                File.Delete(path);
-        //            }
-        //            catch
-        //            {
-        //            }
-        //        }            
-        //    }
-        //}
-
-      
+        
 
         //private void tsm_About_Click(object sender, EventArgs e)
         //{
@@ -281,13 +146,5 @@ namespace CProProcessMonitor.View
         //    tm_ProcessUpdate.Interval = ((IntervalEntry)tscb_TimerInterval.SelectedItem).Milliseconds;
         //    cms_MainForm.Close();
         //}
-
-
-
-
-
-
-
-        
     }
 }

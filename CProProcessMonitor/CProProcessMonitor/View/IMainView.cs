@@ -20,8 +20,8 @@ namespace CProProcessMonitor.View
         string Title { set; }
         string[] UpdateIntervals { set; }
         int SelectedUpdateIntervalIndex { get; set; }
-        int Top { set; }
-        int Left { set; }
+        int Top { set; get; }
+        int Left { set; get; }
         double CPU { set; }
         double Memory { set; }
         double ClrMemory { set; }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 
 namespace CProProcessMonitor.View
 {
@@ -9,7 +10,8 @@ namespace CProProcessMonitor.View
     {
         event EventHandler EvOk;
         event EventHandler EvCancel;
-        
+
+        SynchronizationContext Context { get; }
         string[] Instances { set; }
         int SelectedInstanceIndex { get; }
     }

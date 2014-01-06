@@ -60,3 +60,18 @@ d:\Work\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMo
 d:\Work\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.Properties.Resources.resources
 d:\Work\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.View.SelectInstanceForm.resources
 d:\Work\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.csproj.GenerateResource.Cache
+H:\Git\Work\CProProcessMonitor\CProProcessMonitor\bin\Release\What's New.txt
+H:\Git\Work\CProProcessMonitor\CProProcessMonitor\bin\Release\CPro Process Monitor.exe
+H:\Git\Work\CProProcessMonitor\CProProcessMonitor\bin\Release\CPro Process Monitor.pdb
+H:\Git\Work\CProProcessMonitor\CProProcessMonitor\bin\Release\XLib.Data.Settings.dll
+H:\Git\Work\CProProcessMonitor\CProProcessMonitor\bin\Release\XLib.General.dll
+H:\Git\Work\CProProcessMonitor\CProProcessMonitor\bin\Release\XLib.Data.Settings.pdb
+H:\Git\Work\CProProcessMonitor\CProProcessMonitor\bin\Release\XLib.General.pdb
+H:\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.csprojResolveAssemblyReference.cache
+H:\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.View.AboutBox.resources
+H:\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.View.MainForm.resources
+H:\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.Properties.Resources.resources
+H:\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.View.SelectInstanceForm.resources
+H:\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.csproj.GenerateResource.Cache
+H:\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Release\CPro Process Monitor.exe
+H:\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Release\CPro Process Monitor.pdb

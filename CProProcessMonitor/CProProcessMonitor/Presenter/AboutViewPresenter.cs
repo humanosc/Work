@@ -7,7 +7,7 @@ using System.Text;
 
 namespace CProProcessMonitor.Presenter
 {
-    public class AboutViewPresenter
+    public class AboutViewPresenter : GenericPresenterBase<IAboutView>
     {
         public string AssemblyTitle
         {
@@ -81,30 +81,14 @@ namespace CProProcessMonitor.Presenter
             }
         }
 
-        private readonly IAboutView _view;
-
-        public AboutViewPresenter( IAboutView view )
-        {
-            _view = view;
-            
-            _view.Version = AssemblyVersion;
-            _view.Description = AssemblyDescription;
-            _view.Product = AssemblyProduct;
-            _view.Copyright = AssemblyCopyright;
-            _view.Company = AssemblyCompany;
-            _view.Title = AssemblyTitle;
-
-            _view.EvClose += _view_EvClose;
-        }
-
-        private void _view_EvClose(object sender, EventArgs e)
-        {
-            _view.Close();
-        }
-
-        public void ShowView()
-        {
-            _view.Show();
-        }
+        public AboutViewPresenter( IAboutView view ) : base( view )
+        {            
+            View.Version = AssemblyVersion;
+            View.Description = AssemblyDescription;
+            View.Product = AssemblyProduct;
+            View.Copyright = AssemblyCopyright;
+            View.Company = AssemblyCompany;
+            View.Title = AssemblyTitle;
+        }      
     }
 }

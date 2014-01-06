@@ -9,13 +9,8 @@ using XLib.General;
 
 namespace CProProcessMonitor.View
 {
-    partial class AboutBox : Form, IAboutView
+    partial class AboutBox : FormViewBase, IAboutView
     {
-        public event EventHandler EvLoad;
-        public event EventHandler EvShow;
-        public event EventHandler EvHide;
-        public event EventHandler EvClose;
-
         public string Title
         {
             set { Text = value; }
@@ -49,14 +44,6 @@ namespace CProProcessMonitor.View
         public AboutBox()
         {
             InitializeComponent();
-            Load += (o, e) => EvLoad.RaiseIfValid(this);
-            Shown += (o, e) => EvShow.RaiseIfValid(this);
-            FormClosed += (o, e) => EvClose.RaiseIfValid(this);
-            VisibleChanged += (o, e) =>
-            {
-                if (!Visible)
-                    EvHide.RaiseIfValid(this);
-            };
         }
     }
 }
