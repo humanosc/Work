@@ -12,3 +12,10 @@ D:\Work\Git\Work\XLib.Data.Settings\bin\Debug\XLib.General.pdb
 D:\Work\Git\Work\XLib.Data.Settings\obj\Debug\XLib.Data.Settings.csprojResolveAssemblyReference.cache
 D:\Work\Git\Work\XLib.Data.Settings\obj\Debug\XLib.Data.Settings.dll
 D:\Work\Git\Work\XLib.Data.Settings\obj\Debug\XLib.Data.Settings.pdb
+H:\Git\Work\XLib.Data.Settings\bin\Debug\XLib.Data.Settings.dll
+H:\Git\Work\XLib.Data.Settings\bin\Debug\XLib.Data.Settings.pdb
+H:\Git\Work\XLib.Data.Settings\bin\Debug\XLib.General.dll
+H:\Git\Work\XLib.Data.Settings\bin\Debug\XLib.General.pdb
+H:\Git\Work\XLib.Data.Settings\obj\Debug\XLib.Data.Settings.csprojResolveAssemblyReference.cache
+H:\Git\Work\XLib.Data.Settings\obj\Debug\XLib.Data.Settings.dll
+H:\Git\Work\XLib.Data.Settings\obj\Debug\XLib.Data.Settings.pdb

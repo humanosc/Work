@@ -8,6 +8,7 @@ namespace CProProcessMonitor.View
 {
     public interface ISelectInstanceView : IView 
     {
+        string Category { set; }
         string[] Instances { set; }
         int SelectedInstanceIndex { get; }
     }

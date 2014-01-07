@@ -45,6 +45,8 @@ namespace CProProcessMonitor.View
         public AboutBox()
         {
             InitializeComponent();
+
+            StartPosition = FormStartPosition.CenterScreen;
         }
     }
 }

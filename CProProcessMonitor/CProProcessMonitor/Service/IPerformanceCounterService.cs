@@ -27,6 +27,9 @@ namespace CProProcessMonitor.Service
 
     public interface IPerformanceCounterService
     {
+        event EventHandler<PerformanceCounterCategoryNotSupportedEventArgs> PerformanceCounterNotSupported;
+        event EventHandler<PerformanceCounterBrokenEventArgs> PerformanceCounterBroken;
+        
         bool IsInitialized { get; }
 
         float GetNextCpuValue ();        

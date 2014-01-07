@@ -34,7 +34,6 @@ namespace CProProcessMonitor.Presenter
         const string SETTINGS_PATH = "Settings.xml";
         const string LOG_DIR_PATH = "Log";
 
-        private readonly SynchronizationContext _syncContext;
         private readonly IMainModelSerializerService _moderlSerializerService;
         private readonly IProcessMonitorService _processMonitorService;
         private readonly ILogService _logService;
@@ -81,7 +80,7 @@ namespace CProProcessMonitor.Presenter
 
         private void _processMonitorService_EvProcessExited ( object sender, EventArgs e )
         {
-            _syncContext.Send( () => View.Reset() );
+            View.Context.Send( () => View.Reset() );
         }
 
         private void _processMonitorService_EvNewData ( object sender, NewProcessMonitorDataEventArgs e )

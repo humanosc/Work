@@ -6,7 +6,7 @@ using XLib.General;
 
 namespace CProProcessMonitor.Model
 {
-    public class PerformanceCounterInstanceModel : IPerformanceCounterInstanceModel 
+    public class InstanceModel : IInstanceModel 
     {
         public event EventHandler EvChanged;
 
@@ -21,15 +21,20 @@ namespace CProProcessMonitor.Model
             }
         }
 
+        public string Category
+        {
+            get;
+            set;
+        }
+
         public int SelectedInstanceIndex
         {
             get;
             set;
         }
 
-        public PerformanceCounterInstanceModel()
+        public InstanceModel()
         {
-        }
-
+        }       
     }
 }

@@ -16,3 +16,12 @@ C:\Users\Brosche\Desktop\work\CProProcessMonitor\CProProcessMonitor\CProProcessM
 C:\Users\Brosche\Desktop\work\CProProcessMonitor\CProProcessMonitor\CProProcessMonitor.Analytics\obj\Release\CProProcessMonitor.Analytics.fsprojResolveAssemblyReference.cache
 C:\Users\Brosche\Desktop\work\CProProcessMonitor\CProProcessMonitor\CProProcessMonitor.Analytics\obj\Release\CProProcessMonitor.Analytics.dll
 C:\Users\Brosche\Desktop\work\CProProcessMonitor\CProProcessMonitor\CProProcessMonitor.Analytics\obj\Release\CProProcessMonitor.Analytics.pdb
+H:\Git\Work\CProProcessMonitor\CProProcessMonitor.Analytics\bin\Release\CProProcessMonitor.Analytics.XML
+H:\Git\Work\CProProcessMonitor\CProProcessMonitor.Analytics\bin\Release\CProProcessMonitor.Analytics.dll
+H:\Git\Work\CProProcessMonitor\CProProcessMonitor.Analytics\bin\Release\CProProcessMonitor.Analytics.pdb
+H:\Git\Work\CProProcessMonitor\CProProcessMonitor.Analytics\bin\Release\FSharp.Core.dll
+H:\Git\Work\CProProcessMonitor\CProProcessMonitor.Analytics\bin\Release\FSharp.Core.xml
+H:\Git\Work\CProProcessMonitor\CProProcessMonitor.Analytics\bin\Release\de\FSharp.Core.resources.dll
+H:\Git\Work\CProProcessMonitor\CProProcessMonitor.Analytics\obj\Release\CProProcessMonitor.Analytics.fsprojResolveAssemblyReference.cache
+H:\Git\Work\CProProcessMonitor\CProProcessMonitor.Analytics\obj\Release\CProProcessMonitor.Analytics.dll
+H:\Git\Work\CProProcessMonitor\CProProcessMonitor.Analytics\obj\Release\CProProcessMonitor.Analytics.pdb

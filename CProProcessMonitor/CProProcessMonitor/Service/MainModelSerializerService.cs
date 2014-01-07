@@ -25,7 +25,7 @@ namespace CProProcessMonitor.Service
             {
                 Version.Value = CURRENT_VERSION;
 #if DEBUG
-                ProcessName.Value = "explorer"; 
+                ProcessName.Value = "notepad"; 
 #else
                 ProcessName.Value = "CircuitPro";
 #endif

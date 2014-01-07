@@ -22,12 +22,12 @@ namespace CProProcessMonitor
 
             MainForm mainForm = new MainForm(); 
             MainModel mainModel = new MainModel();
-            SelectInstancePresenter selectInstancePresenter = new SelectInstancePresenter( new SelectInstanceForm(), new PerformanceCounterInstanceModel());
+            SelectInstancePresenter selectInstancePresenter = new SelectInstancePresenter( new SelectInstanceForm(), new InstanceModel());
             
             IPerformanceCounterService performanceCounterService = new PerformanceCounterService();
             IPerformanceCounterInstanceInfoService performanceCounterInstanceInfoService = new PerformanceCounterInstanceInfoService();
-            IPerformanceCounterInstanceSelectorService performanceCounterInstanceSelectorService = new PerformanceCounterInstanceSelectorService( selectInstancePresenter );
-            IProcessMonitorService processMonitorService = new ProcessMonitorService( performanceCounterService, performanceCounterInstanceInfoService, performanceCounterInstanceSelectorService, mainModel);
+            IInstanceSelectorService instanceSelectorService = new InstanceSelectorService( selectInstancePresenter );
+            IProcessMonitorService processMonitorService = new ProcessMonitorService( performanceCounterService, performanceCounterInstanceInfoService, instanceSelectorService, mainModel);
             IGnuPlotGeneratorService gnuPlotGenerator = new GnuPlotGeneratorService( mainModel );
             IMainModelSerializerService mainModelSerializerService = new MainModelSerializerService();
             ILogService logService = new LogService( mainModel );

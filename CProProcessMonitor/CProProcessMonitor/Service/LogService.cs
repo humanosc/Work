@@ -46,7 +46,7 @@ namespace CProProcessMonitor.Service
                     Directory.CreateDirectory(logDirectoryPath);
                 }
 
-                _model.LogPath = Path.Combine(logDirectoryPath, string.Format("CPro Process Monitor ({0}).log", DateTime.Now.ToString("ddMMyy-hhmmss")));
+                _model.LogPath = Path.GetFullPath(Path.Combine(logDirectoryPath, string.Format("CPro Process Monitor ({0}).log", DateTime.Now.ToString("ddMMyy-hhmmss"))));
 
                 _writer = createLogStream(_model.LogPath);
             }

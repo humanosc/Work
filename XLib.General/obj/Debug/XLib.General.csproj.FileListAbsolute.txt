@@ -7,3 +7,7 @@ D:\Work\Git\Work\XLib.General\bin\Debug\XLib.General.dll
 D:\Work\Git\Work\XLib.General\bin\Debug\XLib.General.pdb
 D:\Work\Git\Work\XLib.General\obj\Debug\XLib.General.dll
 D:\Work\Git\Work\XLib.General\obj\Debug\XLib.General.pdb
+H:\Git\Work\XLib.General\bin\Debug\XLib.General.dll
+H:\Git\Work\XLib.General\bin\Debug\XLib.General.pdb
+H:\Git\Work\XLib.General\obj\Debug\XLib.General.dll
+H:\Git\Work\XLib.General\obj\Debug\XLib.General.pdb

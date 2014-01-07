@@ -11,14 +11,14 @@ namespace CProProcessMonitor.Presenter
 {
     public class SelectInstancePresenter : GenericPresenterBase<ISelectInstanceView>
     {
-        private readonly IPerformanceCounterInstanceModel _model;
+        private readonly IInstanceModel _model;
 
-        public IPerformanceCounterInstanceModel Model
+        public IInstanceModel Model
         {
             get { return _model; }
         }
 
-        public SelectInstancePresenter ( ISelectInstanceView view, IPerformanceCounterInstanceModel model ) : base( view )
+        public SelectInstancePresenter ( ISelectInstanceView view, IInstanceModel model ) : base( view )
         {
             _model = model;
             _model.EvChanged += _model_EvChanged;
@@ -39,6 +39,7 @@ namespace CProProcessMonitor.Presenter
         private void _model_EvChanged(object sender, EventArgs e)
         {
             View.Instances = _model.Instances;
+            View.Category = _model.Category;
         }
     }
 }

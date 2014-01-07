@@ -48,9 +48,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\IMainModel.cs" />
-    <Compile Include="Model\IPerformanceCounterInstanceModel.cs" />
+    <Compile Include="Model\IInstanceModel.cs" />
     <Compile Include="Model\MainModel.cs" />
-    <Compile Include="Model\PerformanceCounterInstanceModel.cs" />
+    <Compile Include="Model\InstanceModel.cs" />
     <Compile Include="Presenter\AboutViewPresenter.cs" />
     <Compile Include="Presenter\GenericPresenterBase.cs" />
     <Compile Include="Presenter\IPresenter.cs" />
@@ -59,14 +59,13 @@
     <Compile Include="Service\ILogService.cs" />
     <Compile Include="Service\IMainModelSerializerService.cs" />
     <Compile Include="Service\IPerformanceCounterInstanceInfoService.cs" />
-    <Compile Include="Service\IPerformanceCounterInstanceSelectorService.cs" />
+    <Compile Include="Service\IInstanceSelectorService.cs" />
     <Compile Include="Service\IPerformanceCounterService.cs" />
     <Compile Include="Service\IProcessMonitorService.cs" />
     <Compile Include="Service\LogService.cs" />
     <Compile Include="Service\MainModelSerializerService.cs" />
-    <Compile Include="Service\PerformanceCounterCategoryNames.cs" />
     <Compile Include="Service\PerformanceCounterInstanceInfoService.cs" />
-    <Compile Include="Service\PerformanceCounterInstanceSelectorService.cs" />
+    <Compile Include="Service\InstanceSelectorService.cs" />
     <Compile Include="Service\PerformanceCounterService.cs" />
     <Compile Include="Service\ProcessMonitorService.cs" />
     <Compile Include="View\AboutBox.cs">

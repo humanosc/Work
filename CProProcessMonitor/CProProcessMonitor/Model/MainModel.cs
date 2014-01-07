@@ -13,6 +13,18 @@ namespace CProProcessMonitor.Model
             set;
         }
 
+        public string LogDirPath
+        {
+            get;
+            set;
+        }
+
+        public string LogPath
+        {
+            get;
+            set;
+        }        
+
         public string ProcessName
         {
             get;
@@ -47,18 +59,6 @@ namespace CProProcessMonitor.Model
         {
             get;
             set;
-        }
-        
-        public string LogDirPath
-        {
-            get;
-            set;
-        }
-
-        public string LogPath
-        {
-            get;
-            set;
-        }        
+        }       
     }
 }

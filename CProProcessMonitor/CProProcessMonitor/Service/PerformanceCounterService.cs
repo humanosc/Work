@@ -17,7 +17,7 @@ namespace CProProcessMonitor.Service
         private PerformanceCounter _processCpu;
         private PerformanceCounter _processPrivateBytes;
         private PerformanceCounter _processClrBytes;
-        private bool _isInitialized;
+        private bool _isInitialized; 
 
         public bool IsInitialized { get { return _isInitialized; } }
 
@@ -47,18 +47,18 @@ namespace CProProcessMonitor.Service
 
         public void Initialize(string processPerformanceCounterInstanceName, string clrMemoryPerformanceCounterInstanceName)
         {
-            _processCpu = new PerformanceCounter(PerformanceCounterCategoryNames.Process, "% Processor Time", processPerformanceCounterInstanceName);
-            _processPrivateBytes = new PerformanceCounter(PerformanceCounterCategoryNames.Process, "Private Bytes", processPerformanceCounterInstanceName);
+            _processCpu = new PerformanceCounter(PerformanceCounterCategoryType.Process.GetName(), "% Processor Time", processPerformanceCounterInstanceName);
+            _processPrivateBytes = new PerformanceCounter(PerformanceCounterCategoryType.Process.GetName(), "Private Bytes", processPerformanceCounterInstanceName);
 
 
-            if (PerformanceCounterCategory.InstanceExists(clrMemoryPerformanceCounterInstanceName, PerformanceCounterCategoryNames.ClrMemory))
+            if ( clrMemoryPerformanceCounterInstanceName != null && PerformanceCounterCategory.InstanceExists(clrMemoryPerformanceCounterInstanceName, PerformanceCounterCategoryType.ClrMemory.GetName()))
             {
-                _processClrBytes = new PerformanceCounter(PerformanceCounterCategoryNames.ClrMemory, "# Bytes in all heaps", clrMemoryPerformanceCounterInstanceName);
+                _processClrBytes = new PerformanceCounter(PerformanceCounterCategoryType.ClrMemory.GetName(), "# Bytes in all heaps", clrMemoryPerformanceCounterInstanceName);
             }
             else
             {
 
-                PerformanceCounterNotSupported.RaiseIfValid(this, new PerformanceCounterCategoryNotSupportedEventArgs(PerformanceCounterCategoryNames.ClrMemory));
+                PerformanceCounterNotSupported.RaiseIfValid(this, new PerformanceCounterCategoryNotSupportedEventArgs(PerformanceCounterCategoryType.ClrMemory.GetName()));
             }
 
             _isInitialized = true;

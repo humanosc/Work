@@ -5,23 +5,38 @@ using System.Linq;
 using System.Text;
 
 namespace CProProcessMonitor.Service
-{
+{   
     public class PerformanceCounterInstanceInfoService : IPerformanceCounterInstanceInfoService 
     {
         public PerformanceCounterInstanceInfoService ()
         {
         }
 
-        public string[] GetProcessCategoryInstanceNames ( string processName )
+        private static string[] GetProcessInstanceNames ( PerformanceCounterCategoryType categoryType, int pid )
         {
-            var category = new PerformanceCounterCategory( PerformanceCounterCategoryNames.Process );
-            return category.GetInstanceNames().Where( s => s.StartsWith( processName ) ).ToArray();
+            PerformanceCounterCategory cat = new PerformanceCounterCategory( categoryType.GetName() );
+            List<string> names = new List<string>();
+            string[] instances = cat.GetInstanceNames();
+            foreach ( string instance in instances )
+            {
+
+                using ( PerformanceCounter cnt = new PerformanceCounter( categoryType.GetName(),
+                     "ID Process", instance, true ) )
+                {
+                    int val = (int)cnt.RawValue;
+                    if ( val == pid )
+                    {
+                        names.Add( instance );
+                    }
+                }
+            }
+            return names.ToArray();
         }
 
-        public string[] GetClrMemoryCategoryInstanceNames ( string processName )
+        public string[] GetCategoryInstanceNames ( PerformanceCounterCategoryType categoryType, Process process )
         {
-            var category = new PerformanceCounterCategory( PerformanceCounterCategoryNames.ClrMemory );
-            return category.GetInstanceNames().Where( s => s.StartsWith( processName ) ).ToArray();
+            var category = new PerformanceCounterCategory( categoryType.GetName() );
+            return GetProcessInstanceNames( categoryType, process.Id ); // category.GetInstanceNames().Where( s => s == process.ProcessName ).ToArray();
         }
     }
 }

@@ -5,8 +5,8 @@ using System.Text;
 
 namespace CProProcessMonitor.Service
 {
-    public interface IPerformanceCounterInstanceSelectorService
+    public interface IInstanceSelectorService
     {
-        int SelectInstance(string[] instances);
+        int SelectInstance(string category, string[] instances);
     }
 }

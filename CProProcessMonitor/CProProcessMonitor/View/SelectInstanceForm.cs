@@ -33,6 +33,13 @@ namespace CProProcessMonitor.View
 
             bt_Ok.Click += (o, e) => Presenter.OnOk();
             bt_Cancel.Click += (o, e) => Presenter.OnCancel();
+
+            StartPosition = FormStartPosition.CenterScreen;
+        }
+
+        public string Category
+        {
+            set { Text = string.Format( "Please select instance of the {0} category...", value ); }
         }
     }
 }

@@ -22,3 +22,18 @@ D:\Work\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Debug\CProProcessMoni
 D:\Work\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Debug\CProProcessMonitor.csproj.GenerateResource.Cache
 D:\Work\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Debug\CPro Process Monitor.exe
 D:\Work\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Debug\CPro Process Monitor.pdb
+H:\Git\Work\CProProcessMonitor\CProProcessMonitor\bin\Debug\What's New.txt
+H:\Git\Work\CProProcessMonitor\CProProcessMonitor\bin\Debug\CPro Process Monitor.exe
+H:\Git\Work\CProProcessMonitor\CProProcessMonitor\bin\Debug\CPro Process Monitor.pdb
+H:\Git\Work\CProProcessMonitor\CProProcessMonitor\bin\Debug\XLib.Data.Settings.dll
+H:\Git\Work\CProProcessMonitor\CProProcessMonitor\bin\Debug\XLib.General.dll
+H:\Git\Work\CProProcessMonitor\CProProcessMonitor\bin\Debug\XLib.Data.Settings.pdb
+H:\Git\Work\CProProcessMonitor\CProProcessMonitor\bin\Debug\XLib.General.pdb
+H:\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Debug\CProProcessMonitor.csprojResolveAssemblyReference.cache
+H:\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Debug\CProProcessMonitor.View.AboutBox.resources
+H:\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Debug\CProProcessMonitor.View.MainForm.resources
+H:\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Debug\CProProcessMonitor.Properties.Resources.resources
+H:\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Debug\CProProcessMonitor.View.SelectInstanceForm.resources
+H:\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Debug\CProProcessMonitor.csproj.GenerateResource.Cache
+H:\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Debug\CPro Process Monitor.exe
+H:\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Debug\CPro Process Monitor.pdb
