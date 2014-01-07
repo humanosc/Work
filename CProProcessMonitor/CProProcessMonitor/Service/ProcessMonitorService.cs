@@ -12,15 +12,16 @@ namespace CProProcessMonitor.Service
 {
     public class ProcessMonitorService : IProcessMonitorService 
     {
+        public event EventHandler EvProcessCreated;
         public event EventHandler EvProcessExited;
         public event EventHandler<NewProcessMonitorDataEventArgs> EvNewData;
 
         private readonly IPerformanceCounterService _performanceCounterService;
         private readonly IPerformanceCounterInstanceInfoService _performanceCounterInstanceInfoService;
-        private readonly IInstanceSelectorService _instanceSelectorService;
         private readonly IMainModel _model;
-        private Thread _thread;
-        private bool _isRunning = false;
+        private bool _isInitialized;
+        private bool _isProcessObserverRunning;
+        private bool _isProcessMonitorRunning;
         private readonly ManualResetEvent _startEvent = new ManualResetEvent(false);
       
         public int Interval
@@ -31,17 +32,15 @@ namespace CProProcessMonitor.Service
 
         public bool IsInitialized
         {
-            get { return _thread != null; }
+            get { return _isInitialized != null; }
         }
 
         public ProcessMonitorService ( IPerformanceCounterService performanceCounterService,
                                        IPerformanceCounterInstanceInfoService performanceCounterInstanceInfoService,
-                                       IInstanceSelectorService instanceSelectorService, 
                                        IMainModel model )
         {
             _performanceCounterService = performanceCounterService;
             _performanceCounterInstanceInfoService = performanceCounterInstanceInfoService;
-            _instanceSelectorService = instanceSelectorService;
             _model = model;
         }
 
@@ -67,11 +66,11 @@ namespace CProProcessMonitor.Service
         {
             Process process = null;
 
-            while (_isRunning)
+            while (_isProcessObserverRunning)
             {
                 while (!_startEvent.WaitOne(100))
                 {
-                    if (!_isRunning)
+                    if (!_isProcessObserverRunning)
                     {
                         return;
                     }
@@ -91,21 +90,19 @@ namespace CProProcessMonitor.Service
                         var filteredProcesses = processes.Where( p => p.ProcessName == _model.ProcessName ).ToArray();
                         if ( filteredProcesses.Length > 0 )
                         {
-                            int processIndex = filteredProcesses.Length > 1 ? _instanceSelectorService.SelectInstance( "Process", filteredProcesses.Select( p => string.Format( "Name:{0} PID:{1}", p.ProcessName, p.Id ) ).ToArray() ) : 0;
-                            process = filteredProcesses[processIndex];
+                            EvProcessCreated.RaiseIfValid(this);
+
+                            process = filteredProcesses.Min( p => p.TotalProcessorTime.TotalSeconds );
 
                             _model.ProcessWindowTitle = process.MainWindowTitle;
 
                             string[] processInstances = _performanceCounterInstanceInfoService.GetCategoryInstanceNames( PerformanceCounterCategoryType.Process, process );
                             string[] clrMemoryInstances = _performanceCounterInstanceInfoService.GetCategoryInstanceNames( PerformanceCounterCategoryType.ClrMemory, process );
 
-                            int processInstanceIndex = processInstances.Length > 1 ? _instanceSelectorService.SelectInstance( PerformanceCounterCategoryType.Process.GetName(), processInstances ) : 0;
-                            int clrMemoryInstanceIndex = clrMemoryInstances.Length > 1 ? _instanceSelectorService.SelectInstance( PerformanceCounterCategoryType.ClrMemory.GetName(), clrMemoryInstances ) : 0;
+                            string processInstance = processInstances.Length > 0 ? processInstances.Last() : null;
+                            string clrMemoryInstance = clrMemoryInstances.Length > 0 ? clrMemoryInstances.Last(): null;
 
-                            string processInstance = processInstances.Length > 0 ? processInstances[processInstanceIndex] : null;
-                            string clrMemoryInstance = clrMemoryInstances.Length > 0 ? clrMemoryInstances[clrMemoryInstanceIndex] : null;
-
-                            if ( processInstanceIndex != -1 && clrMemoryInstanceIndex != -1 )
+                            if (processInstance != null) 
                             {
                                 initializePerformanceCounterService( processInstance, clrMemoryInstance );
                             }
@@ -134,17 +131,15 @@ namespace CProProcessMonitor.Service
         public void Initialize ()
         {
             Deinitialize();
-            _thread = new Thread(new ThreadStart(update));
-            _thread.IsBackground = true;
-            _isRunning = true;
-            _thread.Start();
+            ThreadPool.QueueUserWorkItem( o => update() );
+            _isProcessObserverRunning = true;            
         }
 
         public void Deinitialize ()
         {
             if (IsInitialized)
             {
-                _isRunning = false;
+                _isProcessObserverRunning = false;
                 _thread.Join();
                 _thread = null;
             }
