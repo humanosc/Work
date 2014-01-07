@@ -24,6 +24,17 @@ namespace CProProcessMonitor.Service
 
             return null;
         }
+
+        public static string GetProcessIdCounterName(this PerformanceCounterCategoryType instance)
+        {
+            switch (instance)
+            {
+                case PerformanceCounterCategoryType.Process: return "ID Process";
+                case PerformanceCounterCategoryType.ClrMemory: return "Process ID";
+            }
+
+            return null;
+        }
     }
 
     public interface IPerformanceCounterInstanceInfoService

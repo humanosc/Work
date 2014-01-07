@@ -20,8 +20,7 @@ namespace CProProcessMonitor.Service
             foreach ( string instance in instances )
             {
 
-                using ( PerformanceCounter cnt = new PerformanceCounter( categoryType.GetName(),
-                     "ID Process", instance, true ) )
+                using ( PerformanceCounter cnt = new PerformanceCounter( categoryType.GetName(), categoryType.GetProcessIdCounterName() , instance, true ) )
                 {
                     int val = (int)cnt.RawValue;
                     if ( val == pid )

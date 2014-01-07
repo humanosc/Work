@@ -40,6 +40,7 @@ namespace CProProcessMonitor.Presenter
         private readonly IGnuPlotGeneratorService _plotGeneratorService;
         private readonly List<IntervalEntry> _intervals = new List<IntervalEntry>();
         private readonly IMainModel _model;
+        private readonly AboutViewPresenter _aboutViewPresenter;
 
         public string AssemblyVersion
         {
@@ -55,13 +56,15 @@ namespace CProProcessMonitor.Presenter
                                  IMainModelSerializerService modelSerializerService,
                                  IProcessMonitorService processMonitorService, 
                                  ILogService logService,
-                                 IGnuPlotGeneratorService plotGeneratorService ) : base( view )
+                                 IGnuPlotGeneratorService plotGeneratorService,
+                                 AboutViewPresenter aboutViewPresenter ) : base( view )
         {
             _model = model;
             _logService = logService;
             _moderlSerializerService = modelSerializerService;
             _processMonitorService = processMonitorService;
             _plotGeneratorService = plotGeneratorService;
+            _aboutViewPresenter = aboutViewPresenter;
 
             _intervals.Add(new IntervalEntry("Very very high resolution ~ 1 s", 1000));
             _intervals.Add(new IntervalEntry("Very high resolution ~ 5 s", 5000));
@@ -144,6 +147,7 @@ namespace CProProcessMonitor.Presenter
 
         public virtual void OnAbout()
         {
+            _aboutViewPresenter.ShowDialogView();
         }
 
         public virtual void OnShow()

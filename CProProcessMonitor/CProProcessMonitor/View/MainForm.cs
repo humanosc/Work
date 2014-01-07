@@ -70,6 +70,21 @@ namespace CProProcessMonitor.View
         {
             InitializeComponent();
 
+            ni_MainForm.MouseClick += (o, e) =>
+                  {
+                      if (e.Button == System.Windows.Forms.MouseButtons.Left)
+                      {
+                          if (Visible)
+                          {
+                              Presenter.OnHide();
+                          }
+                          else
+                          {
+                              Presenter.OnShow();
+                          }
+                      }
+                  };
+
             tsm_ShowMonitor.Click += (o, e) => Presenter.OnShow();
             tsm_HideMonitor.Click += (o, e) => Presenter.OnHide();
             tsm_CloseMonitor.Click += (o, e) => Presenter.OnClose();
@@ -94,21 +109,6 @@ namespace CProProcessMonitor.View
             CPU = 0.0;
             Memory = 0.0;
             ClrMemory = 0.0;
-        }
-       
-        private void ni_MainForm_MouseClick_1(object sender, MouseEventArgs e)
-        {
-            if (e.Button == System.Windows.Forms.MouseButtons.Left)
-            {
-                if (Visible)
-                {
-                    Presenter.OnHide();
-                }
-                else
-                {
-                    Presenter.OnShow();
-                }
-            }
-        }             
+        }     
     }
 }

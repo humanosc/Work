@@ -39,7 +39,7 @@ namespace CProProcessMonitor.View
 
         public string Category
         {
-            set { Text = string.Format( "Please select instance of the {0} category...", value ); }
+            set { Text = string.Format("Please select {0} instance...", value); }
         }
     }
 }

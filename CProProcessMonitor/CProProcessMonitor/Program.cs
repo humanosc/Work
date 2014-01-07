@@ -32,7 +32,9 @@ namespace CProProcessMonitor
             IMainModelSerializerService mainModelSerializerService = new MainModelSerializerService();
             ILogService logService = new LogService( mainModel );
 
-            MainViewPresenter mainViewPresenter = new MainViewPresenter(mainForm, mainModel, mainModelSerializerService, processMonitorService, logService, gnuPlotGenerator);
+            AboutViewPresenter aboutPresenter = new AboutViewPresenter(new AboutBox());
+
+            MainViewPresenter mainViewPresenter = new MainViewPresenter(mainForm, mainModel, mainModelSerializerService, processMonitorService, logService, gnuPlotGenerator, aboutPresenter);
 
             Application.Run( mainForm );
         }

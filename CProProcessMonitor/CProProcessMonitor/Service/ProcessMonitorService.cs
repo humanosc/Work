@@ -23,7 +23,6 @@ namespace CProProcessMonitor.Service
         private bool _isRunning = false;
         private readonly ManualResetEvent _startEvent = new ManualResetEvent(false);
       
-
         public int Interval
         {
             get;
