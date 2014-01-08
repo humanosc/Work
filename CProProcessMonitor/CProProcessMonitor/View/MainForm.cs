@@ -16,7 +16,7 @@ using XLib.General;
 using CProProcessMonitor.Presenter;
 
 namespace CProProcessMonitor.View
-{  
+{
     public partial class MainForm : GenericFormViewBase<MainViewPresenter>, IMainView 
     {      
         public string[] UpdateIntervals
@@ -25,6 +25,14 @@ namespace CProProcessMonitor.View
             {
                 tscb_TimerInterval.Items.Clear();
                 tscb_TimerInterval.Items.AddRange(value);
+            }
+        }
+
+        public string StateText
+        {
+            set
+            {
+                tssl_State.Text = value;               
             }
         }
 
@@ -102,6 +110,8 @@ namespace CProProcessMonitor.View
                     Presenter.OnUpdateIntervalChanged();
                     cms_MainForm.Close();
                 };
+
+           
         }
 
         public void Reset ()
@@ -109,6 +119,7 @@ namespace CProProcessMonitor.View
             CPU = 0.0;
             Memory = 0.0;
             ClrMemory = 0.0;
+            StateText = string.Empty;
         }     
     }
 }

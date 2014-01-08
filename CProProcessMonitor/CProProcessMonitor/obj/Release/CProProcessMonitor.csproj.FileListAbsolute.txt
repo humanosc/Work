@@ -71,7 +71,6 @@ H:\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor
 H:\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.View.AboutBox.resources
 H:\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.View.MainForm.resources
 H:\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.Properties.Resources.resources
-H:\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.View.SelectInstanceForm.resources
 H:\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Release\CProProcessMonitor.csproj.GenerateResource.Cache
 H:\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Release\CPro Process Monitor.exe
 H:\Git\Work\CProProcessMonitor\CProProcessMonitor\obj\Release\CPro Process Monitor.pdb

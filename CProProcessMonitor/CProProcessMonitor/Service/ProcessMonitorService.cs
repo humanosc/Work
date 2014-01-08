@@ -12,18 +12,17 @@ namespace CProProcessMonitor.Service
 {
     public class ProcessMonitorService : IProcessMonitorService 
     {
-        public event EventHandler EvProcessCreated;
-        public event EventHandler EvProcessExited;
+        public event EventHandler<ProcessMonitorEventArgs> EvProcessCreated;
+        public event EventHandler<ProcessMonitorEventArgs> EvProcessExited;
         public event EventHandler<NewProcessMonitorDataEventArgs> EvNewData;
 
         private readonly IPerformanceCounterService _performanceCounterService;
         private readonly IPerformanceCounterInstanceInfoService _performanceCounterInstanceInfoService;
         private readonly IMainModel _model;
-        private bool _isInitialized;
-        private bool _isProcessObserverRunning;
-        private bool _isProcessMonitorRunning;
+        private bool _isRunning;
         private readonly ManualResetEvent _startEvent = new ManualResetEvent(false);
-      
+        private readonly ManualResetEvent _stoppedEvent = new ManualResetEvent( false );
+       
         public int Interval
         {
             get;
@@ -32,7 +31,7 @@ namespace CProProcessMonitor.Service
 
         public bool IsInitialized
         {
-            get { return _isInitialized != null; }
+            get { return _isRunning; }
         }
 
         public ProcessMonitorService ( IPerformanceCounterService performanceCounterService,
@@ -59,27 +58,23 @@ namespace CProProcessMonitor.Service
         {
             _performanceCounterService.PerformanceCounterBroken -= _performanceCounterService_PerformanceCounterBroken;
             _performanceCounterService.Deinitialize();
-            EvProcessExited.RaiseIfValid( this );
         }
 
         private void update ()
         {
             Process process = null;
 
-            while (_isProcessObserverRunning)
+            while (_isRunning)
             {
-                while (!_startEvent.WaitOne(100))
+                if(!_startEvent.WaitOne(100))
                 {
-                    if (!_isProcessObserverRunning)
-                    {
-                        return;
-                    }
-                }
+                    continue;
+                }                
 
                 if ( process != null && process.HasExited )
                 {
                     deinitializePerformanceCounterService();
-                    EvProcessExited.RaiseIfValid( this );
+                    EvProcessExited.RaiseIfValid( this, new ProcessMonitorEventArgs( process.ProcessName, process.Id ) );
                 }
 
                 try
@@ -90,9 +85,7 @@ namespace CProProcessMonitor.Service
                         var filteredProcesses = processes.Where( p => p.ProcessName == _model.ProcessName ).ToArray();
                         if ( filteredProcesses.Length > 0 )
                         {
-                            EvProcessCreated.RaiseIfValid(this);
-
-                            process = filteredProcesses.Min( p => p.TotalProcessorTime.TotalSeconds );
+                            process = filteredProcesses.OrderBy( p => p.TotalProcessorTime ).Last();
 
                             _model.ProcessWindowTitle = process.MainWindowTitle;
 
@@ -105,6 +98,7 @@ namespace CProProcessMonitor.Service
                             if (processInstance != null) 
                             {
                                 initializePerformanceCounterService( processInstance, clrMemoryInstance );
+                                EvProcessCreated.RaiseIfValid( this, new ProcessMonitorEventArgs( process.ProcessName, process.Id ) );
                             }
                         }                       
                     }
@@ -125,23 +119,27 @@ namespace CProProcessMonitor.Service
 
                 Thread.Sleep(Interval);
             }
+
+            _stoppedEvent.Set();
         }
 
       
         public void Initialize ()
         {
             Deinitialize();
+
             ThreadPool.QueueUserWorkItem( o => update() );
-            _isProcessObserverRunning = true;            
+          
+            _stoppedEvent.Reset();
+            _isRunning = true;            
         }
 
         public void Deinitialize ()
         {
-            if (IsInitialized)
+            if ( IsInitialized )
             {
-                _isProcessObserverRunning = false;
-                _thread.Join();
-                _thread = null;
+                _isRunning = false;
+                _stoppedEvent.WaitOne();
             }
         }
 
@@ -153,6 +151,8 @@ namespace CProProcessMonitor.Service
         public void Stop ()
         {
             _startEvent.Reset();
-        }    
+        }
+
+      
     }
 }

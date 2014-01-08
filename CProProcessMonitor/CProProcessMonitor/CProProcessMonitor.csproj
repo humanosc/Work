@@ -48,13 +48,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\IMainModel.cs" />
-    <Compile Include="Model\IInstanceModel.cs" />
     <Compile Include="Model\MainModel.cs" />
-    <Compile Include="Model\InstanceModel.cs" />
     <Compile Include="Presenter\AboutViewPresenter.cs" />
     <Compile Include="Presenter\GenericPresenterBase.cs" />
     <Compile Include="Presenter\IPresenter.cs" />
-    <Compile Include="Presenter\SelectInstancePresenter.cs" />
     <Compile Include="Service\IGnuPlotGeneratorService.cs" />
     <Compile Include="Service\ILogService.cs" />
     <Compile Include="Service\IMainModelSerializerService.cs" />
@@ -65,7 +62,6 @@
     <Compile Include="Service\LogService.cs" />
     <Compile Include="Service\MainModelSerializerService.cs" />
     <Compile Include="Service\PerformanceCounterInstanceInfoService.cs" />
-    <Compile Include="Service\InstanceSelectorService.cs" />
     <Compile Include="Service\PerformanceCounterService.cs" />
     <Compile Include="Service\ProcessMonitorService.cs" />
     <Compile Include="View\AboutBox.cs">
@@ -81,7 +77,6 @@
     </Compile>
     <Compile Include="View\IAboutView.cs" />
     <Compile Include="View\IMainView.cs" />
-    <Compile Include="View\ISelectInstanceView.cs" />
     <Compile Include="View\IView.cs" />
     <Compile Include="View\MainForm.cs">
       <SubType>Form</SubType>
@@ -91,12 +86,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="View\SelectInstanceForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\SelectInstanceForm.Designer.cs">
-      <DependentUpon>SelectInstanceForm.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="View\AboutBox.resx">
       <DependentUpon>AboutBox.cs</DependentUpon>
     </EmbeddedResource>
@@ -113,9 +102,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="View\SelectInstanceForm.resx">
-      <DependentUpon>SelectInstanceForm.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Content Include="CircuitPro3D _Logo.ico" />

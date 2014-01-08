@@ -1,4 +1,5 @@
-﻿namespace CProProcessMonitor.View
+﻿using System.Windows.Forms;
+namespace CProProcessMonitor.View
 {
     partial class MainForm
     {
@@ -57,8 +58,11 @@
             this.tsm_About = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripSeparator();
             this.tsm_CloseMonitor = new System.Windows.Forms.ToolStripMenuItem();
+            this.ss_State = new System.Windows.Forms.StatusStrip();
+            this.tssl_State = new System.Windows.Forms.ToolStripStatusLabel();
             this.tblp_View.SuspendLayout();
             this.cms_MainForm.SuspendLayout();
+            this.ss_State.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbl_CPUDesc
@@ -294,12 +298,29 @@
             this.tsm_CloseMonitor.Size = new System.Drawing.Size(255, 22);
             this.tsm_CloseMonitor.Text = "Close Monitor";
             // 
+            // ss_State
+            // 
+            this.ss_State.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tssl_State});
+            this.ss_State.Location = new System.Drawing.Point(0, 117);
+            this.ss_State.Name = "ss_State";
+            this.ss_State.Size = new System.Drawing.Size(171, 22);
+            this.ss_State.TabIndex = 4;
+            this.ss_State.GripStyle = ToolStripGripStyle.Hidden;
+            this.ss_State.SizingGrip = false;
+            // 
+            // tssl_State
+            // 
+            this.tssl_State.Name = "tssl_State";
+            this.tssl_State.Size = new System.Drawing.Size(0, 17);
+            //
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(171, 118);
+            this.ClientSize = new System.Drawing.Size(171, 139);
             this.ControlBox = false;
+            this.Controls.Add(this.ss_State);
             this.Controls.Add(this.tblp_View);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -315,7 +336,10 @@
             this.tblp_View.ResumeLayout(false);
             this.tblp_View.PerformLayout();
             this.cms_MainForm.ResumeLayout(false);
+            this.ss_State.ResumeLayout(false);
+            this.ss_State.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -349,6 +373,8 @@
         private System.Windows.Forms.ToolStripComboBox tscb_TimerInterval;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem4;
         private System.Windows.Forms.ToolStripMenuItem tsm_ClearLog;
+        private System.Windows.Forms.StatusStrip ss_State;
+        private System.Windows.Forms.ToolStripStatusLabel tssl_State;
     }
 }
 

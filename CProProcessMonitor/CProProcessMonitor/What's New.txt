@@ -16,3 +16,8 @@ v1.3 (13.12.13)
 	- fixed inconsistent datetime format
 	- added functionality to clear the current log (context menu)
 	- fixed timer interval selection
+
+v1.4 (08.01.14)
+	- fixed broken clr-memory performance counter
+	- added dynamic process attachment
+	- added status view

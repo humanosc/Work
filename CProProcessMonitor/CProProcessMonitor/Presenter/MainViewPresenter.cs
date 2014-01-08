@@ -78,12 +78,25 @@ namespace CProProcessMonitor.Presenter
             View.Title = AssemblyVersion;
          
             _processMonitorService.EvNewData += _processMonitorService_EvNewData;
+            _processMonitorService.EvProcessCreated += _processMonitorService_EvProcessCreated;
             _processMonitorService.EvProcessExited += _processMonitorService_EvProcessExited;
+
+            View.StateText = "Waiting for process...";
+        }
+
+        void _processMonitorService_EvProcessCreated ( object sender, ProcessMonitorEventArgs e )
+        {
+            View.Context.Send( () => View.StateText = string.Format( "Attached to {0} ({1})", e.ProcessName, e.ProcessId ));
         }
 
         private void _processMonitorService_EvProcessExited ( object sender, EventArgs e )
         {
-            View.Context.Send( () => View.Reset() );
+            View.Context.Send( () => 
+                                {
+                                    View.Reset();
+                                    View.StateText = "Waiting for process...";
+                                });
+
         }
 
         private void _processMonitorService_EvNewData ( object sender, NewProcessMonitorDataEventArgs e )

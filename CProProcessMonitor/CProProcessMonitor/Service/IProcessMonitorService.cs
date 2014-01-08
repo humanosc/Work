@@ -19,9 +19,22 @@ namespace CProProcessMonitor.Service
         }
     }
 
+    public class ProcessMonitorEventArgs : EventArgs
+    {
+        public readonly string ProcessName;
+        public readonly int ProcessId;
+
+        public ProcessMonitorEventArgs ( string processName, int processId )
+        {
+            ProcessName = processName;
+            ProcessId = processId;
+        }
+    }
+
     public interface IProcessMonitorService
     {
-        event EventHandler EvProcessExited;
+        event EventHandler<ProcessMonitorEventArgs> EvProcessCreated;
+        event EventHandler<ProcessMonitorEventArgs> EvProcessExited;
         event EventHandler<NewProcessMonitorDataEventArgs> EvNewData;
         int Interval { get; set; }
         bool IsInitialized { get; } 
